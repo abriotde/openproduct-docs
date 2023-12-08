@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="110mm"
+   height="80mm"
+   viewBox="0 0 110 80"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   sodipodi:docname="logoOpenProduct.svg"
+   inkscape:export-filename="../f3535a26/logoOpenProduct.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.6076602"
+     inkscape:cx="162.96976"
+     inkscape:cy="173.54414"
+     inkscape:window-width="1920"
+     inkscape:window-height="1011"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <sodipodi:guide
+       position="49.444074,26.762879"
+       orientation="1,0"
+       id="guide4203"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="99.080811,37.770566"
+       orientation="1,0"
+       id="guide4205"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="30.94041,29.968699"
+       orientation="0,-1"
+       id="guide4207"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="61.222513,-19.733452"
+       orientation="0,-1"
+       id="guide4209"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="79.35052 : 19.787677 : 1"
+       inkscape:vp_y="0 : 999.99993 : 0"
+       inkscape:vp_z="210.00002 : -68.500003 : 1"
+       inkscape:persp3d-origin="105 : -118 : 1"
+       id="perspective2544" />
+  </defs>
+  <g
+     inkscape:label="Hutte"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="opacity:1;fill:#ffb906;fill-opacity:0.565476;stroke:#808080;stroke-width:0.155;stroke-dasharray:none"
+       d="M 108.59344,76.448761 C 42.222417,-91.995279 1.810252,77.303471 1.810252,77.303471 Z"
+       id="path5524"
+       inkscape:label="Dôme" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="porte">
+    <ellipse
+       style="opacity:1;fill:#3fa648;fill-opacity:1;stroke:#808080;stroke-width:0.157527;stroke-dasharray:none"
+       id="path2671"
+       ry="24.924345"
+       rx="24.698101"
+       cy="52.705967"
+       cx="51.380333"
+       inkscape:label="Dormant" />
+    <path
+       style="opacity:1;fill:#b3521a;fill-opacity:1;stroke:#523b1b;stroke-width:0.154113;stroke-dasharray:none;stroke-opacity:1"
+       id="path6058"
+       sodipodi:type="arc"
+       sodipodi:cx="56.140621"
+       sodipodi:cy="53.013592"
+       sodipodi:rx="19.96805"
+       sodipodi:ry="23.32091"
+       sodipodi:start="0"
+       sodipodi:end="6.2727058"
+       sodipodi:arc-type="slice"
+       d="M 76.108671,53.013592 A 19.96805,23.32091 0 0 1 56.192935,76.334421 19.96805,23.32091 0 0 1 36.172845,53.135787 19.96805,23.32091 0 0 1 55.983681,29.693403 19.96805,23.32091 0 0 1 76.107575,52.769205 l -19.966954,0.244387 z"
+       inkscape:label="Ouvrant" />
+    <path
+       style="opacity:1;fill:#000000;fill-opacity:1;stroke:#523b1b;stroke-width:0.0649098;stroke-dasharray:none;stroke-opacity:1"
+       id="path13012"
+       sodipodi:type="arc"
+       sodipodi:cx="39.391788"
+       sodipodi:cy="50.10273"
+       sodipodi:rx="1.5190866"
+       sodipodi:ry="1.4007031"
+       sodipodi:start="0"
+       sodipodi:end="6.2727058"
+       sodipodi:arc-type="slice"
+       d="m 40.910875,50.10273 a 1.5190866,1.4007031 0 0 1 -1.515107,1.400698 1.5190866,1.4007031 0 0 1 -1.523045,-1.393359 1.5190866,1.4007031 0 0 1 1.507126,-1.407999 1.5190866,1.4007031 0 0 1 1.530943,1.385981 l -1.519004,0.01468 z"
+       inkscape:label="poignée" />
+  </g>
+</svg>

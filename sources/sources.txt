@@ -1,0 +1,4 @@
+
+* Catalogue des producteurs.pdf par infos@dinan-capfrehel.com
+* Guide Saveurs & Savoir-Faire : https://www.capderquy-valandre.com/guide-saveurs-savoir-faire
+* https://cotesdarmor.fr/actualites/une-carte-pour-consommer-local : https://agrilocal22.gogocarto.fr/api/elements?bounds=-3.85071%2C48.08909%2C-1.7276%2C49.12422%3B&boundsJson=%5B%7B%22_southWest%22%3A%7B%22lat%22%3A48.08909%2C%22lng%22%3A-3.85071%7D%2C%22_northEast%22%3A%7B%22lat%22%3A49.12422%2C%22lng%22%3A-1.7276%7D%7D%2C%7B%22_southWest%22%3A%7B%22lat%22%3A0%2C%22lng%22%3A0%7D%2C%22_northEast%22%3A%7B%22lat%22%3A0%2C%22lng%22%3A0%7D%7D%2C%7B%22_southWest%22%3A%7B%22lat%22%3A0%2C%22lng%22%3A0%7D%2C%22_northEast%22%3A%7B%22lat%22%3A0%2C%22lng%22%3A0%7D%7D%2C%7B%22_southWest%22%3A%7B%22lat%22%3A0%2C%22lng%22%3A0%7D%2C%22_northEast%22%3A%7B%22lat%22%3A0%2C%22lng%22%3A0%7D%7D%5D
