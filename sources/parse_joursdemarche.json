@@ -1,0 +1,39 @@
+[
+                {
+            idCategorie : 1,
+            produits : [{idProduit : 14, nom : "abricot"},{idProduit : 143, nom : "amande"},{idProduit : 150, nom : "baies"},{idProduit : 1, nom : "cassis"},{idProduit : 9, nom : "cerise"},{idProduit : 131, nom : "châtaigne"},{idProduit : 15, nom : "clémentine"},{idProduit : 128, nom : "coing"},{idProduit : 132, nom : "figue"},{idProduit : 2, nom : "fraise"},{idProduit : 3, nom : "framboise"},{idProduit : 165, nom : "fruits"},{idProduit : 4, nom : "groseille"},{idProduit : 162, nom : "kaki"},{idProduit : 5, nom : "kiwi"},{idProduit : 140, nom : "marron"},{idProduit : 6, nom : "melon"},{idProduit : 12, nom : "mirabelle"},{idProduit : 7, nom : "mûre"},{idProduit : 8, nom : "myrtille"},{idProduit : 130, nom : "noisette"},{idProduit : 115, nom : "noix"},{idProduit : 161, nom : "olives"},{idProduit : 134, nom : "pastèque"},{idProduit : 13, nom : "pêche"},{idProduit : 11, nom : "poire"},{idProduit : 10, nom : "pomme"},{idProduit : 129, nom : "prune"},{idProduit : 155, nom : "pruneau"},{idProduit : 133, nom : "raisin"},],
+        },
+                {
+            idCategorie : 2,
+            produits : [{idProduit : 16, nom : "ail"},{idProduit : 17, nom : "artichaut"},{idProduit : 18, nom : "asperge"},{idProduit : 19, nom : "aubergine"},{idProduit : 20, nom : "betterave"},{idProduit : 21, nom : "blette"},{idProduit : 139, nom : "brocoli"},{idProduit : 22, nom : "carotte"},{idProduit : 23, nom : "céleri"},{idProduit : 24, nom : "chou blanc"},{idProduit : 25, nom : "chou de Bruxelles"},{idProduit : 26, nom : "chou rouge"},{idProduit : 27, nom : "chou-fleur"},{idProduit : 28, nom : "chou-rave"},{idProduit : 154, nom : "choux"},{idProduit : 29, nom : "citrouille"},{idProduit : 138, nom : "coloquinte"},{idProduit : 30, nom : "concombre"},{idProduit : 31, nom : "cornichon"},{idProduit : 32, nom : "courge"},{idProduit : 33, nom : "courgette"},{idProduit : 153, nom : "cresson"},{idProduit : 34, nom : "échalotte"},{idProduit : 35, nom : "endive"},{idProduit : 135, nom : "épinard"},{idProduit : 136, nom : "fenouil"},{idProduit : 146, nom : "fève"},{idProduit : 36, nom : "haricot vert"},{idProduit : 164, nom : "légumes"},{idProduit : 37, nom : "lentilles"},{idProduit : 147, nom : "mâche"},{idProduit : 137, nom : "maïs"},{idProduit : 39, nom : "navet"},{idProduit : 40, nom : "oignon"},{idProduit : 41, nom : "panais"},{idProduit : 174, nom : "patate douce"},{idProduit : 42, nom : "patisson"},{idProduit : 43, nom : "petits pois"},{idProduit : 44, nom : "poireau"},{idProduit : 151, nom : "pois"},{idProduit : 45, nom : "poivron"},{idProduit : 46, nom : "pomme de terre"},{idProduit : 47, nom : "potimarron"},{idProduit : 159, nom : "potiron"},{idProduit : 158, nom : "quinoa"},{idProduit : 48, nom : "radis"},{idProduit : 49, nom : "rhubarbe"},{idProduit : 148, nom : "roquette"},{idProduit : 149, nom : "rutabaga"},{idProduit : 50, nom : "salade"},{idProduit : 157, nom : "salsifi"},{idProduit : 51, nom : "tomate"},{idProduit : 52, nom : "topinambour"},],
+        },
+                {
+            idCategorie : 4,
+            produits : [{idProduit : 60, nom : "autres boissons"},{idProduit : 171, nom : "bière"},{idProduit : 59, nom : "champagne"},{idProduit : 53, nom : "cidre"},{idProduit : 55, nom : "eau de vie"},{idProduit : 54, nom : "jus de fruits"},{idProduit : 56, nom : "vin blanc"},{idProduit : 58, nom : "vin rosé"},{idProduit : 57, nom : "vin rouge"},],
+        },
+                {
+            idCategorie : 5,
+            produits : [{idProduit : 141, nom : "agneau"},{idProduit : 66, nom : "autres viandes"},{idProduit : 61, nom : "boeuf"},{idProduit : 62, nom : "charcuterie"},{idProduit : 145, nom : "lapin"},{idProduit : 65, nom : "mouton"},{idProduit : 63, nom : "porc"},{idProduit : 64, nom : "veau"},{idProduit : 170, nom : "viandes"},],
+        },
+                {
+            idCategorie : 6,
+            produits : [{idProduit : 67, nom : "canard"},{idProduit : 68, nom : "chapon"},{idProduit : 69, nom : "dinde"},{idProduit : 70, nom : "faisan"},{idProduit : 71, nom : "oie"},{idProduit : 72, nom : "pigeon"},{idProduit : 73, nom : "pintade"},{idProduit : 74, nom : "poulet"},{idProduit : 169, nom : "volailles"},],
+        },
+                {
+            idCategorie : 7,
+            produits : [{idProduit : 75, nom : "beurre"},{idProduit : 76, nom : "crème"},{idProduit : 156, nom : "faisselle"},{idProduit : 80, nom : "fromage"},{idProduit : 77, nom : "glaces & sorbets"},{idProduit : 78, nom : "lait"},{idProduit : 168, nom : "produits laitiers"},{idProduit : 79, nom : "yaourt"},],
+        },
+                {
+            idCategorie : 8,
+            produits : [{idProduit : 86, nom : "araignée"},{idProduit : 81, nom : "bulot"},{idProduit : 82, nom : "coquille Saint-Jacques"},{idProduit : 87, nom : "étrille"},{idProduit : 88, nom : "homard"},{idProduit : 90, nom : "huitre"},{idProduit : 92, nom : "langouste"},{idProduit : 93, nom : "langoustine"},{idProduit : 91, nom : "moule"},{idProduit : 83, nom : "ormeau"},{idProduit : 84, nom : "palourde"},{idProduit : 85, nom : "praire"},{idProduit : 89, nom : "tourteau"},],
+        },
+                {
+            idCategorie : 9,
+            produits : [{idProduit : 95, nom : "bar"},{idProduit : 94, nom : "barbue"},{idProduit : 96, nom : "carrelet"},{idProduit : 97, nom : "civelle"},{idProduit : 98, nom : "dorade"},{idProduit : 99, nom : "encornet"},{idProduit : 109, nom : "hareng"},{idProduit : 100, nom : "lotte"},{idProduit : 101, nom : "maquereau"},{idProduit : 102, nom : "raie"},{idProduit : 103, nom : "rouget"},{idProduit : 110, nom : "sardine"},{idProduit : 106, nom : "saumon"},{idProduit : 104, nom : "seiche"},{idProduit : 105, nom : "sole"},{idProduit : 111, nom : "thon"},{idProduit : 108, nom : "truite"},{idProduit : 107, nom : "turbot"},],
+        },
+                {
+            idCategorie : 10,
+            produits : [{idProduit : 120, nom : "algue"},{idProduit : 144, nom : "céréales"},{idProduit : 163, nom : "champignons"},{idProduit : 166, nom : "compote"},{idProduit : 123, nom : "confiture"},{idProduit : 126, nom : "cosmétiques"},{idProduit : 172, nom : "escargot"},{idProduit : 142, nom : "farine"},{idProduit : 112, nom : "fleur"},{idProduit : 122, nom : "foie gras"},{idProduit : 127, nom : "herbes et aromates"},{idProduit : 119, nom : "huile"},{idProduit : 125, nom : "miel et produits dérivés"},{idProduit : 116, nom : "oeuf"},{idProduit : 124, nom : "pain"},{idProduit : 152, nom : "piment"},{idProduit : 117, nom : "plant"},{idProduit : 121, nom : "soupe"},{idProduit : 160, nom : "tapenade"},{idProduit : 167, nom : "tisane"},{idProduit : 113, nom : "truffe"},{idProduit : 173, nom : "vêtement"},{idProduit : 118, nom : "vinaigre"},],
+        },
+            ]
+
