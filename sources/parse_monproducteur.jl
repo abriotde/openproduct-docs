@@ -1,7 +1,7 @@
 #!/usr/local/bin/julia --startup=no
 using ArgParse
 
-######### https://www.jours-de-marche.fr/producteur-local #############
+######### https://www.mon-producteur.com #############
 # TODO : Get label, sell products
 # TODO : manage inoherence, if line not insert
 
@@ -122,19 +122,18 @@ sqlInsert = DBInterface.prepare(conn, "Insert ignore into openproduct.producer
  (latitude, longitude, name, city, postCode, address, phoneNumber, siret, email, website, `text`, openingHours, geoprecision, categories)
  values (?,?,?,?,?,?, ?,?,?,?,?,?, ?,?) on duplicate key update postCode=values(postCode)")
 
- function parse_commandline()
-     s = ArgParseSettings()
-     @add_arg_table s begin
-         "--dept"
-             help = "Import a uniq departement."
-             arg_type = Int
-         "--all", "-a"
-             help = "Import all departements (default none)."
-             action = :store_true
-     end
-
-     return parse_args(s)
- end
+function parse_commandline()
+	s = ArgParseSettings()
+	@add_arg_table s begin
+	 "--dept"
+		 help = "Import a uniq departement."
+		 arg_type = Int
+	 "--all", "-a"
+		 help = "Import all departements (default none)."
+		 action = :store_true
+	end
+	return parse_args(s)
+end
 
 function getPhoneNumber(phoneString)
 	phoneNumber = ""
@@ -145,6 +144,7 @@ function getPhoneNumber(phoneString)
 	end
 	phoneNumber
 end
+
 function getXYFromAddress(address)
     println("getXYFromAddress(",address,")")
     adressAPIurl = "https://api-adresse.data.gouv.fr/search/?q="
@@ -160,76 +160,43 @@ function getXYFromAddress(address)
     if m!=nothing
     	address = m[1]
     end
-    [coordinates[2], coordinates[1], props["score"], props["postcode"], props["city"]]
+    [coordinates[2], coordinates[1], props["score"], props["postcode"], props["city"], address]
 end
 
-function parse_producer(id, url, name)
-    println("parse_producer(",id,", ",url,", ",name,")")
-    response = HTTP.get(url)
+function parse_producer(url_prod, name, shortDescription)
+    println("parse_producer(",url_prod,", ",name,", ",shortDescription,")")
+    response = HTTP.get(url_prod)
     html = response.body |> String |> Gumbo.parsehtml
-    divNb = 1
+    tmpfile = "./parse_monproducteur_prod_"*name*".html"
+    # download(url_prod,tmpfile); htmlStr = read(tmpfile, String); html = Gumbo.parsehtml(htmlStr)
     description = address = website = phoneNumber = email = openingHours = postCode = city = ""
+    lastname = ""
     x = y = score = 0
-
     ok = 0
-    for infoDiv in eachmatch(sel"div.rounded", html.root)
-        # println(infoDiv)
-        if divNb==1
-            # println("div nb 1")
-            # Get phoneNumber
-            for phoneNumberDiv in eachmatch(sel"a.btn-jaune", infoDiv)
-                phoneNumber = getPhoneNumber(Gumbo.getattr(phoneNumberDiv, "href"))
-                # println("phoneNumber:",phoneNumber)
-            end
-            # Get descriptions
-            for textDiv in eachmatch(sel"p:not(.visible-xs)", infoDiv)
-                description = Gumbo.text(textDiv)
-                # println("description:", description)
-            end
-        elseif divNb==2
-            # println("div nb 2")
-            # Get address
-            for addressP in eachmatch(sel"p", infoDiv)
-                vals = split.(string(addressP), "<br/>")
-                address = join(vals[3:length(vals)])
-                address = replace(address, "</p>" => "", "<br/>"=>"", r"\s+"=>" ");
-                # println("address:", address)
-                x, y , score, postCode, city = getXYFromAddress(address)
-                ok += 2
-            end
-            # Get phoneNumber - email - website
-            for aLink in eachmatch(sel"a", infoDiv)
-                href = Gumbo.getattr(aLink, "href")
-                indexType = findfirst(":", href)[1]
-                type = first(href, (indexType-1))
-                if type=="tel"
-                    phoneNumber = href[indexType+1:length(href)]
-                    ok += 1
-                elseif type=="mailto"
-                    email = href[indexType+1:length(href)]
-                    ok += 1
-                elseif type=="http" || type=="https"
-                    website = href
-                    ok += 1
-                else
-                    println("Warning : unthreated link href type : ",type)
-                end
-            end
-            # println("email:", email, "; website:",website, "; phone:",phoneNumber)
-        elseif divNb==4
-            # Get openingHours
-            val = string(infoDiv)
-            if findfirst("Lieux de vente", Gumbo.text(infoDiv))!=nothing
-                vals = split.(val, "<br/>")
-                if length(vals)>2
-                    openingHours = vals[2]
-                    ok += 1
-                end
-                # println("openingHours:", openingHours)
-            end
-        end
-        divNb += 1
+    i = 0
+    for div in eachmatch(sel"div#product_coords p", html.root)
+    	# println(div)
+    	vals = split.(string(div), "<br/>")
+    	for val in vals
+	    	val = strip(replace(val, r"</?p>"=>""))
+    		# println("- ",i," : ",val)
+    		if val!=""
+				if i==0
+					lastname = val
+					ok += 1
+				elseif i==1
+                	x, y , score, postCode, city, address = getXYFromAddress(val)
+					ok += 2
+				elseif i==3
+					phoneNumber = getPhoneNumber(val)
+					ok += 1
+				end
+			end
+    		i+=1
+    	end
     end
+
+
     if ok > 2
         # (latitude, longitude, name, city, postCode,
         #  address, phoneNumber, siret, email, website,
@@ -240,50 +207,59 @@ function parse_producer(id, url, name)
             description, openingHours, score, "A" # Only food product from that website
         ]
         println("Insert producer : ", values)
-        DBInterface.execute(sqlInsert, values)
+        # DBInterface.execute(sqlInsert, values)
         1
     else
-        println("ERROR : parse_producer(",id,", ",url,", ",name,") OK=",ok)
+        println("ERROR : parse_producer(",url_prod,", ",producer,", ",shortDescription,") OK=",ok)
         0
     end
 end
 
+#=
 
-function parse_departement(deptnum)
+=#
+function parse_departement(deptnum::Int64; pageNum::Int64=0)
     nbProducers = 0
-    try
+    # try
         deptname = departements[deptnum]
-        println("parse_departement(",deptnum,", ",deptname,")")
+        println("parse_departement(",deptnum,", ",deptname,", page=", pageNum,")")
         deptnumStr = lpad(string(deptnum), 2, "0")
-        tmpfile = "./parse_joursdemarche_"*deptnumStr*".html"
-        url = "https://www.jours-de-marche.fr/producteur-local/"*deptnumStr*"-"*"deptname/"
-        download(url,tmpfile)
-        # response = HTTP.get(url)
-        # html = response.body |> String |> parsehtml
-        htmlStr = read(tmpfile, String)
-        html = Gumbo.parsehtml(htmlStr)
-        # Iterate over <div id="producteur2201" class="col-12">
-        for producerDiv in eachmatch(sel"div.col-12", html.root)
-            id = try
-                Gumbo.getattr(producerDiv, "id")
-            catch e
-                ""
-            end
-            m=match(regexIdProducer, id)
-            if m!=nothing
-                producerId = m[1]
-                # println(producerDiv)
-                for link in eachmatch(sel"h3 a", producerDiv)
-                    producerUrl = Gumbo.getattr(link, "href")
-                    # println("link:",producerUrl)
-                    println("Producer nb ", nbProducers)
-                    nbProducers += parse_producer(producerId, producerUrl, Gumbo.text(link))
-                end
-            end
+        tmpfile = "./parse_monproducteur_"*deptnumStr*".html"
+        url = "https://www.mon-producteur.com/recherche/"*deptnumStr*"-"*deptname
+        if pageNum>0
+        	url = url*"?p="*string(pageNum)
         end
-    catch err
-        println("ERROR : fail parse_departement(",deptnum,") : ",err)
-    end
+        # download(url,tmpfile); htmlStr = read(tmpfile, String); html = Gumbo.parsehtml(htmlStr)
+        response = HTTP.get(url)
+        html = response.body |> String |> Gumbo.parsehtml
+        if pageNum==0 # We want all pages, we get the first one by default, get the others
+			for pagination in eachmatch(sel"div#pagination ul.pagination li a", html.root)
+				paginationVal = Gumbo.text(pagination)
+				if paginationVal[1]>='0' && paginationVal[1]<='9'
+					parse_departement(deptnum, pageNum=parse(Int64, paginationVal))
+				end
+			end
+		end
+
+	    # Iterate over <div id="producteur2201" class="col-12">
+	    for producerDiv in eachmatch(sel"ul#product_list li h3", html.root)
+	    	url_prod = ""
+	    	producerName = ""
+	    	shortDescription = ""
+	    	for child in Gumbo.children(producerDiv)
+	    		childtype = typeof(child)
+	    		if childtype==Gumbo.HTMLText
+		    		shortDescription = strip(Gumbo.text(child))
+	    		elseif childtype==Gumbo.HTMLElement{:a}
+		    		url_prod = Gumbo.getattr(child, "href")
+		    		producerName = Gumbo.getattr(child, "title")
+	    		end
+	    	end
+	    	parse_producer(url_prod, producerName, shortDescription)
+	    end
+    # catch err
+    #     println("ERROR : fail parse_departement(",deptnum,") : ",err)
+    # end
 end
 
 args = parse_commandline()
