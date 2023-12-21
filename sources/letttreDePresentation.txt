@@ -1,0 +1,11 @@
+Bonjour,
+
+Nous avons créé une association OpenProduct qui cherche à promouvoir les producteurs locaux au travers d'un site et idéalement d'une application mobile. Notre ambition est d'être à terme présent au niveau national. Nous voyons qu'il existe beaucoup de choses mais aucune n'est unifié et simple. Les offices de tourisme proposent des listes mais ou les producteurs doivent souvent payer et ou l'on a pas de visualisation cartographique. Deplus c'est loin de répondre à tous les besoins. Il existe aussi des sites comme madefrance.fr ou monsieurcocorico.com mais ces sites sont conçus pour des citadins patriotes qui commandent par internet pas pour du "local".
+Nous souhaitons laisser le site gratuit pour les consommateurs comme pour les producteurs (Mais ouvert aux dons). Il est pour l'instant en ligne à l'état de prototype sur https://openproduct.freeboxos.fr/ (Pas toujours actif)
+De nombreuses personnes en voyage souhaiteraient ramener un produit réellement local et pas un "souvenir en plastique made in china". Voici une clientelle délaissée aujourd'hui et qui pourrait constituer notre plus par rapport aux autres.
+
+Dans ce cadre, La French Touch me semble parfaitement répondre au besoin cependant, nous ne trouvons ni adresse ni localisation.
+
+Cordialement,
+OpenProduct (Albéric de la Crochais)
+

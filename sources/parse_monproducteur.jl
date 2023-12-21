@@ -117,10 +117,30 @@ departements = Dict(
 )
 regexIdProducer = Regex("producteur([0-9]+)")
 
+ fields = [
+ 	"name", "firstname", "lastname", 
+ 	"city", "postCode", "address", 
+ 	"phoneNumber", "siret", "email", "website", 
+ 	"shortDescription", "`text`", "openingHours", "categories"
+ ]
+sql::String = "Insert ignore into openproduct.producer (latitude, longitude, geoprecision"
+for field in fields
+	global sql *= ","*field
+end
+sql *= ") values (?,?,?"
+for field in fields
+	global sql *= ",?"
+end
+sql *= ") on duplicate key update "
+sep = ""
+for field in fields
+	global sql *= sep*field*" = if(length(coalesce("*field*",''))<length(values("*field*")), values("*field*"), "*field*")"
+	global sep = ","
+end
+# println("SQL:",sql)
+
 conn = DBInterface.connect(MySQL.Connection, "Localhost", "root", "osiris")
-sqlInsert = DBInterface.prepare(conn, "Insert ignore into openproduct.producer
- (latitude, longitude, name, city, postCode, address, phoneNumber, siret, email, website, `text`, openingHours, geoprecision, categories)
- values (?,?,?,?,?,?, ?,?,?,?,?,?, ?,?) on duplicate key update postCode=values(postCode)")
+sqlInsert = DBInterface.prepare(conn, sql)
 
 function parse_commandline()
 	s = ArgParseSettings()
@@ -170,7 +190,7 @@ function parse_producer(url_prod, name, shortDescription)
     tmpfile = "./parse_monproducteur_prod_"*name*".html"
     # download(url_prod,tmpfile); htmlStr = read(tmpfile, String); html = Gumbo.parsehtml(htmlStr)
     description = address = website = phoneNumber = email = openingHours = postCode = city = ""
-    lastname = ""
+    firstname = lastname = description = ""
     x = y = score = 0
     ok = 0
     i = 0
@@ -195,6 +215,17 @@ function parse_producer(url_prod, name, shortDescription)
     		i+=1
     	end
     end
+    for div in eachmatch(sel"div.titre-prod h2", html.root)
+    	name = strip(Gumbo.text(div))
+    end
+    for div in eachmatch(sel"div.titre-prod h3", html.root)
+    	shortDescription =  strip(Gumbo.text(div))
+    end
+    sep = "Produits proposés : "
+    for div in eachmatch(sel"td.precisions", html.root)
+    	description *=  sep*strip(Gumbo.text(div))
+	    sep = "; "
+    end
 
 
     if ok > 2
@@ -202,12 +233,12 @@ function parse_producer(url_prod, name, shortDescription)
         #  address, phoneNumber, siret, email, website,
         #  `text`, openingHours, geoprecision)
         values = [
-            x, y, name, city, postCode,
+            x, y, score, name, firstname, lastname, city, postCode,
             address, phoneNumber, 0, email, website,
-            description, openingHours, score, "A" # Only food product from that website
+            shortDescription, description, openingHours, "A" # Only food product from that website
         ]
         println("Insert producer : ", values)
-        # DBInterface.execute(sqlInsert, values)
+        DBInterface.execute(sqlInsert, values)
         1
     else
         println("ERROR : parse_producer(",url_prod,", ",producer,", ",shortDescription,") OK=",ok)

@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:generator>LibreOffice/7.6.2.1$Linux_X86_64 LibreOffice_project/60$Build-1</meta:generator><dc:date>2023-12-01T10:57:11.827725124</dc:date><meta:editing-duration>PT8H53S</meta:editing-duration><meta:editing-cycles>58</meta:editing-cycles><meta:document-statistic meta:table-count="3" meta:image-count="1" meta:object-count="0" meta:page-count="9" meta:paragraph-count="122" meta:word-count="2583" meta:character-count="15435" meta:non-whitespace-character-count="13001"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/7.6.4.1$Linux_X86_64 LibreOffice_project/60$Build-1</meta:generator><dc:date>2023-12-21T16:41:18.963931535</dc:date><meta:editing-duration>PT8H21M5S</meta:editing-duration><meta:editing-cycles>60</meta:editing-cycles><meta:document-statistic meta:table-count="3" meta:image-count="1" meta:object-count="0" meta:page-count="10" meta:paragraph-count="129" meta:word-count="2612" meta:character-count="15674" meta:non-whitespace-character-count="13223"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">112395</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">156210</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
    <config:config-item config:name="ViewAreaWidth" config:type="long">48156</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">20613</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">19581</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">24335</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">129217</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">17387</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">172041</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">112395</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">156210</config:config-item>
      <config:config-item config:name="VisibleRight" config:type="long">48154</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">133006</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">175789</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -74,7 +74,7 @@
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddFrameOffsets" config:type="boolean">true</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">3699176</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">3786262</config:config-item>
    <config:config-item config:name="FootnoteInColumnToPageEnd" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ProtectFields" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
@@ -157,7 +157,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:writing-mode="lr-tb" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0cm" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0cm" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Arial" fo:font-size="11pt" fo:language="fr" fo:country="FR" style:letter-kerning="false" style:font-name-asian="Arial1" style:font-size-asian="11pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Arial1" style:font-size-complex="11pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -694,49 +694,61 @@
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" fo:padding="0cm" fo:border="none" style:writing-mode="lr-tb"/>
    <style:text-properties fo:background-color="transparent"/>
   </style:style>
-  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Footer">
+  <style:style style:name="P55" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:paragraph-rsid="003871e8"/>
+  </style:style>
+  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:paragraph-rsid="003871e8"/>
+  </style:style>
+  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="003871e8" officeooo:paragraph-rsid="003871e8"/>
+  </style:style>
+  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="Footer">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
-  </style:style>
-  <style:style style:name="P56" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:paragraph-properties fo:break-before="page"/>
-   <style:text-properties officeooo:rsid="000c9136" officeooo:paragraph-rsid="000c9136"/>
-  </style:style>
-  <style:style style:name="P57" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:text-properties officeooo:rsid="000c9136" officeooo:paragraph-rsid="000c9136"/>
-  </style:style>
-  <style:style style:name="P58" style:family="paragraph" style:parent-style-name="Heading_20_1">
-   <style:paragraph-properties fo:break-before="page"/>
   </style:style>
   <style:style style:name="P59" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:paragraph-properties fo:break-before="page"/>
-   <style:text-properties officeooo:rsid="0013aafc" officeooo:paragraph-rsid="0013aafc"/>
+   <style:text-properties officeooo:rsid="000c9136" officeooo:paragraph-rsid="000c9136"/>
   </style:style>
   <style:style style:name="P60" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:text-properties officeooo:rsid="000c9136" officeooo:paragraph-rsid="000c9136"/>
+  </style:style>
+  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:paragraph-properties fo:break-before="page"/>
+  </style:style>
+  <style:style style:name="P62" style:family="paragraph" style:parent-style-name="Heading_20_1">
+   <style:paragraph-properties fo:break-before="page"/>
+   <style:text-properties officeooo:rsid="0013aafc" officeooo:paragraph-rsid="0013aafc"/>
+  </style:style>
+  <style:style style:name="P63" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:paragraph-rsid="0022920e"/>
   </style:style>
-  <style:style style:name="P61" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P64" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="001edf51"/>
   </style:style>
-  <style:style style:name="P62" style:family="paragraph" style:parent-style-name="Heading_20_3">
+  <style:style style:name="P65" style:family="paragraph" style:parent-style-name="Heading_20_3">
    <style:text-properties officeooo:paragraph-rsid="003871e8"/>
   </style:style>
-  <style:style style:name="P63" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="Standard">
+  <style:style style:name="P66" style:family="paragraph" style:parent-style-name="Heading_20_3">
+   <style:text-properties officeooo:rsid="0039c616" officeooo:paragraph-rsid="0039c616"/>
+  </style:style>
+  <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="Standard">
    <style:paragraph-properties style:page-number="1"/>
   </style:style>
-  <style:style style:name="P64" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="List_20_1">
+  <style:style style:name="P68" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="List_20_1">
    <style:text-properties officeooo:rsid="001edf51" officeooo:paragraph-rsid="001edf51"/>
   </style:style>
-  <style:style style:name="P65" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:paragraph-rsid="003871e8"/>
-  </style:style>
-  <style:style style:name="P66" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
+  <style:style style:name="P69" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L2">
    <style:text-properties officeooo:rsid="003871e8" officeooo:paragraph-rsid="003871e8"/>
   </style:style>
-  <style:style style:name="P67" style:family="paragraph" style:parent-style-name="Standard">
-   <style:text-properties officeooo:rsid="003871e8" officeooo:paragraph-rsid="003871e8"/>
+  <style:style style:name="P70" style:family="paragraph" style:parent-style-name="Standard">
+   <style:text-properties officeooo:rsid="0039c616" officeooo:paragraph-rsid="0039c616"/>
   </style:style>
-  <style:style style:name="P68" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+  <style:style style:name="P71" style:family="paragraph" style:parent-style-name="Standard" style:list-style-name="L3">
+   <style:text-properties officeooo:paragraph-rsid="0039c616"/>
+  </style:style>
+  <style:style style:name="P72" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:text-indent="0cm" style:auto-text-indent="false" fo:padding="0cm" fo:border="none" style:writing-mode="lr-tb"/>
    <style:text-properties fo:background-color="transparent"/>
   </style:style>
@@ -968,7 +980,7 @@
  <office:master-styles>
   <style:master-page style:name="Standard" style:page-layout-name="pm1" draw:style-name="dp1">
    <style:header>
-    <text:p text:style-name="P1"><draw:frame draw:style-name="fr1" draw:name="image1.png Copie 1" text:anchor-type="as-char" svg:y="-0.954cm" svg:width="1.355cm" svg:height="0.953cm" draw:z-index="8"><draw:image draw:mime-type="image/png">
+    <text:p text:style-name="P1"><draw:frame draw:style-name="fr1" draw:name="image1.png Copie 1" text:anchor-type="as-char" svg:y="-0.954cm" svg:width="1.355cm" svg:height="0.953cm" draw:z-index="9"><draw:image draw:mime-type="image/png">
        <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAYYAAAEbCAYAAADeeCN4AAABg2lDQ1BJQ0MgcHJvZmlsZQAA
         KJF9kT1Iw0AcxV9TpaLVDmYQcchQneyiRRxrFYpQIdQKrTqYj35Bk4YkxcVRcC04+LFYdXBx
         1tXBVRAEP0BcXZwUXaTE/yWFFjEeHPfj3b3H3TuAa1YVzepJAJpum5lUUsjlV4XQKwbAYwhx
@@ -1316,7 +1328,7 @@
     <text:p text:style-name="P4"><text:bookmark-start text:name="PageNumWizard_FOOTER_Style de page par défaut7"/><text:page-number text:select-page="current">9</text:page-number><text:bookmark-end text:name="PageNumWizard_FOOTER_Style de page par défaut7"/></text:p>
    </style:footer>
    <style:footer-left>
-    <text:p text:style-name="P4"><text:bookmark-start text:name="PageNumWizard_FOOTER_Style de page par défaut8"/><text:page-number text:select-page="current">8</text:page-number><text:bookmark-end text:name="PageNumWizard_FOOTER_Style de page par défaut8"/></text:p>
+    <text:p text:style-name="P4"><text:bookmark-start text:name="PageNumWizard_FOOTER_Style de page par défaut8"/><text:page-number text:select-page="current">10</text:page-number><text:bookmark-end text:name="PageNumWizard_FOOTER_Style de page par défaut8"/></text:p>
    </style:footer-left>
   </style:master-page>
  </office:master-styles>
@@ -1329,7 +1341,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P63"/>
+   <text:p text:style-name="P67"/>
    <text:p text:style-name="Standard"/>
    <text:p text:style-name="P22"/>
    <text:p text:style-name="P22"><text:bookmark text:name="_mlw3vetb5bqr"/>Business plan <text:span text:style-name="T4">OpenProduct</text:span></text:p>
@@ -1489,19 +1501,19 @@
    <text:p text:style-name="Standard"><text:bookmark text:name="docs-internal-guid-f224b5e0-7fff-7895-dc85-fb005832404a"/></text:p>
    <text:list text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P68">Mettre en avant la transparence : L&apos;un des avantages clés de la production open-source est la transparence. Il est donc important de mettre en avant cette transparence dans la communication avec les clients. Cela peut être fait en partageant des informations sur les processus de fabrication, les sources de matériaux et les contributeurs qui ont participé à la conception des produits.</text:p>
+     <text:p text:style-name="P72">Mettre en avant la transparence : L&apos;un des avantages clés de la production open-source est la transparence. Il est donc important de mettre en avant cette transparence dans la communication avec les clients. Cela peut être fait en partageant des informations sur les processus de fabrication, les sources de matériaux et les contributeurs qui ont participé à la conception des produits.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P68">Communiquer les avantages du modèle open-source : Il est important de communiquer les avantages du modèle open-source pour les clients. Cela peut inclure la flexibilité dans la personnalisation des produits, la possibilité de modifier ou d&apos;améliorer les produits existants, la réduction des coûts grâce à la collaboration communautaire, et la contribution à une communauté active et engagée.</text:p>
+     <text:p text:style-name="P72">Communiquer les avantages du modèle open-source : Il est important de communiquer les avantages du modèle open-source pour les clients. Cela peut inclure la flexibilité dans la personnalisation des produits, la possibilité de modifier ou d&apos;améliorer les produits existants, la réduction des coûts grâce à la collaboration communautaire, et la contribution à une communauté active et engagée.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P68">Cibler des communautés spécifiques : Il peut être utile de cibler des communautés spécifiques qui sont susceptibles d&apos;être attirées par le modèle open-source, telles que les communautés de makers, les groupes d&apos;utilisateurs de logiciels libres et les communautés environnementales. Cela peut être fait en participant à des événements ou des forums en ligne, en publiant des articles sur des sites pertinents et en établissant des partenariats avec des organisations connexes.</text:p>
+     <text:p text:style-name="P72">Cibler des communautés spécifiques : Il peut être utile de cibler des communautés spécifiques qui sont susceptibles d&apos;être attirées par le modèle open-source, telles que les communautés de makers, les groupes d&apos;utilisateurs de logiciels libres et les communautés environnementales. Cela peut être fait en participant à des événements ou des forums en ligne, en publiant des articles sur des sites pertinents et en établissant des partenariats avec des organisations connexes.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P68">Créer un site web et une présence sur les réseaux sociaux : Il est important de créer un site web qui met en avant les produits et les valeurs de l&apos;entreprise, ainsi que de créer des comptes sur les réseaux sociaux pour communiquer avec les clients potentiels. Le site web doit être clair et facile à naviguer, et doit fournir suffisamment d&apos;informations sur les produits et le modèle open-source. Les réseaux sociaux peuvent être utilisés pour partager des actualités, des mises à jour et des photos des produits.</text:p>
+     <text:p text:style-name="P72">Créer un site web et une présence sur les réseaux sociaux : Il est important de créer un site web qui met en avant les produits et les valeurs de l&apos;entreprise, ainsi que de créer des comptes sur les réseaux sociaux pour communiquer avec les clients potentiels. Le site web doit être clair et facile à naviguer, et doit fournir suffisamment d&apos;informations sur les produits et le modèle open-source. Les réseaux sociaux peuvent être utilisés pour partager des actualités, des mises à jour et des photos des produits.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P68">Collaborer avec des blogueurs et des influenceurs : Enfin, il peut être utile de collaborer avec des blogueurs et des influenceurs qui sont actifs dans les communautés pertinentes. Les blogueurs et les influenceurs peuvent aider à promouvoir les produits et les valeurs de l&apos;entreprise en partageant des critiques, des photos et des vidéos de produits, et en faisant connaître l&apos;entreprise à leur audience. <text:span text:style-name="T7">Mais au-delà de collaborer, il serait tout à fait dans la philosophie de l’entreprise de lancer une chaîne dédié, qui explique régulièrement les visites des petites PME qui rejoignent l’aventure.</text:span></text:p>
+     <text:p text:style-name="P72">Collaborer avec des blogueurs et des influenceurs : Enfin, il peut être utile de collaborer avec des blogueurs et des influenceurs qui sont actifs dans les communautés pertinentes. Les blogueurs et les influenceurs peuvent aider à promouvoir les produits et les valeurs de l&apos;entreprise en partageant des critiques, des photos et des vidéos de produits, et en faisant connaître l&apos;entreprise à leur audience. <text:span text:style-name="T7">Mais au-delà de collaborer, il serait tout à fait dans la philosophie de l’entreprise de lancer une chaîne dédié, qui explique régulièrement les visites des petites PME qui rejoignent l’aventure.</text:span></text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="Standard"/>
@@ -1517,19 +1529,19 @@
    <text:p text:style-name="P28">L’essentiel de l’offre se concentre sur les labels. Citons</text:p>
    <text:list text:style-name="List_20_1">
     <text:list-item>
-     <text:p text:style-name="P64">« Made in France »  ou «Fabriqué en France» : Il faut pour se faire respecter les règles douanière qui sont assez larges. Souvent, c’est seulement la dernière étape de l’assemblage qui est réalisé en France et les consommateurs ne sont pas vraiment dupe.</text:p>
+     <text:p text:style-name="P68">« Made in France »  ou «Fabriqué en France» : Il faut pour se faire respecter les règles douanière qui sont assez larges. Souvent, c’est seulement la dernière étape de l’assemblage qui est réalisé en France et les consommateurs ne sont pas vraiment dupe.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P64">« Origine France Garantie » : : Plus stricte que le « made in France » il reste peu précis quand à la localisation ni sur les conditions. Seulement le consommateur sait que c’est mieux sur les deux points que du hors Europe.</text:p>
+     <text:p text:style-name="P68">« Origine France Garantie » : : Plus stricte que le « made in France » il reste peu précis quand à la localisation ni sur les conditions. Seulement le consommateur sait que c’est mieux sur les deux points que du hors Europe.</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P28">Il y a aussi les labels de qualité qui ne sont pas toujours locaux</text:p>
    <text:list text:continue-numbering="true" text:style-name="List_20_1">
     <text:list-item>
-     <text:p text:style-name="P64">« Label rouge » : Il apporte un gage sur la qualité du produit mais peu sur les conditions de productions.</text:p>
+     <text:p text:style-name="P68">« Label rouge » : Il apporte un gage sur la qualité du produit mais peu sur les conditions de productions.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P64">« Agriculture biologique » : De même que pour le « Label rouge » avec toutefois des critères plus strictes (Sauf qu’il est moins souvent « made in France », il faut alors combiner les deux, chose assez simple)</text:p>
+     <text:p text:style-name="P68">« Agriculture biologique » : De même que pour le « Label rouge » avec toutefois des critères plus strictes (Sauf qu’il est moins souvent « made in France », il faut alors combiner les deux, chose assez simple)</text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="P51" text:outline-level="3"><text:bookmark-start text:name="__RefHeading___Toc994_4283898452"/>L<text:span text:style-name="T9">a grande distribution</text:span><text:bookmark-end text:name="__RefHeading___Toc994_4283898452"/></text:h>
@@ -1538,25 +1550,44 @@
    <text:p text:style-name="P28">C’est le principal lieu d’achat/vente en local. Mais cela se limite souvent à l’alimentaire. Et on y trouve beaucoup de faux locaux qui achètent leurs produits chez des grossistes. La confiance des consommateur y est bien entamé néanmoins ils estiment que c’est la seule offre vraiment locale sérieuse. Pour les producteurs, cela représente une bonne source de revenus mais aussi un gros coût en terme surtout de temps. Ils perdent notamment beaucoup de temps à charger/décharger, monter/démonter le stand, temps de trajets et autres coûts de gazoil. Ils y subissent aussi des vols et arnaques.</text:p>
    <text:h text:style-name="Heading_20_3" text:outline-level="3"><text:bookmark-start text:name="__RefHeading___Toc996_4283898452"/>Les producteurs eux même<text:bookmark-end text:name="__RefHeading___Toc996_4283898452"/></text:h>
    <text:p text:style-name="P28">Les producteurs font souvent leurs propre promotions aux travers de leurs réseaux et des marchés et vendent alors directement sur le lieux de production ou par colis. Mais cela reste une part faible de leur chiffre d’affaire que l’on pourrait aisément développé. La difficulté étant de les connaître.</text:p>
-   <text:h text:style-name="P62" text:outline-level="3">Les outsiders</text:h>
-   <text:p text:style-name="P65">Openfoodfacts <text:span text:style-name="T22">propose certaine fonctionnalités qu’OpenProduct propose, il y a un certain ADN commun, d’où une similitude dans le nom entre autre. Nous ambitionnons d’aller plus loin qu’eux :</text:span></text:p>
+   <text:h text:style-name="P55" text:outline-level="3">Les outsiders</text:h>
+   <text:p text:style-name="P56">Openfoodfacts <text:span text:style-name="T22">propose certaine fonctionnalités qu’OpenProduct propose, il y a un certain ADN commun, d’où une similitude dans le nom entre autre. Nous ambitionnons d’aller plus loin qu’eux :</text:span></text:p>
+   <text:list text:style-name="L2">
+    <text:list-item>
+     <text:p text:style-name="P69">Élargir au-delà de l’alimentaire.</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P69">Proposer une carte dynamique pour pouvoir chercher par localisation.</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P69">Être plus précis dans les fournisseur mais aussi sur la manière de fabriquer. Ne proposer pas que le nom du fournisseur, mais l’adresse de l’usine.</text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P69">Être plus axé sur les petits producteurs éthiques.</text:p>
+    </text:list-item>
+   </text:list>
+   <text:h text:style-name="P66" text:outline-level="3">Les autres</text:h>
+   <text:p text:style-name="P70">Ce sont des boutiques en lignes mais ou il est souvent difficile d’identifier les producteurs réels derrières.</text:p>
    <text:list text:style-name="L3">
     <text:list-item>
-     <text:p text:style-name="P66">Élargir au-delà de l’alimentaire.</text:p>
+     <text:p text:style-name="P71"><text:a xlink:type="simple" xlink:href="https://madine-france.com/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://madine-france.com/</text:a></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P66">Proposer une carte dynamique pour pouvoir chercher par localisation.</text:p>
+     <text:p text:style-name="P71"><text:a xlink:type="simple" xlink:href="https://www.madefrance.fr/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.madefrance.fr/</text:a></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P66">Être plus précis dans les fournisseur mais aussi sur la manière de fabriquer. Ne proposer pas que le nom du fournisseur, mais l’adresse de l’usine.</text:p>
+     <text:p text:style-name="P71"><text:a xlink:type="simple" xlink:href="https://www.cocorico.store/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.cocorico.store/</text:a></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P66">Être plus axé sur les petits producteurs éthiques.</text:p>
+     <text:p text:style-name="P71"><text:a xlink:type="simple" xlink:href="https://www.marques-de-france.fr/" text:style-name="Internet_20_link" text:visited-style-name="Visited_20_Internet_20_Link">https://www.marques-de-france.fr/</text:a></text:p>
+    </text:list-item>
+    <text:list-item>
+     <text:p text:style-name="P71"/>
     </text:list-item>
    </text:list>
    <text:h text:style-name="Heading_20_3" text:outline-level="3">Constat général</text:h>
    <text:p text:style-name="P15"><text:span text:style-name="T5">Le constat est que quand on achète un produit, typiquement en grande surface, il est impossible de savoir d’où il provient et la valeur réellement ajouté par rapport à un produit concurrent à côté.</text:span> <text:span text:style-name="T5">On préfère donc acheté le moins cher car il se vaudraient tous ou alors la grande marque parce qu’elle est gage d’une qualité minimale supérieur. Un petit producteur aura tendance à être à la fois plus cher que la grande marque et moins connu. Il cumule les faiblesses.</text:span></text:p>
-   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc884_4283898452"/>Environnement du marché<text:bookmark-end text:name="__RefHeading___Toc884_4283898452"/></text:h>
+   <text:h text:style-name="Heading_20_2" text:outline-level="2"><text:bookmark-start text:name="__RefHeading___Toc884_4283898452"/><text:soft-page-break/>Environnement du marché<text:bookmark-end text:name="__RefHeading___Toc884_4283898452"/></text:h>
    <text:p text:style-name="P29">Les prix producteurs locaux et de bonne qualité sont toujours cher, mais bien souvent il font des efforts considérables pour rester acceptable pour le consommateur. Le frein principal à leur développement reste souvent la promotion et/ou la marche d’accès à la grande distribution. La grande distribution serait sans doute prête à les mettre sur leurs étalages, mais les produits locaux/de qualité, n’arrivent pas à faire assez valoir leur qualité pour attirer assez le client. Ils sont alors non-viable pour la grande distribution.</text:p>
    <text:p text:style-name="P31">La plus value d’OpenProduct, va consister à rendre les petits producteurs attractif pour le client pour booster les ventes et les rendre viable pour la grande distribution.</text:p>
    <text:h text:style-name="P33" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc369_4283898452"/>Stratégie financière<text:bookmark-end text:name="__RefHeading___Toc369_4283898452"/></text:h>
@@ -1707,8 +1738,8 @@
    <text:p text:style-name="P42"/>
    <text:p text:style-name="P43">Passé cette étape délicate, il est prévu de se développer sur fonds propre.</text:p>
    <text:h text:style-name="P50" text:outline-level="1">Bilan</text:h>
-   <text:p text:style-name="P67">Je crois très fortement, qu’il y a un marché important avec une forte demande tant du côté des producteurs que des consommateur. Et la crise, qui certes restreint le budget des consommateurs ne diminue pas leur envie de mieux consommer. Et consommer local n’est pas toujours significativement plus cher car l’on peut disrupter certains intermédiaires. Dans tous les cas, il ne s’agit pas de rendre attractif un produit qui ne l’est pas : on intervient sur des entreprises sont déjà implantées, qui ont déjà une clientèle. Elles ont donc une attractivité propre. Notre but est simplement de leur apporter du chiffre d’affaire en plus en améliorant la promotion et la commercialisation des produits.</text:p>
-   <text:p text:style-name="P67"/>
+   <text:p text:style-name="P57">Je crois très fortement, qu’il y a un marché important avec une forte demande tant du côté des producteurs que des consommateur. Et la crise, qui certes restreint le budget des consommateurs ne diminue pas leur envie de mieux consommer. Et consommer local n’est pas toujours significativement plus cher car l’on peut disrupter certains intermédiaires. Dans tous les cas, il ne s’agit pas de rendre attractif un produit qui ne l’est pas : on intervient sur des entreprises sont déjà implantées, qui ont déjà une clientèle. Elles ont donc une attractivité propre. Notre but est simplement de leur apporter du chiffre d’affaire en plus en améliorant la promotion et la commercialisation des produits.</text:p>
+   <text:p text:style-name="P57"/>
   </office:text>
  </office:body>
 </office:document>
