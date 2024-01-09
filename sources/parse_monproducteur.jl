@@ -1,4 +1,4 @@
-#!/usr/local/bin/julia --startup=no
+#!/usr/local/bin/julia
 using ArgParse
 
 ######### https://www.mon-producteur.com #############
@@ -166,21 +166,26 @@ function getPhoneNumber(phoneString)
 end
 
 function getXYFromAddress(address)
-    println("getXYFromAddress(",address,")")
-    adressAPIurl = "https://api-adresse.data.gouv.fr/search/?q="
-    address = replace(strip(address), "\""=>"")
-    url = adressAPIurl * URIs.escapeuri(address)
-    # println("CALL: ",url)
-    response = HTTP.get(url)
-    jsonDatas = response.body |> String |> JSON.parse
-    addr = jsonDatas["features"][1]
-    coordinates = addr["geometry"]["coordinates"]
-    props = addr["properties"]
-    m=match(Regex("(.*)\\s*"*props["postcode"]*"\\s*"*props["city"]), address)
-    if m!=nothing
-    	address = m[1]
+	try
+		println("getXYFromAddress(",address,")")
+		adressAPIurl = "https://api-adresse.data.gouv.fr/search/?q="
+		address = replace(strip(address), "\""=>"")
+		url = adressAPIurl * URIs.escapeuri(address)
+		# println("CALL: ",url)
+		response = HTTP.get(url)
+		jsonDatas = response.body |> String |> JSON.parse
+		addr = jsonDatas["features"][1]
+		coordinates = addr["geometry"]["coordinates"]
+		props = addr["properties"]
+		m=match(Regex("(.*)\\s*"*props["postcode"]*"\\s*"*props["city"]), address)
+		if m!=nothing
+			address = m[1]
+		end
+		[coordinates[2], coordinates[1], props["score"], props["postcode"], props["city"], address]
+    catch err
+        println("ERROR : fail parse_departement(",deptnum,") : ",err)
+        [0, 0, 0, 0, "", address]
     end
-    [coordinates[2], coordinates[1], props["score"], props["postcode"], props["city"], address]
 end
 
 function parse_producer(url_prod, name, shortDescription)
@@ -297,8 +302,10 @@ args = parse_commandline()
 if args["dept"]!=nothing
     parse_departement(args["dept"])
 elseif args["all"]!=nothing
-     for num in departements
-         parse_departement(num.first)
+     for num in 1:99
+     	if haskey(departements, num)
+     		parse_departement(num)
+     	end
      end
 end
 

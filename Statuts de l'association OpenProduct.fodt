@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.text">
- <office:meta><meta:generator>LibreOffice/7.6.4.1$Linux_X86_64 LibreOffice_project/60$Build-1</meta:generator><dc:date>2023-12-13T18:49:27.981094603</dc:date><meta:editing-duration>PT8H24M4S</meta:editing-duration><meta:editing-cycles>66</meta:editing-cycles><meta:document-statistic meta:table-count="2" meta:image-count="1" meta:object-count="0" meta:page-count="4" meta:paragraph-count="66" meta:word-count="707" meta:character-count="4474" meta:non-whitespace-character-count="3852"/></office:meta>
+ <office:meta><meta:generator>LibreOffice/7.6.4.1$Linux_X86_64 LibreOffice_project/60$Build-1</meta:generator><dc:date>2024-01-08T16:27:37.865511842</dc:date><meta:editing-duration>PT8H50M36S</meta:editing-duration><meta:editing-cycles>93</meta:editing-cycles><meta:print-date>2024-01-08T16:26:51.790906413</meta:print-date><meta:document-statistic meta:table-count="2" meta:image-count="1" meta:object-count="0" meta:page-count="4" meta:paragraph-count="69" meta:word-count="795" meta:character-count="4983" meta:non-whitespace-character-count="4277"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="ViewAreaTop" config:type="long">58420</config:config-item>
+   <config:config-item config:name="ViewAreaTop" config:type="long">96520</config:config-item>
    <config:config-item config:name="ViewAreaLeft" config:type="long">0</config:config-item>
-   <config:config-item config:name="ViewAreaWidth" config:type="long">22809</config:config-item>
-   <config:config-item config:name="ViewAreaHeight" config:type="long">19581</config:config-item>
+   <config:config-item config:name="ViewAreaWidth" config:type="long">48156</config:config-item>
+   <config:config-item config:name="ViewAreaHeight" config:type="long">20613</config:config-item>
    <config:config-item config:name="ShowRedlineChanges" config:type="boolean">true</config:config-item>
    <config:config-item config:name="InBrowseMode" config:type="boolean">false</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view2</config:config-item>
-     <config:config-item config:name="ViewLeft" config:type="long">8505</config:config-item>
-     <config:config-item config:name="ViewTop" config:type="long">69446</config:config-item>
+     <config:config-item config:name="ViewLeft" config:type="long">20324</config:config-item>
+     <config:config-item config:name="ViewTop" config:type="long">112242</config:config-item>
      <config:config-item config:name="VisibleLeft" config:type="long">0</config:config-item>
-     <config:config-item config:name="VisibleTop" config:type="long">58420</config:config-item>
-     <config:config-item config:name="VisibleRight" config:type="long">22807</config:config-item>
-     <config:config-item config:name="VisibleBottom" config:type="long">77999</config:config-item>
+     <config:config-item config:name="VisibleTop" config:type="long">96520</config:config-item>
+     <config:config-item config:name="VisibleRight" config:type="long">48154</config:config-item>
+     <config:config-item config:name="VisibleBottom" config:type="long">117131</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ViewLayoutColumns" config:type="short">1</config:config-item>
      <config:config-item config:name="ViewLayoutBookMode" config:type="boolean">false</config:config-item>
@@ -74,7 +74,7 @@
    <config:config-item config:name="UpdateFromTemplate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="AddFrameOffsets" config:type="boolean">true</config:config-item>
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="Rsid" config:type="int">3917295</config:config-item>
+   <config:config-item config:name="Rsid" config:type="int">3929019</config:config-item>
    <config:config-item config:name="FootnoteInColumnToPageEnd" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ProtectFields" config:type="boolean">false</config:config-item>
    <config:config-item config:name="SaveGlobalDocumentLinks" config:type="boolean">false</config:config-item>
@@ -93,12 +93,12 @@
    <config:config-item config:name="SaveVersionOnClose" config:type="boolean">false</config:config-item>
    <config:config-item config:name="ChartAutoUpdate" config:type="boolean">true</config:config-item>
    <config:config-item config:name="ImagePreferredDPI" config:type="int">0</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary"/>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">yQH+/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWAAAAywAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SExMMjMxMEQKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5hZGp1c3RtZW50PTAsMCwnMCwwCmNvbG9yZGVwdGg9MjQKcHNsZXZlbD0wCnBkZmRldmljZT0xCmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4dERhdGEKRHVwbGV4Ok5vbmUASW5wdXRTbG90OlRSQVkxAFBhZ2VTaXplOkE0AAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2ZmDABQUklOVEVSX05BTUUAAAsARFJJVkVSX05BTUUAAA==</config:config-item>
    <config:config-item config:name="SmallCapsPercentage66" config:type="boolean">false</config:config-item>
    <config:config-item config:name="AlignTabStopPosition" config:type="boolean">true</config:config-item>
    <config:config-item config:name="DropCapPunctuation" config:type="boolean">false</config:config-item>
    <config:config-item config:name="MathBaselineAlignment" config:type="boolean">true</config:config-item>
-   <config:config-item config:name="PrinterName" config:type="string"/>
+   <config:config-item config:name="PrinterName" config:type="string">HLL2310D</config:config-item>
    <config:config-item config:name="CharacterCompressionType" config:type="short">0</config:config-item>
    <config:config-item config:name="AddParaTableSpacing" config:type="boolean">false</config:config-item>
    <config:config-item config:name="DoNotJustifyLinesWithManualBreak" config:type="boolean">false</config:config-item>
@@ -157,7 +157,7 @@
  <office:styles>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" draw:shadow-offset-x="0.3cm" draw:shadow-offset-y="0.3cm" draw:start-line-spacing-horizontal="0.283cm" draw:start-line-spacing-vertical="0.283cm" draw:end-line-spacing-horizontal="0.283cm" draw:end-line-spacing-vertical="0.283cm" style:writing-mode="lr-tb" style:flow-with-text="false"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0cm" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:line-break="strict" loext:tab-stop-distance="0cm" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Arial" fo:font-size="11pt" fo:language="fr" fo:country="FR" style:letter-kerning="false" style:font-name-asian="Arial1" style:font-size-asian="11pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Arial1" style:font-size-complex="11pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -774,45 +774,63 @@
   <style:style style:name="P70" style:family="paragraph" style:parent-style-name="Text_20_body">
    <style:text-properties officeooo:rsid="000f76cb" officeooo:paragraph-rsid="0039d08b"/>
   </style:style>
-  <style:style style:name="P71" style:family="paragraph" style:parent-style-name="Footer">
+  <style:style style:name="P71" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="003bc5ef" officeooo:paragraph-rsid="003bc5ef"/>
+  </style:style>
+  <style:style style:name="P72" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:paragraph-rsid="003bc5ef"/>
+  </style:style>
+  <style:style style:name="P73" style:family="paragraph" style:parent-style-name="Footer">
    <style:paragraph-properties fo:text-align="end" style:justify-single-word="false"/>
   </style:style>
-  <style:style style:name="P72" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P74" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:paragraph-properties fo:break-before="page"/>
    <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
   </style:style>
-  <style:style style:name="P73" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P75" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
   </style:style>
-  <style:style style:name="P74" style:family="paragraph" style:parent-style-name="Heading_20_1">
+  <style:style style:name="P76" style:family="paragraph" style:parent-style-name="Heading_20_1">
    <style:text-properties officeooo:paragraph-rsid="0039d08b"/>
   </style:style>
-  <style:style style:name="P75" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="Standard">
+  <style:style style:name="P77" style:family="paragraph" style:parent-style-name="Standard" style:master-page-name="Standard">
    <style:paragraph-properties style:page-number="1"/>
   </style:style>
-  <style:style style:name="P76" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
-   <style:text-properties officeooo:paragraph-rsid="0039d08b"/>
-  </style:style>
-  <style:style style:name="P77" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
-   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
-  </style:style>
-  <style:style style:name="P78" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="Numbering_20_123">
-   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
-  </style:style>
-  <style:style style:name="P79" style:family="paragraph" style:parent-style-name="Text_20_body">
-   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
-  </style:style>
-  <style:style style:name="P80" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
-   <style:text-properties officeooo:paragraph-rsid="0039d08b"/>
-  </style:style>
-  <style:style style:name="P81" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
-   <style:text-properties officeooo:rsid="00108325" officeooo:paragraph-rsid="0039d08b"/>
-  </style:style>
-  <style:style style:name="P82" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="List_20_1">
+  <style:style style:name="P78" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="List_20_1">
    <style:text-properties officeooo:rsid="003bc5ef" officeooo:paragraph-rsid="003bc5ef"/>
   </style:style>
+  <style:style style:name="P79" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:text-properties officeooo:paragraph-rsid="0039d08b"/>
+  </style:style>
+  <style:style style:name="P80" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L1">
+   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
+  </style:style>
+  <style:style style:name="P81" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="Numbering_20_123">
+   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="0039d08b"/>
+  </style:style>
+  <style:style style:name="P82" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="003bf3bb"/>
+  </style:style>
   <style:style style:name="P83" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="List_20_1">
-   <style:text-properties officeooo:paragraph-rsid="003bc5ef"/>
+   <style:text-properties officeooo:rsid="0004a866" officeooo:paragraph-rsid="003bf3bb"/>
+  </style:style>
+  <style:style style:name="P84" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+   <style:text-properties officeooo:paragraph-rsid="0039d08b"/>
+  </style:style>
+  <style:style style:name="P85" style:family="paragraph" style:parent-style-name="Text_20_body" style:list-style-name="L2">
+   <style:text-properties officeooo:rsid="00108325" officeooo:paragraph-rsid="0039d08b"/>
+  </style:style>
+  <style:style style:name="P86" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="00035062" officeooo:paragraph-rsid="003bf3bb"/>
+  </style:style>
+  <style:style style:name="P87" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="000f76cb" officeooo:paragraph-rsid="0039d08b"/>
+  </style:style>
+  <style:style style:name="P88" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties officeooo:rsid="003bf3bb" officeooo:paragraph-rsid="003bf3bb"/>
+  </style:style>
+  <style:style style:name="P89" style:family="paragraph" style:parent-style-name="Text_20_body">
+   <style:text-properties fo:font-weight="bold" officeooo:rsid="003bf3bb" officeooo:paragraph-rsid="003bf3bb" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-size="10pt" fo:font-weight="bold" style:font-size-asian="10pt" style:font-weight-asian="bold" style:font-size-complex="10pt"/>
@@ -931,6 +949,15 @@
   <style:style style:name="T39" style:family="text">
    <style:text-properties officeooo:rsid="003bc5ef"/>
   </style:style>
+  <style:style style:name="T40" style:family="text">
+   <style:text-properties officeooo:rsid="003a6992" fo:background-color="transparent" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T41" style:family="text">
+   <style:text-properties officeooo:rsid="003bf3bb" fo:background-color="transparent" loext:char-shading-value="0"/>
+  </style:style>
+  <style:style style:name="T42" style:family="text">
+   <style:text-properties officeooo:rsid="003bf3bb"/>
+  </style:style>
   <style:style style:name="fr1" style:family="graphic" style:parent-style-name="Graphics">
    <style:graphic-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" style:vertical-pos="from-top" style:horizontal-pos="center" style:horizontal-rel="paragraph" fo:background-color="transparent" draw:fill="none" draw:fill-color="#ffffff" fo:padding="0cm" fo:border="none" style:mirror="none" fo:clip="rect(0cm, 0cm, 0cm, 0cm)" draw:luminance="0%" draw:contrast="0%" draw:red="0%" draw:green="0%" draw:blue="0%" draw:gamma="100%" draw:color-inversion="false" draw:image-opacity="100%" draw:color-mode="standard"/>
   </style:style>
@@ -1044,56 +1071,56 @@
    </text:list-level-style-bullet>
   </text:list-style>
   <text:list-style style:name="L3">
-   <text:list-level-style-number text:level="1" text:style-name="Numbering_20_Symbols" loext:num-list-format="%1%." style:num-suffix="." style:num-format="1">
+   <text:list-level-style-bullet text:level="1" text:style-name="Bullet_20_Symbols" loext:num-list-format="%1%" text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.27cm" fo:text-indent="-0.635cm" fo:margin-left="1.27cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="2" text:style-name="Numbering_20_Symbols" loext:num-list-format="%2%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="2" text:style-name="Bullet_20_Symbols" loext:num-list-format="%2%" text:bullet-char="◦">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="1.905cm" fo:text-indent="-0.635cm" fo:margin-left="1.905cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="3" text:style-name="Numbering_20_Symbols" loext:num-list-format="%3%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="3" text:style-name="Bullet_20_Symbols" loext:num-list-format="%3%" text:bullet-char="▪">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="2.54cm" fo:text-indent="-0.635cm" fo:margin-left="2.54cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="4" text:style-name="Numbering_20_Symbols" loext:num-list-format="%4%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="4" text:style-name="Bullet_20_Symbols" loext:num-list-format="%4%" text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.175cm" fo:text-indent="-0.635cm" fo:margin-left="3.175cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="5" text:style-name="Numbering_20_Symbols" loext:num-list-format="%5%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="5" text:style-name="Bullet_20_Symbols" loext:num-list-format="%5%" text:bullet-char="◦">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="3.81cm" fo:text-indent="-0.635cm" fo:margin-left="3.81cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="6" text:style-name="Numbering_20_Symbols" loext:num-list-format="%6%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="6" text:style-name="Bullet_20_Symbols" loext:num-list-format="%6%" text:bullet-char="▪">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="4.445cm" fo:text-indent="-0.635cm" fo:margin-left="4.445cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="7" text:style-name="Numbering_20_Symbols" loext:num-list-format="%7%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="7" text:style-name="Bullet_20_Symbols" loext:num-list-format="%7%" text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.08cm" fo:text-indent="-0.635cm" fo:margin-left="5.08cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="8" text:style-name="Numbering_20_Symbols" loext:num-list-format="%8%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="8" text:style-name="Bullet_20_Symbols" loext:num-list-format="%8%" text:bullet-char="◦">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="5.715cm" fo:text-indent="-0.635cm" fo:margin-left="5.715cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="9" text:style-name="Numbering_20_Symbols" loext:num-list-format="%9%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="9" text:style-name="Bullet_20_Symbols" loext:num-list-format="%9%" text:bullet-char="▪">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.35cm" fo:text-indent="-0.635cm" fo:margin-left="6.35cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
-   <text:list-level-style-number text:level="10" text:style-name="Numbering_20_Symbols" loext:num-list-format="%10%." style:num-suffix="." style:num-format="1">
+   </text:list-level-style-bullet>
+   <text:list-level-style-bullet text:level="10" text:style-name="Bullet_20_Symbols" loext:num-list-format="%10%" text:bullet-char="•">
     <style:list-level-properties text:list-level-position-and-space-mode="label-alignment">
      <style:list-level-label-alignment text:label-followed-by="listtab" text:list-tab-stop-position="6.985cm" fo:text-indent="-0.635cm" fo:margin-left="6.985cm"/>
     </style:list-level-properties>
-   </text:list-level-style-number>
+   </text:list-level-style-bullet>
   </text:list-style>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties fo:page-width="21.001cm" fo:page-height="29.7cm" style:num-format="1" style:print-orientation="portrait" fo:margin-top="1.27cm" fo:margin-bottom="2.54cm" fo:margin-left="2.54cm" fo:margin-right="2.54cm" style:writing-mode="lr-tb" style:layout-grid-color="#c0c0c0" style:layout-grid-lines="24620" style:layout-grid-base-height="0.176cm" style:layout-grid-ruby-height="0cm" style:layout-grid-mode="none" style:layout-grid-ruby-below="false" style:layout-grid-print="false" style:layout-grid-display="false" style:layout-grid-base-width="0.423cm" style:layout-grid-snap-to="true" style:footnote-max-height="0cm" loext:margin-gutter="0cm">
@@ -1474,7 +1501,7 @@
     <text:sequence-decl text:display-outline-level="0" text:name="Drawing"/>
     <text:sequence-decl text:display-outline-level="0" text:name="Figure"/>
    </text:sequence-decls>
-   <text:p text:style-name="P75"/>
+   <text:p text:style-name="P77"/>
    <text:p text:style-name="Standard"/>
    <text:p text:style-name="P22"/>
    <text:p text:style-name="P22"><text:span text:style-name="T23">Statuts de l’association</text:span> <text:span text:style-name="T4">OpenProduct</text:span></text:p>
@@ -1500,7 +1527,7 @@
       <text:p text:style-name="P8">01/12/2023</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau2.A1" office:value-type="string">
-      <text:p text:style-name="P18">0.1</text:p>
+      <text:p text:style-name="P18">1</text:p>
      </table:table-cell>
      <table:table-cell table:style-name="Tableau2.A1" office:value-type="string">
       <text:p text:style-name="P18">Albéric de la Crochais</text:p>
@@ -1613,53 +1640,56 @@
    <text:p text:style-name="P14"/>
    <text:h text:style-name="P59" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc361_4283898452"/>Objectifs <text:span text:style-name="T24">de l’association</text:span><text:bookmark-end text:name="__RefHeading___Toc361_4283898452"/></text:h>
    <text:p text:style-name="P58"/>
-   <text:p text:style-name="P61">L’association « Open<text:span text:style-name="T39">Product</text:span> » a pour objectif<text:span text:style-name="T39">s :</text:span></text:p>
+   <text:p text:style-name="P82">L’association « Open<text:span text:style-name="T39">Product</text:span> » a pour objectif<text:span text:style-name="T39">s :</text:span></text:p>
    <text:list text:style-name="List_20_1">
+    <text:list-item>
+     <text:p text:style-name="P83"><text:span text:style-name="T40">Élargir le principe de l’Open-Source aux biens de consommations courantes </text:span><text:span text:style-name="T41">et en faire la promotion</text:span><text:span text:style-name="T40">.</text:span></text:p>
+    </text:list-item>
     <text:list-item>
      <text:p text:style-name="P83"><text:span text:style-name="T39">Promouvoir chez les producteurs, la transparence dans la composition et les procédés de fabrication des produits, y compris auprès des fournisseurs. Autrement dis, appliquer le principe de l’open-source du logiciel aux biens de consommations physiques.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P82">Promouvoir chez les consommateurs cette transparence afin de faciliter une consommation responsable de leur part et ainsi inciter les producteurs. Cette promotion se fait au travers d’outils tels qu’un site internet et une application mobile.</text:p>
+     <text:p text:style-name="P78">Promouvoir chez les consommateurs cette transparence afin de faciliter une consommation responsable de leur part et ainsi inciter les producteurs. Cette promotion se fait au travers d’outils tels qu’un site internet et une application mobile.</text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc251_1906532005"/>Instances dirigeantes<text:bookmark-end text:name="__RefHeading___Toc251_1906532005"/></text:h>
    <text:p text:style-name="P66">Les fondateurs Albéric de la Crochais et Louis-Marie de la Crochais dirigent l’association jusqu’à leur démission ou leur retraite.</text:p>
-   <text:p text:style-name="P66">A <text:span text:style-name="T25">l’</text:span>issue <text:span text:style-name="T25">de ce terme</text:span>, le dirigeant sera élu <text:span text:style-name="T25">dans l</text:span><text:span text:style-name="T24">e</text:span><text:span text:style-name="T25">s conditions suivantes :</text:span></text:p>
+   <text:p text:style-name="P86">A <text:span text:style-name="T25">l’</text:span>issue <text:span text:style-name="T25">de ce terme</text:span>, le dirigeant sera élu à <text:span text:style-name="T42">la majorité absolu </text:span><text:span text:style-name="T25">dans l</text:span><text:span text:style-name="T24">e</text:span><text:span text:style-name="T25">s conditions suivantes :</text:span></text:p>
    <text:list text:style-name="L1">
     <text:list-item>
-     <text:p text:style-name="P77">Les candidats sont les membres volontaires de plus de 1 an d’ancienneté dans l’association.</text:p>
+     <text:p text:style-name="P80">Les candidats sont les membres volontaires de plus de 1 an d’ancienneté dans l’association.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P76"><text:span text:style-name="T25">Les votants potentiels sont </text:span><text:span text:style-name="T26">l’ensemble des membres </text:span><text:span text:style-name="T25">de l’association</text:span><text:span text:style-name="T26">.</text:span></text:p>
+     <text:p text:style-name="P79"><text:span text:style-name="T25">Les votants potentiels sont </text:span><text:span text:style-name="T26">l’ensemble des membres </text:span><text:span text:style-name="T25">de l’association</text:span><text:span text:style-name="T26">.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P76"><text:span text:style-name="T25">Le scrutin est </text:span><text:span text:style-name="T26">à 2 tours.</text:span></text:p>
+     <text:p text:style-name="P79"><text:span text:style-name="T42">Tant que la majorité absolu n’est pas obtenue, on organise un autre tour avec les N meilleurs candidats</text:span><text:span text:style-name="T26">. </text:span><text:span text:style-name="T42">N étant défini pour M candidats initiaux comme l’entier compris entre M/2 et M/2+1.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P76"><text:span text:style-name="T25">Le </text:span><text:span text:style-name="T26">mandat </text:span><text:span text:style-name="T25">est </text:span><text:span text:style-name="T26">de </text:span><text:span text:style-name="T38">3</text:span><text:span text:style-name="T26"> ans.</text:span></text:p>
+     <text:p text:style-name="P79"><text:span text:style-name="T25">Le </text:span><text:span text:style-name="T26">mandat </text:span><text:span text:style-name="T25">est </text:span><text:span text:style-name="T26">de </text:span><text:span text:style-name="T38">3</text:span><text:span text:style-name="T26"> ans.</text:span></text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc253_1906532005"/><text:span text:style-name="T27">L</text:span>es assemblées générales<text:bookmark-end text:name="__RefHeading___Toc253_1906532005"/></text:h>
-   <text:p text:style-name="P67">Tous les membres sont invités aux assemblés générales au moins par courriel.</text:p>
+   <text:p text:style-name="P67">Tous les membres sont invités aux assemblés générales au moins par courriel <text:span text:style-name="T42">au minimum 20 jours avant la date avec les points à aborder</text:span>.</text:p>
    <text:p text:style-name="P61">Les points abordés lors des assemblées générales <text:span text:style-name="T27">sont définis par le dirigeant. </text:span><text:span text:style-name="T28">A ceux-ci</text:span><text:span text:style-name="T27"> </text:span><text:span text:style-name="T28">s’ajoute</text:span><text:span text:style-name="T24">nt</text:span><text:span text:style-name="T28"> ceux proposés par au moins 10 % des membres et déposés 8 jours avant la date</text:span><text:span text:style-name="T27">. </text:span><text:span text:style-name="T38">Par ailleurs tous membre peut proposer des points seulement ils ne seront pas nécessairement retenus.</text:span></text:p>
-   <text:p text:style-name="P68">L’assemblé générale édite et publie les « Principes et règles générale » de l’association afin de donné un cadre de travail pour le bureau chargé des affaires courantes.</text:p>
-   <text:h text:style-name="P60" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc255_1906532005"/>Le budget<text:bookmark-end text:name="__RefHeading___Toc255_1906532005"/></text:h>
+   <text:p text:style-name="P68">L’assemblé générale édite et publie les « Principes et règles générale » de l’association afin de donn<text:span text:style-name="T42">er</text:span> un cadre de travail pour le bureau chargé des affaires courantes.</text:p>
+   <text:h text:style-name="P60" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc255_1906532005"/><text:soft-page-break/>Le budget<text:bookmark-end text:name="__RefHeading___Toc255_1906532005"/></text:h>
    <text:p text:style-name="P61">Les comptes de l’association <text:span text:style-name="T29">doivent être</text:span> public sous licence Créative Common Attribution.</text:p>
    <text:p text:style-name="P67">Chaque décision budgétaire doit être voté par majorité absolu des membres présents lors des assemblés générales.</text:p>
-   <text:p text:style-name="P61"><text:soft-page-break/>Les sources de revenus sont constitués de dons, des cotisations des membres et de tous les produits qu’elle pourrait vendre.</text:p>
+   <text:p text:style-name="P61">Les sources de revenus sont constitués de dons, des cotisations des membres et de tous les produits qu’elle pourrait vendre.</text:p>
    <text:p text:style-name="P61">L’association doit prioriser ses dépenses comme suit :</text:p>
    <text:list text:style-name="Numbering_20_123">
     <text:list-item>
-     <text:p text:style-name="P78">Les dépenses administratives absolument nécessaires, d’hébergements des serveurs et légales.</text:p>
+     <text:p text:style-name="P81">Les dépenses administratives absolument nécessaires, d’hébergements des serveurs et légales.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P78">Le remboursement des frais occasionnés par l’association (Frais de déplacements et autres consommations).</text:p>
+     <text:p text:style-name="P81">Le remboursement des frais occasionnés par l’association (Frais de déplacements et autres consommations).</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P78">Les investissements dans <text:span text:style-name="T30">des moyens</text:span> <text:span text:style-name="T30">ou </text:span>de nouveaux produits open-sources.</text:p>
+     <text:p text:style-name="P81">Les investissements dans <text:span text:style-name="T30">des moyens</text:span> <text:span text:style-name="T30">ou </text:span>de nouveaux produits open-sources.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P78">Les <text:span text:style-name="T31">frais de personnels : primes et hausses de </text:span>salaires des dirigeants et employés <text:span text:style-name="T31">ainsi que l’embauches de nouveaux salariés</text:span>. </text:p>
+     <text:p text:style-name="P81">Les <text:span text:style-name="T31">frais de personnels : primes et hausses de </text:span>salaires des dirigeants et employés <text:span text:style-name="T31">ainsi que l’embauches de nouveaux salariés</text:span>. </text:p>
     </text:list-item>
    </text:list>
    <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc257_1906532005"/>Exclusion d’un membre<text:bookmark-end text:name="__RefHeading___Toc257_1906532005"/></text:h>
@@ -1669,26 +1699,34 @@
    <text:p text:style-name="P61">Si l’entreprise peut se permettre de prendre des employés, ceux-ci seront préférentiellement choisi parmi les bénévoles et ensuite parmi les membres. </text:p>
    <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc261_1906532005"/>Modifications des statu<text:span text:style-name="T24">t</text:span>s<text:bookmark-end text:name="__RefHeading___Toc261_1906532005"/></text:h>
    <text:p text:style-name="P63"><text:span text:style-name="T32">La modification des statu</text:span><text:span text:style-name="T24">ts</text:span><text:span text:style-name="T32"> n’est possible qu’avec accord du ou des dirigeant et vote a la majorité absolu de 80 % des membres.</text:span></text:p>
-   <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc263_1906532005"/>Dissolution<text:bookmark-end text:name="__RefHeading___Toc263_1906532005"/></text:h>
-   <text:p text:style-name="P65">La dissolution n’est possible qu’avec accord du ou des dirigeant et vote a la majorité absolu de 80 % des membres.</text:p>
+   <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc263_1906532005"/><text:soft-page-break/>Dissolution<text:bookmark-end text:name="__RefHeading___Toc263_1906532005"/></text:h>
+   <text:p text:style-name="P65">La dissolution n’est possible qu’avec accord du ou des dirigeant et vote <text:span text:style-name="T42">à</text:span> la majorité absolu de 80 % des membres.</text:p>
    <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc685_408783139"/>Le Bureau<text:bookmark-end text:name="__RefHeading___Toc685_408783139"/></text:h>
    <text:p text:style-name="P64">Le bureau est constitué :</text:p>
    <text:list text:style-name="L2">
     <text:list-item>
-     <text:p text:style-name="P81"><text:soft-page-break/>Des dirigeants.</text:p>
+     <text:p text:style-name="P85">Des dirigeants.</text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P80">D<text:span text:style-name="T33">es employés au m</text:span><text:span text:style-name="T34">inimum</text:span><text:span text:style-name="T33"> à mi-temps.</text:span></text:p>
+     <text:p text:style-name="P84">D<text:span text:style-name="T33">es employés au m</text:span><text:span text:style-name="T34">inimum</text:span><text:span text:style-name="T33"> à mi-temps.</text:span></text:p>
     </text:list-item>
     <text:list-item>
-     <text:p text:style-name="P81">D’un ou plusieurs délégué décidés en conseils d’administration.</text:p>
+     <text:p text:style-name="P85">D’un ou plusieurs délégué décidés en conseils d’administration.</text:p>
     </text:list-item>
    </text:list>
    <text:p text:style-name="P63"><text:span text:style-name="T33">Le bureau est chargé des affaires courantes dont </text:span><text:span text:style-name="T35">des décisions concernant </text:span><text:span text:style-name="T34">la conception et maintenance </text:span><text:span text:style-name="T33">du site </text:span><text:span text:style-name="T38">OpenProduct</text:span><text:span text:style-name="T33"> </text:span><text:span text:style-name="T34">(</text:span><text:span text:style-name="T33">et donc de </text:span><text:span text:style-name="T34">s</text:span><text:span text:style-name="T33">a modération</text:span><text:span text:style-name="T34">). Ils peuvent supprimer des contributions voir des utilisateurs (</text:span><text:span text:style-name="T35">à ne pas confondre avec l</text:span><text:span text:style-name="T34">es membres de l’association). </text:span><text:span text:style-name="T35">Ils appliquent </text:span><text:span text:style-name="T34">les </text:span><text:span text:style-name="T36">« Principes et règles générale »</text:span><text:span text:style-name="T34"> votés en assemblé générale </text:span><text:span text:style-name="T37">(notamment concernant la modération)</text:span><text:span text:style-name="T34">.</text:span></text:p>
    <text:h text:style-name="P62" text:outline-level="1"><text:bookmark-start text:name="__RefHeading___Toc687_408783139"/>Domiciliation<text:bookmark-end text:name="__RefHeading___Toc687_408783139"/></text:h>
-   <text:p text:style-name="P70">L’association est domicilié au « 7 le Surget, 22980 Plélan-le-Petit »</text:p>
-   <text:p text:style-name="P65"/>
-   <text:p text:style-name="P65">https://demarches.service-public.fr/</text:p>
+   <text:p text:style-name="P70">L’association est domicilié au « 7 le Surget, 22980 Plélan-le-Petit ».</text:p>
+   <text:p text:style-name="P70"/>
+   <text:p text:style-name="P70"/>
+   <text:p text:style-name="P89">Signatures</text:p>
+   <text:p text:style-name="P88">Le président de l’assemblé général et dirigeant : Albéric de la Crochais</text:p>
+   <text:p text:style-name="P88"/>
+   <text:p text:style-name="P88"/>
+   <text:p text:style-name="P88"/>
+   <text:p text:style-name="P88"/>
+   <text:p text:style-name="P88">Le secrétaire de l’assemblée générale représentant les membres présents et témoins du vote : Louis-Marie de la Crochais</text:p>
+   <text:p text:style-name="P88"/>
   </office:text>
  </office:body>
 </office:document>
