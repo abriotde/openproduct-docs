@@ -1,0 +1,49 @@
+
+Nous lançons un site web et une application mobile pour promouvoir les producteurs locaux : https://openproduct.fr/. 
+Nous sommes gratuit pour les producteurs comme les consommateurs. Nous ne nous limitons pas aux producteurs alimentaires (agriculteurs, potier, travail du bois, du métal... ).
+Consultez la carte et trouvez les producteurs autour de vous. 
+C'est le lancement, tout n'est pas encore au point. Toute aide est la bienvenue, qu'elle soit pour compléter la base de donnée ou financière.
+
+
+# Done
+
+* Nos Producteurs et Artisans Locaux (15) : https://www.facebook.com/groups/558896428351493/
+* Les Producteurs et Eleveurs Locaux du Berry 36 : https://www.facebook.com/groups/611934756056171/
+* Producteurs et Artisans Locaux : https://www.facebook.com/groups/309213376737425/
+* producteurs locaux : https://www.facebook.com/groups/2298415197045046/
+* nos producteurs et artisans locaux (63) : https://www.facebook.com/groups/520941795288066/
+* PENSEZ AUX PRODUCTEURS LOCAUX : https://www.facebook.com/groups/315546759419380/
+* Du Producteur au Consommateur... : https://www.facebook.com/groups/DuProducteurAuConsommateur/
+* Producteurs et commerçants locaux Quimper et environs : https://www.facebook.com/groups/520053628669709/
+* vente directe producteurs locaux au particulier : https://www.facebook.com/groups/2510063929310087/
+* Producteurs locaux du 17 : https://www.facebook.com/groups/producteurs.locaux.17/
+* nos producteurs et artisans locaux (03) : https://www.facebook.com/groups/310785850082843/
+* Réseau Producteurs locaux indépendants bourgogne franche comté : https://www.facebook.com/groups/513419432652187/
+* Producteurs locaux 36-37 et 41 : https://www.facebook.com/groups/572747672872666/
+* Producteurs locaux du Pays de Brest : https://www.facebook.com/groups/505550893454851/
+* Trouve ton producteur dans l'Aisne : https://www.facebook.com/groups/1519855338177511/
+* PRODUCTEURS LOCAUX GARDOIS ET ALENTOURS TOUS EN JAUNE ! : https://www.facebook.com/groups/2293875970900618/
+* Entraide, infos, et producteurs locaux Thônes : https://www.facebook.com/groups/511163536471541/
+* PRODUCTEURS LOCAUX ALPILLES / DURANCE ET PAYS SALONAIS : https://www.facebook.com/groups/producteurseyguierens/
+* Vos producteurs & commerçants locaux - Pubs, bons plans, ... : https://www.facebook.com/groups/producteurs.et.commercants.locaux/
+* Producteurs locaux🔹 circuits courts🔹 Saône et Loire 71 🔹 : https://www.facebook.com/groups/1857672321068282/
+
+# TODO
+
+* Producteurs locaux Louhans et alentours : https://www.facebook.com/groups/1050279352077973/
+* PRODUCTEURS LOCAUX ET CREATEURS DU 79 : https://www.facebook.com/groups/849069285822629/
+* agriculteurs, producteurs et artisans local : https://www.facebook.com/groups/2223656057893442/
+* Artisans 🧰 Créateurs✂ Producteurs 🥕du Finistère (29) : https://www.facebook.com/groups/245394730169634/
+* Marché des producteurs locaux de Conflans-en-Jarnisy : https://www.facebook.com/groups/1059338571261903/
+* Producteurs locaux Sud Touraine : https://www.facebook.com/groups/producteurslocauxsudtouraine/
+* Créateurs, Artisans et Producteurs en Vendée : https://www.facebook.com/groups/248945637387178/
+* Producteurs locaux et consommateurs 42 🌱🌾🌻 : https://www.facebook.com/groups/354204308850788/
+
+# No TODO
+
+* Nos producteurs locaux du Perche : https://www.facebook.com/groups/1134912207431069/
+
+# Autres
+ 
+* Producteurs Peyi ! : Martinique : https://www.facebook.com/groups/2786140631685612/
+

@@ -1,0 +1,19 @@
+O2Switch
+Montant payé	55.44€
+Processeur de paiement	Stripe
+ID de transaction	pi_3OizRZHH1EwS0obl1na9xKMD 
+Date transaction	12/02/24 à 14:21:09
+ID de panier	662852 
+Référence unique	ebd36d00-d5c3-4635-82ca-2d7da463f896 
+
+Node d'hébergement : truchat.o2switch.net
+Adresse de référence : kaja9241.odns.fr
+Nom de domaine : openproduct.fr
+
+Done: 
+* MySQL : DB openproduct & opendproduct_wiki; user web & wiki
+* SSL
+
+TODO:
+
+

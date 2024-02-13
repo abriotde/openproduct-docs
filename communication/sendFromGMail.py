@@ -7,10 +7,12 @@ from googleapiclient.discovery import build
 from requests import HTTPError
 import mysql.connector
 import yaml
+import random
+import string
 
 DB_CONFIGURATION_FILE = "../../openproduct-web/db/connection.yml"
 # SENDER = "openproduct.fr@gmail.com"
-GMAIL_API_KEY_FILE = "OpenProductMailSender_OAuth2_key.json"
+GMAIL_API_KEY_FILE = "../private/OpenProductMailSender_OAuth2_key.json"
 SUBJECT = "Promotion des producteurs locaux"
 EMAIL_BODY_TEMPLATE_FILE = "template1stCommunication.html"
 
@@ -30,10 +32,10 @@ mycursor = mydb.cursor()
 
 # Query for all email
 mycursor.execute(
-	"""SELECT name, coalesce(lastname,firstname), email 
+	"""SELECT name, coalesce(lastname,firstname), email, tokenAccess
 		FROM openproduct.producer 
 		WHERE email is not null and email!=''
-			AND id>=10000 
+			AND (id in (67) OR (id>=100 AND id <300))
 	"""
 )
 producers = mycursor.fetchall()
@@ -54,16 +56,28 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 
 	for producer in producers:
 		email = producer[2]
+		token = producer[3]
+		# print("-> "+email)
+		if token is None or token=="":
+			print("Generate token for "+email)
+			token = ''.join(random.choice(string.ascii_letters+string.digits) for i in range(64))
+			sql2 = """UPDATE openproduct.producer 
+				SET tokenAccess="%s"
+				WHERE email="%s"
+				""" % (token, email)
+			mycursor.execute(sql2)
 		context = {
 			'email': email,
 			'lastname': producer[1],
-			'name': producer[0]
+			'name': producer[0],
+			'token': token
 		}
 		body = template.render(context)
 
 		message = MIMEText(body, 'html')
 		message['to'] = email
 		message['subject'] = SUBJECT
+		message.add_header('List-Unsubscribe', '<https://www.openproduct.fr/unsubcribe.php?mail='+email+'token='+token+'>')
 		create_message = {'raw': base64.urlsafe_b64encode(message.as_bytes()).decode()}
 
 		try:
