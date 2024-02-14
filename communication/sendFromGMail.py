@@ -12,6 +12,7 @@ import string
 
 DB_CONFIGURATION_FILE = "../../openproduct-web/db/connection.yml"
 # SENDER = "openproduct.fr@gmail.com"
+# https://console.cloud.google.com/apis/credentials?authuser=2&hl=fr&project=openproduct-410817
 GMAIL_API_KEY_FILE = "../private/OpenProductMailSender_OAuth2_key.json"
 SUBJECT = "Promotion des producteurs locaux"
 EMAIL_BODY_TEMPLATE_FILE = "template1stCommunication.html"
@@ -36,7 +37,7 @@ mycursor.execute(
 		FROM openproduct.producer 
 		WHERE email is not null and email!=''
 			AND (sendEmail is null or sendEmail!="Never")
-			AND (id in (1187))
+			AND ((id>=2000 AND id<2300))
 		ORDER BY ID
 	"""
 )
