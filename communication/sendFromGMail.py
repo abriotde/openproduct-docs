@@ -20,7 +20,7 @@ EMAIL_BODY_TEMPLATE_FILE = "template1stCommunication.html"
 # Get DB Configuration (user/password)
 with open(DB_CONFIGURATION_FILE, 'r') as file:
 	dbconfiguration = yaml.safe_load(file)
-dbconf = dbconfiguration['prod']
+dbconf = dbconfiguration['dev']
 
 # Connect to DB
 mydb = mysql.connector.connect(
@@ -35,7 +35,9 @@ mycursor.execute(
 	"""SELECT name, coalesce(lastname,firstname), email, tokenAccess
 		FROM openproduct.producer 
 		WHERE email is not null and email!=''
-			AND (id in (67) OR (id>=100 AND id <300))
+			AND (sendEmail is null or sendEmail!="Never")
+			AND (id in (1187))
+		ORDER BY ID
 	"""
 )
 producers = mycursor.fetchall()
