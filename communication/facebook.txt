@@ -1,12 +1,32 @@
 
-Nous lançons un site web et une application mobile pour promouvoir les producteurs locaux : https://openproduct.fr/. 
+Nous lançons un site web et une application mobile pour promouvoir les producteurs locaux : https://openproduct.fr/. Nous recensons 5000 producteurs au travers de la France.
 Nous sommes gratuit pour les producteurs comme les consommateurs. Nous ne nous limitons pas aux producteurs alimentaires (agriculteurs, potier, travail du bois, du métal... ).
 Consultez la carte et trouvez les producteurs autour de vous. 
 C'est le lancement, tout n'est pas encore au point. Toute aide est la bienvenue, qu'elle soit pour compléter la base de donnée ou financière.
 
+Je promeut les producteurs locaux avec un site web et une carte.
+https://openproduct.fr/
 
 # Done
 
+* Des idées menus avec des produits locaux... ou presque : https://www.facebook.com/groups/1419852638623741/?notif_id=1708102060517596&notif_t=group_request_to_participate_approved&ref=notif
+* Locavores 74 - Consommons local ! : https://www.facebook.com/groups/538565416992223/
+* Mangeons local ! Le groupe des locavores du Nord : https://www.facebook.com/groups/mangeonslocal/
+* Les Locavores du 31 et du 82 : https://www.facebook.com/groups/178939488831348/
+* Les locavores d'Alsace 67-68 : https://www.facebook.com/groups/locavores/
+* Locavores-Samarivores - manger local autour d'Amiens et d'Abbeville : https://www.facebook.com/groups/374677995919894/
+* Locavores du 13,84 et 83 : https://www.facebook.com/groups/403356206377340/
+* --- Initiatives Locavores : https://www.facebook.com/groups/170113230096681/
+* Locavore d'OC, le groupe : https://www.facebook.com/groups/538355126570388/
+* Locavore Béziers : https://www.facebook.com/groups/593137438220659/
+* Locavore de France : https://www.facebook.com/groups/336481339769614/
+* Commerces, Artisans, producteurs Rodez et Alentours : https://www.facebook.com/groups/421801502555702/
+* Mangez nos produits artisanaux et locaux : https://www.facebook.com/groups/1336950806687129/
+* PRODUCTEURS LOCAUX EYGUES : https://www.facebook.com/groups/1132402297107578/
+* Trouve ton producteur dans la Drome : https://www.facebook.com/groups/648120125975839/
+* Soutien aux producteurs locaux secteur clohars carnoet -finistere sud : https://www.facebook.com/groups/879656585816763/
+* Trouve ton producteur dans la Manche : https://www.facebook.com/groups/trouvetonproducteurmanche/
+* Producteurs de la champagne : https://www.facebook.com/groups/1365913286937171/
 * Les producteurs locaux et autres, zones Bouchain Douai Valenciennes Cambrai : https://www.facebook.com/groups/2599796563597801/?notif_id=1707904581068640&notif_t=group_r2j_approved&ref=notif
 * produits direct producteurs locaux 68 Haut-Rhin : https://www.facebook.com/groups/2733372966900716/?notif_id=1707903244492976&notif_t=group_r2j_approved&ref=notif
 * Réseau producteurs-consommateurs-échange-entr'aide - Manche 50 : https://www.facebook.com/groups/1287282018328780/?notif_id=1707902593413445&notif_t=group_r2j_approved&ref=notif
@@ -64,13 +84,14 @@ C'est le lancement, tout n'est pas encore au point. Toute aide est la bienvenue,
 * Producteurs locaux🔹 circuits courts🔹 Saône et Loire 71 🔹 : https://www.facebook.com/groups/1857672321068282/
 * PRODUCTEURS LOCAUX ET CREATEURS DU 79 : https://www.facebook.com/groups/849069285822629/
 * agriculteurs, producteurs et artisans local : https://www.facebook.com/groups/2223656057893442/
+* Artisans 🧰 Créateurs✂ Producteurs 🥕du Finistère (29) : https://www.facebook.com/groups/245394730169634/
 
 # TODO
 
-* Artisans 🧰 Créateurs✂ Producteurs 🥕du Finistère (29) : https://www.facebook.com/groups/245394730169634/
 * Marché des producteurs locaux de Conflans-en-Jarnisy : https://www.facebook.com/groups/1059338571261903/
 * Créateurs, Artisans et Producteurs en Vendée : https://www.facebook.com/groups/248945637387178/
 * Producteurs locaux et consommateurs 42 🌱🌾🌻 : https://www.facebook.com/groups/354204308850788/
+* LOCAVOR FELLETIN : https://www.facebook.com/groups/141702547676963/
 
 # No TODO
 

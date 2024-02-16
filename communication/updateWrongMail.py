@@ -42,13 +42,13 @@ service = build('gmail', 'v1', credentials=creds)
 def disableEmail(email):
 	mycursor.execute(
 		"""UPDATE producer
-			SET sendEmail='wrongEmail', status='to-check'
+			SET sendEmail='wrongEmail', status=if(status='actif','to-check',status)
 			WHERE email='%s'
-			LIMIT 1
+			LIMIT 2
 		""" % email
 	)
 
-msgs = service.users().messages().list(userId='me',q='in:inbox is:unread', maxResults=50).execute()
+msgs = service.users().messages().list(userId='me',q='in:inbox is:unread', maxResults=70).execute()
 print(msgs)
 for msg in msgs['messages']:
 	resp = service.users().messages().get(userId='me', id=msg['id']).execute()

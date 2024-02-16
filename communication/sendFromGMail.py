@@ -27,17 +27,18 @@ dbconf = dbconfiguration['dev']
 mydb = mysql.connector.connect(
   host=dbconf['host'],
   user=dbconf['username'],
-  password=dbconf['password']
+  password=dbconf['password'],
+  database=dbconf['database']
 )
 mycursor = mydb.cursor()
 
 # Query for all email
 mycursor.execute(
 	"""SELECT name, coalesce(lastname,firstname), email, tokenAccess
-		FROM openproduct.producer 
+		FROM producer 
 		WHERE email is not null and email!=''
 			AND (sendEmail is null or sendEmail!="Never")
-			AND ((id>=2000 AND id<2300))
+			AND ((id>5000))
 		ORDER BY ID
 	"""
 )
@@ -64,7 +65,7 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 		if token is None or token=="":
 			print("Generate token for "+email)
 			token = ''.join(random.choice(string.ascii_letters+string.digits) for i in range(64))
-			sql2 = """UPDATE openproduct.producer 
+			sql2 = """UPDATE producer 
 				SET tokenAccess="%s"
 				WHERE email="%s"
 				""" % (token, email)
@@ -89,6 +90,11 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 				.send(userId="me", body=create_message)
 				.execute()
 			)
+			sql2 = """UPDATE producer 
+				SET sendEmail="Yes"
+				WHERE email="%s"
+				""" % (email)
+			mycursor.execute(sql2)
 			print(F'sent message to {email} Message Id: {message["id"]}')
 		except HTTPError as error:
 			print(F'An error occurred: {error}')
