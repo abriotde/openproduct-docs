@@ -18,6 +18,7 @@ __ TODO __
 * https://www.localementbon.com/
 * https://locavores.fr/annuaire
 * https://www.cocorico.store/
-* https://agriculture.gouv.fr/la-plateforme-fraisetlocalfr-pour-trouver-des-produits-en-vente-directe-pres-de-chez-vous
+* https://www.madefrance.fr/
+* https://agriculture.gouv.fr/la-plateforme-fraisetlocalfr-pour-trouver-des-produits-en-vente-directe-pres-de-chez-vous : https://www.fraisetlocal.fr/
 * Lunii qui a relocalisé en France sa "fabrique à histoires" à Bayonne.
 
