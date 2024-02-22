@@ -12,10 +12,7 @@ import JSON, MySQL, DBInterface
 # )
 
 
-conn = DBInterface.connect(MySQL.Connection, "Localhost", "root", "osiris")
-sqlInsert = DBInterface.prepare(conn, "Insert ignore into openproduct.producer
- (latitude, longitude, name, city, postCode, address, phoneNumber, siret, email, website, `text`, openingHours)
- values (?,?,?,?,?,?, ?,?,?,?,?,?) on duplicate key update postCode=values(postCode)")
+include("OpenProductProducer.jl")
 
 jsonStr = read("agrilocal.json", String)
 datas = JSON.parse(jsonStr)
@@ -80,4 +77,4 @@ for producer in producers
 end
 println(".")
 
-DBInterface.close!(conn)
+DBInterface.close!(dbConnection)

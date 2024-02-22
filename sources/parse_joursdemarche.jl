@@ -117,10 +117,7 @@ departements = Dict(
 )
 regexIdProducer = Regex("producteur([0-9]+)")
 
-conn = DBInterface.connect(MySQL.Connection, "Localhost", "root", "osiris")
-sqlInsert = DBInterface.prepare(conn, "Insert ignore into openproduct.producer
- (latitude, longitude, name, city, postCode, address, phoneNumber, siret, email, website, `text`, openingHours, geoprecision, categories)
- values (?,?,?,?,?,?, ?,?,?,?,?,?, ?,?) on duplicate key update postCode=values(postCode)")
+include("OpenProductProducer.jl")
 
  function parse_commandline()
      s = ArgParseSettings()
@@ -135,33 +132,6 @@ sqlInsert = DBInterface.prepare(conn, "Insert ignore into openproduct.producer
 
      return parse_args(s)
  end
-
-function getPhoneNumber(phoneString)
-	phoneNumber = ""
-	for c in phoneString
-		if c>='0' && c<='9'
-			phoneNumber *= c
-		end
-	end
-	phoneNumber
-end
-function getXYFromAddress(address)
-    println("getXYFromAddress(",address,")")
-    adressAPIurl = "https://api-adresse.data.gouv.fr/search/?q="
-    address = replace(strip(address), "\""=>"")
-    url = adressAPIurl * URIs.escapeuri(address)
-    # println("CALL: ",url)
-    response = HTTP.get(url)
-    jsonDatas = response.body |> String |> JSON.parse
-    addr = jsonDatas["features"][1]
-    coordinates = addr["geometry"]["coordinates"]
-    props = addr["properties"]
-    m=match(Regex("(.*)\\s*"*props["postcode"]*"\\s*"*props["city"]), address)
-    if m!=nothing
-    	address = m[1]
-    end
-    [coordinates[2], coordinates[1], props["score"], props["postcode"], props["city"]]
-end
 
 function parse_producer(id, url, name)
     println("parse_producer(",id,", ",url,", ",name,")")
@@ -298,9 +268,9 @@ end
 #
 # parse_producer("2201", "https://www.jours-de-marche.fr/producteur-local/la-ferme-de-mon-repos-2201.html", "la ferme de mon repos")
 # parse_producer("1364", "https://www.jours-de-marche.fr/producteur-local/renauflor-1364.html", "renauflor")
-# getXYFromAddress(" Mon repos 35730 Pleurtuit")
 
 
-DBInterface.close!(conn)
+
+DBInterface.close!(dbConnection)
 
 exit()

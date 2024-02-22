@@ -19,64 +19,10 @@ using Cascadia
 
 regexIdProducer = Regex("producteur([0-9]+)")
 
- fields = [
- 	"name", "firstname", "lastname", 
- 	"city", "postCode", "address", 
- 	"phoneNumber", "siret", "email", "website", 
- 	"shortDescription", "`text`", "openingHours", "categories"
- ]
-sql::String = "Insert ignore into openproduct.producer (latitude, longitude, geoprecision"
-for field in fields
-	global sql *= ","*field
-end
-sql *= ") values (?,?,?"
-for field in fields
-	global sql *= ",?"
-end
-sql *= ") on duplicate key update "
-sep = ""
-for field in fields
-	global sql *= sep*field*" = if(length(coalesce("*field*",''))<length(values("*field*")), values("*field*"), "*field*")"
-	global sep = ","
-end
-# println("SQL:",sql)
 
-conn = DBInterface.connect(MySQL.Connection, "Localhost", "root", "osiris")
-sqlInsert = DBInterface.prepare(conn, sql)
+include("OpenProductProducer.jl")
 
 
-function getPhoneNumber(phoneString)
-	phoneNumber = ""
-	for c in phoneString
-		if c>='0' && c<='9'
-			phoneNumber *= c
-		end
-	end
-	phoneNumber
-end
-
-function getXYFromAddress(address)
-	try
-		println("getXYFromAddress(",address,")")
-		adressAPIurl = "https://api-adresse.data.gouv.fr/search/?q="
-		address = replace(strip(address), "\""=>"")
-		url = adressAPIurl * URIs.escapeuri(address)
-		# println("CALL: ",url)
-		response = HTTP.get(url)
-		jsonDatas = response.body |> String |> JSON.parse
-		addr = jsonDatas["features"][1]
-		coordinates = addr["geometry"]["coordinates"]
-		props = addr["properties"]
-		m=match(Regex("(.*)\\s*"*props["postcode"]*"\\s*"*props["city"]), address)
-		if m!=nothing
-			address = m[1]
-		end
-		[coordinates[2], coordinates[1], props["score"], props["postcode"], props["city"], address]
-    catch err
-        println("ERROR : fail getXYFromAddress(",address,") : ",err)
-        [0, 0, 0, 0, "", address]
-    end
-end
 
 function parse_producer(url_prod, name)
     println("parse_producer(",url_prod,", ",name,")")
@@ -192,12 +138,6 @@ parse_all()
 # parse_producer("https://www.magasin-de-producteurs.fr/shop.php?id_shop=16", "Les Fermiers de la Dombes")
 
 
-#
-# parse_producer("2201", "https://www.jours-de-marche.fr/producteur-local/la-ferme-de-mon-repos-2201.html", "la ferme de mon repos")
-# parse_producer("1364", "https://www.jours-de-marche.fr/producteur-local/renauflor-1364.html", "renauflor")
-# getXYFromAddress(" Mon repos 35730 Pleurtuit")
-
-
-DBInterface.close!(conn)
+DBInterface.close!(dbConnection)
 
 exit()
