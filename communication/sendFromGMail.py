@@ -37,8 +37,8 @@ mycursor.execute(
 	"""SELECT name, coalesce(lastname,firstname), email, tokenAccess
 		FROM producer 
 		WHERE email is not null and email!=''
-			AND (sendEmail is null or sendEmail!="Never")
-			AND ((id>5000))
+			AND (sendEmail is null)
+			AND tokenAccess is NULL
 		ORDER BY ID
 	"""
 )

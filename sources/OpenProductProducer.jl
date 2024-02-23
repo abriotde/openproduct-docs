@@ -5,6 +5,7 @@ using Cascadia, YAML
 
 regexPhone = Regex("^[0-9]{10}\$")
 regexEmail = Regex("^[a-z._-]+@[a-z._-]+.[a-z]{2,3}\$")
+regexHttpSchema = Regex("^https?://.*")
 
 ######### https://overpass-turbo.eu/?Q=%2F*%0AThis+has+been+generated+by+the+overpass-turbo+wizard.%0AThe+original+search+was%3A%0A%E2%80%9Cshop%3Dfarm+in+France%E2%80%9D%0A*%2F%0A%5Bout%3Ajson%5D%5Btimeout%3A25%5D%3B%0A%2F%2F+fetch+area+%E2%80%9CFrance%E2%80%9D+to+search+in%0A%7B%7BgeocodeArea%3AFrance%7D%7D-%3E.searchArea%3B%0A%2F%2F+gather+results%0Anwr%5B%22shop%22%3D%22farm%22%5D%28area.searchArea%29%3B%0A%2F%2F+print+results%0Aout+geom%3B&C=45.421588%3B5.31407%3B6&R=
 #############
@@ -186,7 +187,8 @@ function update(producerDB, producer)
 		sep = ","
 	end
 	dbVal = producerDB[:email]
-	if (dbVal===missing || dbVal=="") && producer.email!=""
+	status = producerDB[:sendEmail]
+	if (dbVal===missing || dbVal=="" || sendEmail=="wrongEmail") && producer.email!=""
 		sql *= sep*"email='"*MySQL.escape(dbConnection, producer.email)*"', sendEmail=NULL"
 		sep = ","
 	end
@@ -292,5 +294,54 @@ function getKey(array::Dict, keys, defaultValue)
 		end
 	end
 	defaultValue
+end
+
+function getWebSiteStatus(url)
+	# println("getWebSiteStatus(",url,")")
+	websiteStatus = "unknown"
+	try
+		r = HTTP.get(url, timeout=30, status_exception=false)
+		# println("Response:",r)
+		if r.status==200
+			websiteStatus = "ok"
+		elseif r.status==404
+			println("=> ",r.status, "; URL:",url)
+		elseif r.status>=400 && r.status<500
+			websiteStatus = "400"
+		elseif r.status==500 || r.status==503
+			websiteStatus = "ko"
+		else
+			println(" =>",r.status, "; URL:",url)
+		end
+	catch  err
+		if isa(err, HTTP.ConnectError)
+			websiteStatus = "ConnectionError"
+		elseif isa(err, ArgumentError)
+			m = match(regexHttpSchema, url)
+			if m==nothing
+				newUrl = "https://"*url
+				ok = getWebSiteStatus(newUrl)
+				if ok=="ok"
+					println("Change URL : ",url," => ",newUrl)
+					sql2 = "UPDATE producer
+						SET website='"*newUrl*"'
+						WHERE website='"*url*"'"
+					DBInterface.execute(dbConnection, sql2)
+				end
+				return ok
+			end
+			println("ERROR:",err)
+			exit(1);
+		elseif isa(err, HTTP.Exceptions.StatusError)
+			websiteStatus = "400"
+			println("Status: for ", err)
+			exit(1)
+		else
+			println("ERROR:",err)
+			exit(1);
+		end
+	end
+	# print("getWebSiteStatus(",url,") => ", websiteStatus)
+	websiteStatus
 end
 
