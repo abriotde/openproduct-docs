@@ -89,7 +89,8 @@ function getOpenProductProducer(producer::Dict)
 	OpenProductProducer(
 		lat, lon, score, name, firstname, lastname, city, postCode,
 		address, phoneNumber, siret, email, website,
-		shortDescription, text, openingHours, "A" # Only food product from query with shop=farm
+		shortDescription, text, openingHours, "A", # Only food product from query with shop=farm
+		missing, missing
 	)
 end
 

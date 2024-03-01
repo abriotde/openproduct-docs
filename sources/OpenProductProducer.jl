@@ -76,7 +76,12 @@ mutable struct OpenProductProducer
 	text::String
 	openingHours::String
 	categories::String
+	startdate::String
+	enddate::String
 end
+OpenProductProducer() = OpenProductProducer(
+	0.0,0.0,0.0,"","","","","","","","","","","","","","","",""
+)
 function complete(producer::OpenProductProducer)
 	if strip(producer.address)=="" || producer.city=="" || producer.postCode==""
 		lat, lon, score, postCode, city, address = getAddressFromXY(producer.lat, producer.lon)
@@ -171,13 +176,24 @@ function update(producerDB, producer)
 	sql = "UPDATE producer SET "
 	sep = "";
 	dbVal = producerDB[:name]
-	if dbVal=="" && producer.name!=""
+	if (dbVal===missing || dbVal=="") && producer.name!=""
 		sql *= sep*"name='"*MySQL.escape(dbConnection, producer.name)*"'"
+		sep = ","
+	end
+	dbVal = producerDB[:firstname]
+	if (dbVal===missing || dbVal=="") && producer.firstname!=""
+		sql *= sep*"firstname='"*MySQL.escape(dbConnection, producer.firstname)*"'"
+		sep = ","
+	end
+	dbVal = producerDB[:lastname]
+	if (dbVal===missing || dbVal=="") && producer.lastname!=""
+		sql *= sep*"lastname='"*MySQL.escape(dbConnection, producer.lastname)*"'"
 		sep = ","
 	end
 	dbVal = producerDB[:text]
 	# println(dbVal, " VS ", producer.text)
-	if (dbVal===missing || dbVal=="") && producer.text!=""
+	if (dbVal===missing || dbVal=="" || ((length(dbVal)<32) && length(producer.text)>32) ) && 
+			producer.text!=""
 		sql *= sep*"text='"*MySQL.escape(dbConnection, producer.text)*"'"
 		sep = ","
 	end
@@ -188,7 +204,7 @@ function update(producerDB, producer)
 	end
 	dbVal = producerDB[:email]
 	status = producerDB[:sendEmail]
-	if (dbVal===missing || dbVal=="" || sendEmail=="wrongEmail") && producer.email!=""
+	if (dbVal===missing || dbVal=="" || dbVal=="wrongEmail") && producer.email!=""
 		sql *= sep*"email='"*MySQL.escape(dbConnection, producer.email)*"', sendEmail=NULL"
 		sep = ","
 	end
@@ -207,6 +223,16 @@ function update(producerDB, producer)
 	dbVal = producerDB[:siret]
 	if (dbVal===missing || dbVal=="") && producer.siret!=""
 		sql *= sep*"siret='"*MySQL.escape(dbConnection, producer.siret)*"'"
+		sep = ","
+	end
+	dbVal = producerDB[:enddate]
+	if (dbVal===missing || dbVal=="") && producer.enddate!=""
+		sql *= sep*"enddate='"*MySQL.escape(dbConnection, producer.enddate)*"', status='hs'"
+		sep = ","
+	end
+	dbVal = producerDB[:startdate]
+	if (dbVal===missing || dbVal=="") && producer.startdate!=""
+		sql *= sep*"startdate='"*MySQL.escape(dbConnection, producer.startdate)*"'"
 		sep = ","
 	end
 	if sep==","
@@ -289,7 +315,7 @@ end
 
 function getKey(array::Dict, keys, defaultValue)
 	for key in keys
-		if haskey(array, key)
+		if haskey(array, key) && array[key]!==nothing
 			return array[key]
 		end
 	end

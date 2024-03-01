@@ -5,6 +5,7 @@ using ArgParse
 # TODO : Get label, sell products
 # TODO : manage inoherence, if line not insert
 
+DEBUG = false
 
 # Update openproduct.producer
 # 	set address = if(LOCATE(concat(postCode," ",city), address)>0, SUBSTR(address, 1, length(address)-length(concat(postCode," ",city))-2),address)
@@ -204,13 +205,14 @@ function parse_producer(id, url, name)
         # (latitude, longitude, name, city, postCode,
         #  address, phoneNumber, siret, email, website,
         #  `text`, openingHours, geoprecision)
-        values = [
-            x, y, name, city, postCode,
-            address, phoneNumber, 0, email, website,
-            description, openingHours, score, "A" # Only food product from that website
-        ]
-        println("Insert producer : ", values)
-        DBInterface.execute(sqlInsert, values)
+        producer = OpenProductProducer(
+            x, y, score, name, "","", city, postCode,
+            address, phoneNumber, "", email, website,
+            "", description, openingHours, "A", # Only food product from that website
+			"", ""
+		)
+        println("producer : ", producer)
+		insertOnDuplicateUpdate(producer)
         1
     else
         println("ERROR : parse_producer(",id,", ",url,", ",name,") OK=",ok)
@@ -226,7 +228,7 @@ function parse_departement(deptnum)
         println("parse_departement(",deptnum,", ",deptname,")")
         deptnumStr = lpad(string(deptnum), 2, "0")
         tmpfile = "./parse_joursdemarche_"*deptnumStr*".html"
-        url = "https://www.jours-de-marche.fr/producteur-local/"*deptnumStr*"-"*"deptname/"
+        url = "https://www.jours-de-marche.fr/producteur-local/"*deptnumStr*"-"*deptname*"/"
         download(url,tmpfile)
         # response = HTTP.get(url)
         # html = response.body |> String |> parsehtml
