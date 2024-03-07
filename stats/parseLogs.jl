@@ -142,6 +142,6 @@ function printStats(stats)
 end
 
 year = 0
-# sync()
+sync()
 stats = getStats()
 printStats(stats)

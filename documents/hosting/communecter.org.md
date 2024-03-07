@@ -12,6 +12,7 @@ Voici les besoins que j'ai dans l'ordre de priorité.
 - Un email avec l'autorisation ou nom de l'avertir une fois par mois maximum (email, option sendEmail=ENUM(Yes, Never))
 - Un site web (webSite)
 - Un numéro de téléphone (phoneNumber & phoneNumber2)
+- Un Siret (ou Siren)
 - Une description de 1000 caractères maximum (`text`)
 - Une description simple qui correspond au métier/activité (shortDescription). Exp : Jeux en bois, Ebéniste, Vannerie...
 - Code postale (postCode)
