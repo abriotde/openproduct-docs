@@ -51,8 +51,8 @@ function dbConnect()
 end
 dbConnection = dbConnect()
 sql ="SELECT * FROM openproduct.producer
-	WHERE (latitude between ?-0.002 AND ?+0.002 
-		AND longitude between ?-0.002 AND ?+0.002
+	WHERE (latitude between ?-0.001 AND ?+0.001
+		AND longitude between ?-0.001 AND ?+0.001
 	) OR name like ?"
 sqlSearchXY = DBInterface.prepare(dbConnection, sql)
 sqlInsert = DBInterface.prepare(dbConnection, getSqlInsert())
@@ -242,7 +242,7 @@ function update(producerDB, producer)
 	end
 end
 
-function insertOnDuplicateUpdate(producer::OpenProductProducer; force=true)
+function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)
 	producerDB = search(producer)
 	if producerDB==nothing
 		if (force || producer.email!="" || producer.phoneNumber!="" || producer.website!="" || producer.siret!="") && 

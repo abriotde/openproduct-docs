@@ -6,9 +6,16 @@
 * http://www.mon-producteur.com/departement
 * https://www.annuaire-metiersdart.com/
 * https://www.magasin-de-producteurs.fr/
+* AMAP : Armorique HS, 
+* AMAP : https://www.amap-bearn.fr/wp-content/uploads/sites/69/2018/04/geolocalisationettextes2.csv
+* AMAP : https://amap-aura.org/wp-json/cap/v1/amaps?mode=geoJSON&filter=amap&cp=69,01,73,38,74,15,43,63,03,26,07,42
 
 __ TODO __
 
+* parse_amap44.jl
+
+* https://divinebox.fr/categorie-produit/produits-monastiques/ onvousecoute@divinebox.fr
+* 02 99 38 95 85
 * https://www.acheteralasource.com/producteur/83886
 * https://www.espritpaysan.fr
 * https://www.lespaysanssolidaires.fr
@@ -26,4 +33,19 @@ __ TODO __
 * AMAP
 * https://www.open-atlas.org/
 * https://presdecheznous.fr/
+* https://miramap.org/-Trouver-une-AMAP-.html
+* https://amap-idf.org/les-amap/trouver-une-amap-en-idf#mapamap
+* http://amap49.org/carte-des-amap-du-maine-et-loire/
+* http://amap53.eklablog.com/amaporte-p1007566
+* https://www.amap-hdf.org/amap-rejoindre/
+* wget : Get "mailto:" https://amapreseau-mp.org/liste-amap-midi-pyrenees
+* https://www.reseau-amap-hn.com/amap
 
+Bonjour,
+
+Je vous contact au nom de l'association OpenProduct qui souhaite référencé tous les producteurs de France : https://openproduct.fr/map.html. Seriez vous ouvert à me partager la liste de vos producteurs et eventuellement de vos AMAP? N'hésitez pas a revenir vers moi pour plus de renseignements.
+
+Cordialement,
+Albéric de la Crochais pour OpenProduct.
+courriel : openproduct.fr@gmail.com
+tel : 06 27 23 98 99
