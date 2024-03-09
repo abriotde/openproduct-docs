@@ -167,7 +167,7 @@ function insert(producer::OpenProductProducer)
 		producer.shortDescription, producer.text, producer.openingHours, producer.categories
 	]
 	println("Insert producer : ", values)
-	# DBInterface.execute(sqlInsert, values)
+	DBInterface.execute(sqlInsert, values)
 end
 
 
@@ -242,10 +242,10 @@ function update(producerDB, producer)
 	end
 end
 
-function insertOnDuplicateUpdate(producer::OpenProductProducer)
+function insertOnDuplicateUpdate(producer::OpenProductProducer; force=true)
 	producerDB = search(producer)
 	if producerDB==nothing
-		if (producer.email!="" || producer.phoneNumber!="") && 
+		if (force || producer.email!="" || producer.phoneNumber!="" || producer.website!="" || producer.siret!="") && 
 				producer.text!="" && producer.name!=""
 			insert(producer)
 			1
