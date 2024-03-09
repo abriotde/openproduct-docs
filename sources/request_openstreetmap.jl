@@ -88,7 +88,7 @@ function getOpenProductProducer(producer::Dict)
 	siret = getKey(tags, ["ref:FR:SIRET"], "")
 	OpenProductProducer(
 		lat, lon, score, name, firstname, lastname, city, postCode,
-		address, phoneNumber, siret, email, website,
+		address, phoneNumber, "", siret, email, website,
 		shortDescription, text, openingHours, "A", # Only food product from query with shop=farm
 		missing, missing
 	)

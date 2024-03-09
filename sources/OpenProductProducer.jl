@@ -18,10 +18,10 @@ function getSqlInsert()
 	fields = [
 		"name", "firstname", "lastname", 
 		"city", "postCode", "address", 
-		"phoneNumber", "siret", "email", "website", 
+		"phoneNumber", "phoneNumber2", "siret", "email", "website", 
 		"shortDescription", "`text`", "openingHours", "categories"
 	]
-	sql::String = "Insert ignore into openproduct.producer (latitude, longitude, geoprecision"
+	sql::String = "Insert ignore into producer (latitude, longitude, geoprecision"
 	for field in fields
 		sql *= ","*field
 	end
@@ -56,7 +56,9 @@ sql ="SELECT * FROM openproduct.producer
 	) OR name like ?"
 sqlSearchXY = DBInterface.prepare(dbConnection, sql)
 sqlInsert = DBInterface.prepare(dbConnection, getSqlInsert())
-
+sqlSelectTag = DBInterface.prepare(dbConnection, "SELECT * FROM produce WHERE fr like ?")
+sqlInsertTag = DBInterface.prepare(dbConnection, "INSERT INTO produce(fr) VALUES (?)")
+sqlInsertTagLink = DBInterface.prepare(dbConnection, "INSERT IGNORE INTO product_link(producer, produce) VALUES (?,?)")
 
 mutable struct OpenProductProducer
 	lat::AbstractFloat
@@ -69,6 +71,7 @@ mutable struct OpenProductProducer
 	postCode::String
 	address::String
 	phoneNumber::String
+	phoneNumber2::String
 	siret::String
 	email::String
 	website::String
@@ -80,7 +83,7 @@ mutable struct OpenProductProducer
 	enddate::String
 end
 OpenProductProducer() = OpenProductProducer(
-	0.0,0.0,0.0,"","","","","","","","","","","","","","","",""
+	0.0,0.0,0.0,"","","","","","","","","","","","","","","","",""
 )
 function complete(producer::OpenProductProducer)
 	if strip(producer.address)=="" || producer.city=="" || producer.postCode==""
@@ -159,15 +162,17 @@ function search(producer::OpenProductProducer)
 	end
 	nothing
 end
-function insert(producer::OpenProductProducer)
+function insert(producer::OpenProductProducer)::Int32
 	complete(producer)
 	values = [
 		producer.lat, producer.lon, producer.score, producer.name, producer.firstname, producer.lastname, producer.city, producer.postCode,
-		producer.address, producer.phoneNumber, producer.siret, producer.email, producer.website,
+		producer.address, producer.phoneNumber, producer.phoneNumber2, producer.siret, producer.email, producer.website,
 		producer.shortDescription, producer.text, producer.openingHours, producer.categories
 	]
 	println("Insert producer : ", values)
-	DBInterface.execute(sqlInsert, values)
+	results = DBInterface.execute(sqlInsert, values)
+	v = DBInterface.lastrowid(results)
+	convert(Int32, v)
 end
 
 
@@ -240,15 +245,16 @@ function update(producerDB, producer)
 		println("SQL:",sql,";")
 		# res = DBInterface.execute(dbConnection, sql)
 	end
+	producerDB[:id]
 end
-
-function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)
+#=
+=#
+function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)::Int32
 	producerDB = search(producer)
 	if producerDB==nothing
 		if (force || producer.email!="" || producer.phoneNumber!="" || producer.website!="" || producer.siret!="") && 
 				producer.text!="" && producer.name!=""
 			insert(producer)
-			1
 		else
 			println("SKIP:",producer,"")
 			0
@@ -256,8 +262,25 @@ function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)
 	else
 		if DEBUG; println("Found:", producerDB); end
 		update(producerDB, producer)
-		2
+		producerDB[:id]
 	end
+end
+#=
+@param : id : id of producer
+@param : tag : tag/produce name
+=#
+function setTagOnProducer(producerId::Int32, tagName::AbstractString)
+	tagId = getTagIdDefaultInsert(tagName)
+	DBInterface.execute(sqlInsertTagLink, [producerId, tagId])
+end
+function getTagIdDefaultInsert(tagname::AbstractString)::Int32
+	results = DBInterface.execute(sqlSelectTag, [tagname])
+	for res in results
+		return res[:id]
+	end
+	results = DBInterface.execute(sqlInsertTag, [tagname])
+	id = DBInterface.lastrowid(results)
+	convert(Int32, id)
 end
 
 #=
@@ -303,7 +326,7 @@ function getXYFromAddress(address)
     end
 end
 
-function getPhoneNumber(phoneString::String)
+function getPhoneNumber(phoneString::AbstractString)
 	phoneNumber = ""
 	for c in phoneString
 		if c>='0' && c<='9'

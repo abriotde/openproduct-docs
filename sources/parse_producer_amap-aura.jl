@@ -24,21 +24,6 @@ include("OpenProductProducer.jl")
 
 
 
-        #= (latitude, longitude, name, city, postCode,
-        #  address, phoneNumber, siret, email, website,
-        #  `text`, openingHours, geoprecision)
-        producer = OpenProductProducer(
-            x, y, score, name, "","", city, postCode,
-            address, phoneNumber, "", email, website,
-            "", description, openingHours, "A", # Only food product from that website
-			"", ""
-		)
-        println("producer : ", producer)
-		insertOnDuplicateUpdate(producer)
-        =#
-
-
-
 function parse_proucer_amapAura()
     nbProducers = 0
 	println("parse_proucer_amapAura()")
@@ -79,7 +64,7 @@ function parse_proucer_amapAura()
 		address = addr["rue"]
 		producer = OpenProductProducer(
 			lat, lon, 0.9, vals["nom"], "","", city, postCode,
-			address, "", "", email, website,
+			address, "", "", "", email, website,
 			"AMAP", description, openingHours, "AG", # Only food product from that website
 			"", ""
 		)

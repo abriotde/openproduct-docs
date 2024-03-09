@@ -207,7 +207,7 @@ function parse_producer(id, url, name)
         #  `text`, openingHours, geoprecision)
         producer = OpenProductProducer(
             x, y, score, name, "","", city, postCode,
-            address, phoneNumber, "", email, website,
+            address, phoneNumber, "", "", email, website,
             "", description, openingHours, "A", # Only food product from that website
 			"", ""
 		)

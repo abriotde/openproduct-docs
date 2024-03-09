@@ -23,16 +23,6 @@ regexIdProducer = Regex("producteur([0-9]+)")
 
 include("OpenProductProducer.jl")
 
-#=
-        producer = OpenProductProducer(
-            x, y, score, name, "","", city, postCode,
-            address, phoneNumber, "", email, website,
-            "", description, openingHours, "A", # Only food product from that website
-			"", ""
-		)
-        println("producer : ", producer)
-		insertOnDuplicateUpdate(producer)
-=#
 
 function parse_amapBearn()
     nbProducers = 0
@@ -62,7 +52,7 @@ function parse_amapBearn()
 		end
 		producer = OpenProductProducer(
 			lat, lon, score, name, "","", city, postcode,
-			address, "", "", "", website,
+			address, "", "", "", "", website,
 			"", text, "AMAP", "AG", # Only AMAP here
 			"", ""
 		)
