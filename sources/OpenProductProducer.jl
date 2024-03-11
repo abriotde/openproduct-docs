@@ -4,6 +4,7 @@ import MySQL, DBInterface, HTTP, JSON, URIs, StringDistances
 using Cascadia, YAML
 
 regexPhone = Regex("^[0-9]{10}\$")
+regexPhoneLarge = Regex("^\\+?[0-9 ]{10,20}\$")
 regexEmail = Regex("^[a-z._-]+@[a-z._-]+.[a-z]{2,3}\$")
 regexHttpSchema = Regex("^https?://.*")
 
@@ -253,7 +254,7 @@ function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)::In
 	producerDB = search(producer)
 	if producerDB==nothing
 		if (force || producer.email!="" || producer.phoneNumber!="" || producer.website!="" || producer.siret!="") && 
-				producer.text!="" && producer.name!=""
+				producer.text!="" && producer.name!="" && producer.categories!=""
 			insert(producer)
 		else
 			println("SKIP:",producer,"")
@@ -334,6 +335,9 @@ function getPhoneNumber(phoneString::AbstractString)
 		end
 	end
 	phoneNumber
+end
+function getPhoneNumber(phoneString::Integer)
+	"0"*string(phoneString)
 end
 
 function getKey(array::Dict, keys, defaultValue)

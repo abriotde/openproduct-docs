@@ -113,7 +113,6 @@ function parse_producer(url)
 			println()
 		else
 			println("Warning : not insert/update")
-			exit(0)
 		end
 		id
     else
