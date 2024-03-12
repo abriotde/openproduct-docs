@@ -1,7 +1,7 @@
 #!/usr/local/bin/julia
 using ArgParse
 import MySQL, DBInterface, HTTP, JSON, URIs, StringDistances
-using Cascadia, YAML
+using Cascadia, YAML, Dates
 
 regexPhone = Regex("^[0-9]{10}\$")
 regexPhoneLarge = Regex("^\\+?[0-9 ]{10,20}\$")
@@ -15,25 +15,31 @@ dictionary = Dict(
 	"duck" => "canard"
 )
 
+PRODUCER_UPDATE_FIELDS = [
+	"name", "firstname", "lastname", 
+	"city", "postCode", "address", 
+	"phoneNumber", "phoneNumber2", "siret", "email", "website", 
+	"shortDescription", "text", "openingHours", "categories"
+]
+PRODUCER_UPDATE_FIELDS_KEY = [
+	:name, :firstname, :lastname, 
+	:city, :postCode, :address, 
+	:phoneNumber, :phoneNumber2, :siret, :email, :website, 
+	:shortDescription, :text, :openingHours, :categories
+]
 function getSqlInsert()
-	fields = [
-		"name", "firstname", "lastname", 
-		"city", "postCode", "address", 
-		"phoneNumber", "phoneNumber2", "siret", "email", "website", 
-		"shortDescription", "`text`", "openingHours", "categories"
-	]
 	sql::String = "Insert ignore into producer (latitude, longitude, geoprecision"
-	for field in fields
-		sql *= ","*field
+	for field in PRODUCER_UPDATE_FIELDS
+		sql *= ",`"*field*"`"
 	end
 	sql *= ") values (?,?,?"
-	for field in fields
+	for field in PRODUCER_UPDATE_FIELDS
 		sql *= ",?"
 	end
 	sql *= ") on duplicate key update "
 	sep = ""
-	for field in fields
-		sql *= sep*field*" = if(length(coalesce("*field*",''))<length(values("*field*")), values("*field*"), "*field*")"
+	for field in PRODUCER_UPDATE_FIELDS
+		sql *= sep*"`"*field*"` = if(length(coalesce(`"*field*"`,''))<length(values(`"*field*"`)), values(`"*field*"`), `"*field*"`)"
 		sep = ","
 	end
 	# println("SQL:",sql)
@@ -69,7 +75,7 @@ mutable struct OpenProductProducer
 	firstname::String
 	lastname::String
 	city::String
-	postCode::String
+	postCode::Union{Missing, Int32}
 	address::String
 	phoneNumber::String
 	phoneNumber2::String
@@ -82,13 +88,28 @@ mutable struct OpenProductProducer
 	categories::String
 	startdate::String
 	enddate::String
+	lastUpdateDate::DateTime
 end
 OpenProductProducer() = OpenProductProducer(
-	0.0,0.0,0.0,"","","","","","","","","","","","","","","","",""
+	0.0,0.0,0.0,"","","","","","","","","","","","","","","","","",now()
 )
 function complete(producer::OpenProductProducer)
-	if strip(producer.address)=="" || producer.city=="" || producer.postCode==""
+	if (strip(producer.address)=="" || producer.city=="" || producer.postCode=="") && 
+			producer.lat>0 && producer.lon>0
 		lat, lon, score, postCode, city, address = getAddressFromXY(producer.lat, producer.lon)
+		if lat==0
+			println("ERROR : insertProducer(",producer,") : No coordinates found from getAddressFromXY().")
+			return false
+		end
+		producer.lat = lat
+		producer.lon = lon
+		producer.score = score
+		producer.postCode = postCode
+		producer.city = city
+		producer.address = address
+	elseif (producer.city!="" && producer.postCode!="") && 
+			(producer.lat==0 || producer.lon==0)
+		lat, lon, score, postCode, city, address = getXYFromAddress(producer.address*" "*producer.postCode*" "*producer.city)
 		if lat==0
 			println("ERROR : insertProducer(",producer,") : No coordinates found from getAddressFromXY().")
 			return false
@@ -170,90 +191,114 @@ function insert(producer::OpenProductProducer)::Int32
 		producer.address, producer.phoneNumber, producer.phoneNumber2, producer.siret, producer.email, producer.website,
 		producer.shortDescription, producer.text, producer.openingHours, producer.categories
 	]
-	println("Insert producer : ", values)
-	results = DBInterface.execute(sqlInsert, values)
-	v = DBInterface.lastrowid(results)
-	convert(Int32, v)
+	if DEBUG
+		println("Insert producer : ", values)
+	end
+	if !SIMULMODE
+		results = DBInterface.execute(sqlInsert, values)
+		v = DBInterface.lastrowid(results)
+		convert(Int32, v)
+	else
+		println("Insert producer : ", values)
+	end
 end
 
 
-function update(producerDB, producer)
-	if(DEBUG); println("update(",producerDB,", ",producer,")"); end
-	sql = "UPDATE producer SET "
+function update(producerDB, producer; force=false)
+	# complete(producer)
+	# if(DEBUG); println("update(",producerDB,", ",producer,")"); end
+	sql::String = ""
 	sep = "";
-	dbVal = producerDB[:name]
-	if (dbVal===missing || dbVal=="") && producer.name!=""
-		sql *= sep*"name='"*MySQL.escape(dbConnection, producer.name)*"'"
-		sep = ","
+	for field in PRODUCER_UPDATE_FIELDS_KEY
+		dbVal = producerDB[field]
+		val = getfield(producer, field)
+		ok, postSQL = getUpdateVal(field, dbVal, val, force)
+		if ok
+			println("DBval1:'",dbVal,"'(",typeof(dbVal),"); val:'",val,"'(",typeof(val),")")
+			sql *= sep*"`"*string(field)*"`='"*MySQL.escape(dbConnection, val)*"'"*postSQL
+			sep = ", "
+		end
 	end
-	dbVal = producerDB[:firstname]
-	if (dbVal===missing || dbVal=="") && producer.firstname!=""
-		sql *= sep*"firstname='"*MySQL.escape(dbConnection, producer.firstname)*"'"
-		sep = ","
-	end
-	dbVal = producerDB[:lastname]
-	if (dbVal===missing || dbVal=="") && producer.lastname!=""
-		sql *= sep*"lastname='"*MySQL.escape(dbConnection, producer.lastname)*"'"
-		sep = ","
-	end
-	dbVal = producerDB[:text]
-	# println(dbVal, " VS ", producer.text)
-	if (dbVal===missing || dbVal=="" || ((length(dbVal)<32) && length(producer.text)>32) ) && 
-			producer.text!=""
-		sql *= sep*"text='"*MySQL.escape(dbConnection, producer.text)*"'"
-		sep = ","
-	end
-	dbVal = producerDB[:phoneNumber]
-	if (dbVal===missing || dbVal=="") && producer.phoneNumber!=""
-		sql *= sep*"phoneNumber='"*MySQL.escape(dbConnection, producer.phoneNumber)*"'"
-		sep = ","
-	end
-	dbVal = producerDB[:email]
-	status = producerDB[:sendEmail]
-	if (dbVal===missing || dbVal=="" || dbVal=="wrongEmail") && producer.email!=""
-		sql *= sep*"email='"*MySQL.escape(dbConnection, producer.email)*"', sendEmail=NULL"
-		sep = ","
-	end
-	dbVal = producerDB[:openingHours]
-	if (dbVal===missing || dbVal=="") && producer.openingHours!=""
-		sql *= sep*"openingHours='"*MySQL.escape(dbConnection, producer.openingHours)*"'"
-		sep = ","
-	end
-	dbVal = producerDB[:website]
-	status = producerDB[:websiteStatus]
-	if (dbVal===missing || dbVal=="" || (status!="ok" && status!="unknown")) && 
-			producer.website!=""
-		sql *= sep*"website='"*MySQL.escape(dbConnection, producer.website)*"',websiteStatus='unknown'"
-		sep = ","
-	end
-	dbVal = producerDB[:siret]
-	if (dbVal===missing || dbVal=="") && producer.siret!=""
-		sql *= sep*"siret='"*MySQL.escape(dbConnection, producer.siret)*"'"
-		sep = ","
-	end
-	dbVal = producerDB[:enddate]
-	if (dbVal===missing || dbVal=="") && producer.enddate!=""
-		sql *= sep*"enddate='"*MySQL.escape(dbConnection, producer.enddate)*"', status='hs'"
-		sep = ","
-	end
-	dbVal = producerDB[:startdate]
-	if (dbVal===missing || dbVal=="") && producer.startdate!=""
-		sql *= sep*"startdate='"*MySQL.escape(dbConnection, producer.startdate)*"'"
-		sep = ","
-	end
-	if sep==","
-		sql *= " WHERE id=" * string(producerDB[:id])
-		println("SQL:",sql,";")
-		# res = DBInterface.execute(dbConnection, sql)
+	if sql!=""
+		sql = "UPDATE producer SET "*sql*" WHERE id=" * string(producerDB[:id])
+		if DEBUG || SIMULMODE; println("SQL:",sql,";"); end
+		if !SIMULMODE
+			res = DBInterface.execute(dbConnection, sql)
+		end
 	end
 	producerDB[:id]
 end
+
+function getUpdateVal(field, dbVal::Union{Missing, Integer}, val::Union{Missing, Integer}, force::Bool)
+	if ismissing(val) || val=="NULL"
+		val = 0
+	end
+	if ismissing(dbVal)
+		dbVal = 0
+	end
+	ok::Bool = false
+	postSQL::String = ""
+	if force
+		ok = (dbVal!=val) && val!=0
+	elseif val!=0 && (dbVal!=val) # Case !force
+		if dbVal==0
+			ok = true
+		end
+	end
+	[ok, postSQL]
+end
+function getUpdateVal(field, dbVal::Union{Missing, String}, val::Union{Missing, String}, force::Bool)
+	if ismissing(val) || val=="NULL"
+		val = ""
+	end
+	if ismissing(dbVal)
+		dbVal = ""
+	end
+	ok::Bool = false
+	postSQL::String = ""
+	if force
+		if field==:categories
+			ok = false
+		else
+			dbVal=strip(replace(dbVal, ","=>" ", "\n"=>" ", "\r"=>"", "\""=>"")) # TODO : For import in gogocarto we had to remove ","
+			val=strip(replace(val, ","=>" ", "\n"=>" ", "\r"=>"", "\""=>""))
+			ok = ((dbVal!=val) && val!="")
+		end
+	elseif val!="" && (dbVal!=val) # Case !force
+		if dbVal==""
+			ok = true
+		elseif field==:text
+			if length(dbVal)<32 && length(val)>32
+				ok = true
+			end
+		elseif field==:email
+			if producerDB[:sendEmail]=="wrongEmail"
+				ok = true
+				postSQL=",sendEmail=NULL"
+			end
+		elseif field==:website
+			status = producerDB[:websiteStatus]
+			if status!="ok" && status!="unknown"
+				ok = true
+				postSQL=",websiteStatus='unknown'"
+			end
+		end
+		if field==:enddate && val!=""
+			postSQL=",status='hs'"
+		end
+	end
+	if ok
+		println("DBval2:'",dbVal,"'(",typeof(dbVal),"); val:'",val,"'(",typeof(val),")")
+	end
+	[ok, postSQL]
+end
+
 #=
 =#
-function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)::Int32
+function insertOnDuplicateUpdate(producer::OpenProductProducer; forceInsert=false, forceUpdate=false)::Int32
 	producerDB = search(producer)
 	if producerDB==nothing
-		if (force || producer.email!="" || producer.phoneNumber!="" || producer.website!="" || producer.siret!="") && 
+		if (forceInsert || producer.email!="" || producer.phoneNumber!="" || producer.website!="" || producer.siret!="") && 
 				producer.text!="" && producer.name!="" && producer.categories!=""
 			insert(producer)
 		else
@@ -261,8 +306,11 @@ function insertOnDuplicateUpdate(producer::OpenProductProducer; force=false)::In
 			0
 		end
 	else
-		if DEBUG; println("Found:", producerDB); end
-		update(producerDB, producer)
+		# if DEBUG; println("Found:", producerDB); end
+		if forceUpdate && producerDB[:lastUpdateDate]<producer.lastUpdateDate
+			force=true
+		end
+		update(producerDB, producer, force=force)
 		producerDB[:id]
 	end
 end

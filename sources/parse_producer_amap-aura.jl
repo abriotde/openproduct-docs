@@ -75,7 +75,7 @@ function parse_proucer_amapAura()
 				println("ERROR : parse_proucer_amapAura() : Not activ producer : ", vals["amapEtat"])
 				exit(2)
 			end
-			insertOnDuplicateUpdate(producer, force=true)
+			insertOnDuplicateUpdate(producer, forceInsert=true)
 		end
 	end
 	nbProducers

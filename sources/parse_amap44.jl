@@ -103,7 +103,7 @@ function parse_producer(url)
 			"", ""
 		)
         # println("producer : ", producer)
-		id = insertOnDuplicateUpdate(producer, force=true)
+		id = insertOnDuplicateUpdate(producer, forceInsert=true)
 		if id>0
 			print("Tags: ")
 			for tag in tags

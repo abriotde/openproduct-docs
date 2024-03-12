@@ -57,7 +57,7 @@ function parse_amapBearn()
 			"", ""
 		)
 		# println("producer : ", producer)
-		insertOnDuplicateUpdate(producer, force=true)
+		insertOnDuplicateUpdate(producer, forceInsert=true)
 	end
 end
 
