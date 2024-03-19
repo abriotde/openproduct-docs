@@ -9,9 +9,7 @@ import MySQL, DBInterface, HTTP, Gumbo, URIs
 
 using Cascadia
 
-
-include("OpenProductProducer.jl")
-
+include("connect.jl")
 
 function parse_producer(url)
     println("parse_producer(",url,")")

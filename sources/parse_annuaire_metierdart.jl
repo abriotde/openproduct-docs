@@ -33,7 +33,7 @@ areas = Dict(
 )
 regexIdProducer = Regex("producteur([0-9]+)")
 
-include("OpenProductProducer.jl")
+include("connect.jl")
 
 function parse_commandline()
 	s = ArgParseSettings()

@@ -19,10 +19,7 @@ using Cascadia
 
 regexIdProducer = Regex("producteur([0-9]+)")
 
-
-include("OpenProductProducer.jl")
-
-
+include("connect.jl")
 
 function parse_producer(url_prod, name)
     println("parse_producer(",url_prod,", ",name,")")

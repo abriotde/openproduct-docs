@@ -6,7 +6,7 @@ DEBUG = false
 
 # https://www.societe.com/cgi-bin/search?champs=827977281
 
-include("OpenProductProducer.jl")
+include("connect.jl")
 
 API_URL="https://api.pappers.fr/v2/"
 API_TOKEN="f31cc367337907d63b68f8c8e5e022c8b41a0572b7043451"

@@ -20,9 +20,7 @@ using Cascadia
 
 regexIdProducer = Regex("producteur([0-9]+)")
 
-
-include("OpenProductProducer.jl")
-
+include("connect.jl")
 
 function parse_amapBearn()
     nbProducers = 0

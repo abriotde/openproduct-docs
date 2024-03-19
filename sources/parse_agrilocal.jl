@@ -12,7 +12,8 @@ import JSON, MySQL, DBInterface
 # )
 
 
-include("OpenProductProducer.jl")
+include("connect.jl")
+
 
 jsonStr = read("agrilocal.json", String)
 datas = JSON.parse(jsonStr)

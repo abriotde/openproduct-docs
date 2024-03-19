@@ -6,13 +6,6 @@ using ArgParse
 # TODO : manage inoherence, if line not insert
 
 
-# Update openproduct.producer
-# 	set address = if(LOCATE(concat(postCode," ",city), address)>0, SUBSTR(address, 1, length(address)-length(concat(postCode," ",city))-2),address)
-# where LOCATE(concat(postCode," ",city), address)>0;
-
-# Update openproduct.producer
-# set phoneNumber = replace(phoneNumber, " ","");
-
 import MySQL, DBInterface, HTTP, Gumbo, JSON, URIs
 
 using Cascadia
@@ -117,7 +110,7 @@ departements = Dict(
 )
 regexIdProducer = Regex("producteur([0-9]+)")
 
-include("OpenProductProducer.jl")
+include("connect.jl")
 
 function parse_commandline()
 	s = ArgParseSettings()

@@ -1,0 +1,5 @@
+
+- Envoi de mail : brevo
+- linkedin
+- https://fr.openfoodfacts.org/data : Get code emballeur
+

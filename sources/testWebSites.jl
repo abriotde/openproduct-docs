@@ -4,11 +4,15 @@ import HTTP, JSON, URIs
 using Cascadia
 DEBUG = false
 
-include("OpenProductProducer.jl")
+import DBInterface
+
+include("connect.jl")
+import OpenProduct
+
 function updateWebsiteStatus(id, websiteStatus)
 	sql2 = "UPDATE producer SET websiteStatus='"*websiteStatus*"' WHERE id="*string(id)
 	println("SQL:",sql2,";")
-	# DBInterface.execute(dbConnection, sql2)
+	DBInterface.execute(dbConnection, sql2)
 end
 function testWebsites()
 	sql = """SELECT id, name, website, websiteStatus
@@ -22,7 +26,7 @@ function testWebsites()
 	for websiteParams in res
 		id = websiteParams[:id]
 		website = websiteParams[:website]
-		websiteStatus = getWebSiteStatus(website)
+		websiteStatus = OpenProduct.getWebSiteStatus(website, dbConnection=dbConnection)
 		if websiteStatus != "unknown"
 			println("URL:", website, " => ", websiteStatus)
 			updateWebsiteStatus(id, websiteStatus)
@@ -33,5 +37,5 @@ end
 testWebsites()
 
 
+op_stop(OpenProduct.ok, dbConnection)
 
-DBInterface.close!(dbConnection)

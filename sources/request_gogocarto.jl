@@ -5,8 +5,7 @@ using Cascadia
 DEBUG = true
 SIMULMODE =true
 
-include("OpenProductProducer.jl")
-
+include("connect.jl")
 
 ######### https://producteurspl.gogocarto.fr/api/elements.json?limit=1000&categories=
 #############
