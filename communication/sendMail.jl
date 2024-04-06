@@ -1,8 +1,6 @@
 #!/bin/env julia
 
-import SMTPClient, Random, DBInterface
-
-include("../../OteraEngine.jl/src/OteraEngine.jl")
+import SMTPClient, Random, DBInterface, OteraEngine
 
 EMAIL_BODY_TEMPLATE_FILE = "template1stCommunication.html"
 SUBJECT = "Promotion des producteurs locaux"
@@ -54,16 +52,14 @@ function sendMailToNewProducers()
 		lastname = producer[2]
 		email = producer[3]
 		token = producer[4]
-		# print("-> "+email)
 		if ismissing(token) || token==""
 			println("Generate token for ",email)
 			token = generateToken()
-			sql2 = """UPDATE producer 
-				SET tokenAccess=?
-				WHERE email=?
-				"""
-			DBInterface.prepare(dbConnection, sql)
 			if isnothing(sqlUpdateToken)
+				sql2 = """UPDATE producer 
+					SET tokenAccess=?
+					WHERE email=?
+					"""
 				sqlUpdateToken = DBInterface.prepare(dbConnection, sql2)
 			end
 			DBInterface.execute(sqlUpdateToken, [token, email])
@@ -75,7 +71,6 @@ function sendMailToNewProducers()
 			"token"=> token
 		)
 		message = template1stCommunication(init=dictionary)
-		# println("Message:", message)
 		DBInterface.execute(sqlUpdateSendEmail, [email])
 		ok = sendMail(email, SUBJECT, message)
 		if ok

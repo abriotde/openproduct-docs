@@ -12,6 +12,8 @@
 
 __ TODO __
 
+* https://www.fraisetlocal.fr/api/explore/v2.1/catalog/datasets/flux-toutes-plateformes/exports/geojson/?limit=25000&order_by=categorie&record_metas=true&select=nom%2Cadresse_app%2Cgeolocalisation%2Ccategorie%2Cnom_de_la_plateforme%2Cfamilles_des_produits&where=%28familles_des_produits%3A%22Viandes+%26+Poissons%22%29
+	> https://www.fraisetlocal.fr/api/explore/v2.1/catalog/datasets/flux-toutes-plateformes/records/800be6c222faf23e8c7037a02167c526b5274456/
 * parse_amap44.jl
 
 * https://www.apam-amap.org/visitez-nos-fermes

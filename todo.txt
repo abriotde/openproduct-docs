@@ -1,5 +1,5 @@
 
 - Envoi de mail : brevo
-- linkedin
 - https://fr.openfoodfacts.org/data : Get code emballeur
-
+https://openfoodfacts.github.io/openfoodfacts-server/api/ref-v3/#get-/api/v3/product/-barcode-
+RDF format on Virtuoso Server?
