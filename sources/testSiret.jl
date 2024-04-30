@@ -29,8 +29,15 @@ function geSiretInfos(siret::String)
 	tmpfile = "./societe.html"
 	url = API_URL*"entreprise"*"?api_token="*API_TOKEN*"&siren="*siren
 	println("Url:",url)
-	# download(url,tmpfile); jsonStr = read(tmpfile, String);
-	response = HTTP.get(url, timeout=30, status_exception=false)
+	jsonStr = ""
+	try
+		# download(url,tmpfile); 
+		jsonStr = read(tmpfile, String);
+	catch err
+		println("ERROR : fail download(",url,") : ",err)
+		return [missing, string(err)]
+	end
+	#= response = HTTP.get(url, timeout=30, status_exception=false)
 	if response.status!=200
 		if response.status==404
 			println("=> ",response.status, "; URL:",url)
@@ -41,40 +48,42 @@ function geSiretInfos(siret::String)
 		end
 	end
 	jsonStr = response.body |> String
+	=#
 	datas = JSON.parse(jsonStr)
-	producer = OpenProductProducer()
-    producer.startdate = datas["date_creation"]
-    enddate = datas["date_cessation"]
-	if enddate!==nothing || datas["entreprise_cessee"]
-		println("No siret=",siret," : ", producer.enddate,"; ",datas["entreprise_cessee"])
+	producer = OpenProduct.OpenProductProducer()
+    producer.startdate = OpenProduct.getKey(datas,["date_creation"], "")
+    enddate = OpenProduct.getKey(datas,["date_cessation"], "")
+    entreprise_cessee = OpenProduct.getKey(datas,["entreprise_cessee"])
+	if enddate!==nothing || entreprise_cessee
+		println("No siret=",siret," : ", producer.enddate,"; ",entreprise_cessee)
 		producer.enddate = enddate
 	end
-	producer.name = datas["nom_entreprise"] # datas["denomination"]
+	producer.name = OpenProduct.getKey(datas, ["nom_entreprise", "denomination"], "")
 	# Get address
-	buildings = datas["etablissements"]
+	buildings = OpenProduct.getKey(datas, ["etablissements"], "")
 	for building in buildings
-		address = building["adresse_ligne_1"]
-		v = building["adresse_ligne_2"]
+		address = OpenProduct.getKey(building, ["adresse_ligne_1"], "")
+		v = OpenProduct.getKey(building,["adresse_ligne_2"], "")
 		if v!==nothing
 			address *= v
 		end
 		producer.address = address
-		producer.postCode = building["code_postal"]
+		producer.postCode = parse(Int32, building["code_postal"])
 		producer.city = building["ville"]
 		producer.lat = building["latitude"]
 		producer.lon = building["longitude"]
-		producer.name = getKey(building, ["enseigne","nom_commercial"], producer.name)
+		producer.name = OpenProduct.getKey(building, ["enseigne","nom_commercial"], producer.name)
 	end
 	# Get firstname/lastname
-	people = datas["representants"] # "qualite": "Gérant"
+	people = OpenProduct.getKey(datas,["representants"], [])
 	for man in people
 		if man["qualite"]=="Gérant"
 			producer.lastname = man["nom"]
 			producer.firstname = man["prenom"]
 		end
 	end
-	producer.text = datas["objet_social"]
-	for d in datas["conventions_collectives"]
+	producer.text = OpenProduct.getKey(datas, ["objet_social"], "")
+	for d in OpenProduct.getKey(datas, ["conventions_collectives"], [])
 		producer.shortDescription = d["nom"]
 	end
 	producer.score = 0.9
@@ -94,7 +103,7 @@ function testSirets()
 				-- AND  (sendEmail IS NULL OR sendEmail='wrongEmail')
 				-- AND websiteStatus in ('unknown','ConnectionError')
 			ORDER BY ID
-			LIMIT 15
+			LIMIT 100
 		"""
 	res = DBInterface.execute(dbConnection, sql)
 	for params in res
@@ -112,7 +121,7 @@ function testSirets()
 				siretStatus = "ko"
 			end
 			producerDB = Dict(propertynames(params) .=> values(params))
-			update(producerDB, producer)
+			OpenProduct.update(producerDB, producer)
 		end
 		sql = "UPDATE producer SET siretStatus='"*siretStatus*"', companyInfos=\""*MySQL.escape(dbConnection, jsonStr)*"\" WHERE id="*string(id)
 		println("SQL:",sql,";")

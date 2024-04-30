@@ -7,12 +7,12 @@ DEBUG = false
 import DBInterface
 
 include("connect.jl")
-import OpenProduct
+# import OpenProduct
 
 function updateWebsiteStatus(id, websiteStatus)
 	sql2 = "UPDATE producer SET websiteStatus='"*websiteStatus*"' WHERE id="*string(id)
 	println("SQL:",sql2,";")
-	DBInterface.execute(dbConnection, sql2)
+	# DBInterface.execute(dbConnection, sql2)
 end
 function testWebsites()
 	sql = """SELECT id, name, website, websiteStatus
@@ -37,5 +37,5 @@ end
 testWebsites()
 
 
-op_stop(OpenProduct.ok, dbConnection)
+OpenProduct.op_stop(OpenProduct.ok, dbConnection)
 
