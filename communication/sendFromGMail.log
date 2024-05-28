@@ -1,0 +1,16 @@
+[('Atelier TB', None, 'bonjour@ateliertb.com ', None), ('Atelier Renouard', None, 'contact@renouard.fr', None), ('C.de Swan', None, 'cdeswan@gmail.com', None), ('SONORA', 'TORUA CIENFUEGOS', 'lestortillasdesonora@gmail.com', None), ('Savonnerie Senga Lab', 'Moreira', 'contact@sengalab.com', None), ("Thin'Api", 'Famille Thinat', 'ets.thin.api@gmail.com', None), (' Caféténango Torréfaction', None, ' contact@cafetenango.fr', None)]
+Please visit this URL to authorize this application: https://accounts.google.com/o/oauth2/auth?response_type=code&client_id=981174102333-e1lp334u7d84slpoirg1s2cd35qkt9ee.apps.googleusercontent.com&redirect_uri=http%3A%2F%2Flocalhost%3A51801%2F&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.send&state=6cG50lkfwZiGBxPRBu6RrBW38hRcVU&access_type=offline
+Generate token for bonjour@ateliertb.com 
+sent message to bonjour@ateliertb.com  Message Id: 18f2fae81ab9c739
+Generate token for contact@renouard.fr
+sent message to contact@renouard.fr Message Id: 18f2fae858241f34
+Generate token for cdeswan@gmail.com
+sent message to cdeswan@gmail.com Message Id: 18f2fae8828aa379
+Generate token for lestortillasdesonora@gmail.com
+sent message to lestortillasdesonora@gmail.com Message Id: 18f2fae8b43c0759
+Generate token for contact@sengalab.com
+sent message to contact@sengalab.com Message Id: 18f2fae8f206ce1c
+Generate token for ets.thin.api@gmail.com
+sent message to ets.thin.api@gmail.com Message Id: 18f2fae9211edc8c
+Generate token for  contact@cafetenango.fr
+sent message to  contact@cafetenango.fr Message Id: 18f2fae9517e3acb

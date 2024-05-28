@@ -16,6 +16,7 @@ __ TODO __
 	> https://www.fraisetlocal.fr/api/explore/v2.1/catalog/datasets/flux-toutes-plateformes/records/800be6c222faf23e8c7037a02167c526b5274456/
 * parse_amap44.jl
 
+* https://app.cagette.net/
 * https://www.apam-amap.org/visitez-nos-fermes
 * https://divinebox.fr/categorie-produit/produits-monastiques/ onvousecoute@divinebox.fr
 * 02 99 38 95 85
