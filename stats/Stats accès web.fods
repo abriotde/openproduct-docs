@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.3" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:creation-date>2024-02-17T23:07:55.118887396</meta:creation-date><meta:generator>LibreOffice/7.6.6.3$Linux_X86_64 LibreOffice_project/60$Build-3</meta:generator><dc:date>2024-05-28T18:31:36.985804309</dc:date><meta:editing-duration>PT15M56S</meta:editing-duration><meta:editing-cycles>11</meta:editing-cycles><meta:document-statistic meta:table-count="1" meta:cell-count="339" meta:object-count="0"/></office:meta>
+ <office:meta><meta:creation-date>2024-02-17T23:07:55.118887396</meta:creation-date><meta:generator>LibreOffice/24.2.7.2$Linux_X86_64 LibreOffice_project/420$Build-2</meta:generator><dc:date>2025-01-07T12:32:21.318176635</dc:date><meta:editing-duration>PT20M20S</meta:editing-duration><meta:editing-cycles>14</meta:editing-cycles><meta:document-statistic meta:table-count="1" meta:cell-count="578" meta:object-count="0"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">0</config:config-item>
    <config:config-item config:name="VisibleAreaLeft" config:type="int">0</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">15490</config:config-item>
-   <config:config-item config:name="VisibleAreaHeight" config:type="int">57348</config:config-item>
+   <config:config-item config:name="VisibleAreaHeight" config:type="int">150820</config:config-item>
    <config:config-item-map-indexed config:name="Views">
     <config:config-item-map-entry>
      <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
      <config:config-item-map-named config:name="Tables">
       <config:config-item-map-entry config:name="Feuille1">
-       <config:config-item config:name="CursorPositionX" config:type="int">1</config:config-item>
-       <config:config-item config:name="CursorPositionY" config:type="int">107</config:config-item>
+       <config:config-item config:name="CursorPositionX" config:type="int">3</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">321</config:config-item>
        <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
        <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
-       <config:config-item config:name="PositionBottom" config:type="int">84</config:config-item>
+       <config:config-item config:name="PositionBottom" config:type="int">277</config:config-item>
        <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
        <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
        <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -31,7 +31,7 @@
       </config:config-item-map-entry>
      </config:config-item-map-named>
      <config:config-item config:name="ActiveTable" config:type="string">Feuille1</config:config-item>
-     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">887</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">1847</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
      <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -92,7 +92,7 @@
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string">HLL2310D</config:config-item>
    <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">3gH+/0hMTDIzMTBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpITEwyMzEwRAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAywAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SExMMjMxMEQKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5hZGp1c3RtZW50PTAsMCwnMCwwCmNvbG9yZGVwdGg9MjQKcHNsZXZlbD0wCnBkZmRldmljZT0xCmNvbG9yZGV2aWNlPTAKUFBEQ29udGV4dERhdGEKUGFnZVNpemU6QTQASW5wdXRTbG90OlRSQVkxAER1cGxleDpOb25lAAASAENPTVBBVF9EVVBMRVhfTU9ERQ8ARHVwbGV4TW9kZTo6T2ZmDABQUklOVEVSX05BTUUIAEhMTDIzMTBECwBEUklWRVJfTkFNRQ0AQ1VQUzpITEwyMzEwRA==</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">yAH+/0hMTDIzMTBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpITEwyMzEwRAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAtQAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SExMMjMxMEQKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5hZGp1c3RtZW50PTAsMCwnMCwwCmNvbG9yZGVwdGg9MjQKY29sb3JkZXZpY2U9MApQUERDb250ZXh0RGF0YQpQYWdlU2l6ZTpBNABJbnB1dFNsb3Q6VFJBWTEARHVwbGV4Ok5vbmUAABIAQ09NUEFUX0RVUExFWF9NT0RFDwBEdXBsZXhNb2RlOjpPZmYMAFBSSU5URVJfTkFNRQgASExMMjMxMEQLAERSSVZFUl9OQU1FDQBDVVBTOkhMTDIzMTBE</config:config-item>
    <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
    <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
@@ -215,6 +215,22 @@
    <style:text-properties fo:font-style="italic" style:text-underline-style="solid" style:text-underline-width="auto" style:text-underline-color="font-color" fo:font-weight="bold" style:font-style-asian="italic" style:font-weight-asian="bold" style:font-style-complex="italic" style:font-weight-complex="bold"/>
   </style:style>
   <draw:marker draw:name="Extrémités_20_de_20_flèche_20_1" draw:display-name="Extrémités de flèche 1" svg:viewBox="0 0 20 30" svg:d="M10 0l-10 30h20z"/>
+  <loext:theme loext:name="Office">
+   <loext:theme-colors loext:name="LibreOffice">
+    <loext:color loext:name="dark1" loext:color="#000000"/>
+    <loext:color loext:name="light1" loext:color="#ffffff"/>
+    <loext:color loext:name="dark2" loext:color="#000000"/>
+    <loext:color loext:name="light2" loext:color="#ffffff"/>
+    <loext:color loext:name="accent1" loext:color="#18a303"/>
+    <loext:color loext:name="accent2" loext:color="#0369a3"/>
+    <loext:color loext:name="accent3" loext:color="#a33e03"/>
+    <loext:color loext:name="accent4" loext:color="#8e03a3"/>
+    <loext:color loext:name="accent5" loext:color="#c99c00"/>
+    <loext:color loext:name="accent6" loext:color="#c9211e"/>
+    <loext:color loext:name="hyperlink" loext:color="#0000ee"/>
+    <loext:color loext:name="followed-hyperlink" loext:color="#551a8b"/>
+   </loext:theme-colors>
+  </loext:theme>
  </office:styles>
  <office:automatic-styles>
   <style:style style:name="co1" style:family="table-column">
@@ -245,13 +261,17 @@
    <number:text>/</number:text>
    <number:year/>
   </number:date-style>
-  <style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default">
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N37"/>
   <style:style style:name="ce1" style:family="table-cell" style:parent-style-name="Default">
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
+  <style:style style:name="ce2" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N37"/>
+  <style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce6" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="ce7" style:family="table-cell" style:parent-style-name="Default" style:data-style-name="N37"/>
   <style:page-layout style:name="pm1">
    <style:page-layout-properties style:writing-mode="lr-tb"/>
    <style:header-style>
@@ -294,7 +314,7 @@
      <text:p><text:sheet-name>???</text:sheet-name><text:s/>(<text:title>???</text:title>)</text:p>
     </style:region-left>
     <style:region-right>
-     <text:p><text:date style:data-style-name="N2" text:date-value="2024-05-28">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="18:28:40.666260251">00:00:00</text:time></text:p>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2025-01-07">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="12:32:34.291034017">00:00:00</text:time></text:p>
     </style:region-right>
    </style:header>
    <style:header-left style:display="false"/>
@@ -310,25 +330,25 @@
   <office:spreadsheet>
    <table:calculation-settings table:automatic-find-labels="false" table:use-regular-expressions="false" table:use-wildcards="true"/>
    <table:table table:name="Feuille1" table:style-name="ta1">
-    <table:table-column table:style-name="co1" table:default-cell-style-name="ce2"/>
+    <table:table-column table:style-name="co1" table:default-cell-style-name="ce7"/>
     <table:table-column table:style-name="co2" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co3" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co4" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co1" table:number-columns-repeated="2" table:default-cell-style-name="Default"/>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
       <text:p>Date</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
       <text:p>Visiteurs unique par jour</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
       <text:p>Jour de la semaine</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce1" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
       <text:p>Visiteurs unique par mois</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce1" table:number-columns-repeated="2"/>
+     <table:table-cell table:style-name="ce6" table:number-columns-repeated="2"/>
     </table:table-row>
     <table:table-row table:style-name="ro1">
      <table:table-cell office:value-type="date" office:date-value="2024-02-12" calcext:value-type="date">
@@ -1751,6 +1771,1345 @@
     <table:table-row table:style-name="ro1">
      <table:table-cell office:value-type="date" office:date-value="2024-06-16" calcext:value-type="date">
       <text:p>16/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-17" calcext:value-type="date">
+      <text:p>17/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-18" calcext:value-type="date">
+      <text:p>18/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-19" calcext:value-type="date">
+      <text:p>19/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-20" calcext:value-type="date">
+      <text:p>20/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-21" calcext:value-type="date">
+      <text:p>21/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-22" calcext:value-type="date">
+      <text:p>22/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-23" calcext:value-type="date">
+      <text:p>23/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-24" calcext:value-type="date">
+      <text:p>24/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-25" calcext:value-type="date">
+      <text:p>25/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-26" calcext:value-type="date">
+      <text:p>26/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-27" calcext:value-type="date">
+      <text:p>27/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-28" calcext:value-type="date">
+      <text:p>28/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-29" calcext:value-type="date">
+      <text:p>29/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-06-30" calcext:value-type="date">
+      <text:p>30/06/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-01" calcext:value-type="date">
+      <text:p>01/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-02" calcext:value-type="date">
+      <text:p>02/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-03" calcext:value-type="date">
+      <text:p>03/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-04" calcext:value-type="date">
+      <text:p>04/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-05" calcext:value-type="date">
+      <text:p>05/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-06" calcext:value-type="date">
+      <text:p>06/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-07" calcext:value-type="date">
+      <text:p>07/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-08" calcext:value-type="date">
+      <text:p>08/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-09" calcext:value-type="date">
+      <text:p>09/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-10" calcext:value-type="date">
+      <text:p>10/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-11" calcext:value-type="date">
+      <text:p>11/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-12" calcext:value-type="date">
+      <text:p>12/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-13" calcext:value-type="date">
+      <text:p>13/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-14" calcext:value-type="date">
+      <text:p>14/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-15" calcext:value-type="date">
+      <text:p>15/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-16" calcext:value-type="date">
+      <text:p>16/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-17" calcext:value-type="date">
+      <text:p>17/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-18" calcext:value-type="date">
+      <text:p>18/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-19" calcext:value-type="date">
+      <text:p>19/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-20" calcext:value-type="date">
+      <text:p>20/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-21" calcext:value-type="date">
+      <text:p>21/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-22" calcext:value-type="date">
+      <text:p>22/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-23" calcext:value-type="date">
+      <text:p>23/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-24" calcext:value-type="date">
+      <text:p>24/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-25" calcext:value-type="date">
+      <text:p>25/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-26" calcext:value-type="date">
+      <text:p>26/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-27" calcext:value-type="date">
+      <text:p>27/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-28" calcext:value-type="date">
+      <text:p>28/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-29" calcext:value-type="date">
+      <text:p>29/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-30" calcext:value-type="date">
+      <text:p>30/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-07-31" calcext:value-type="date">
+      <text:p>31/07/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-01" calcext:value-type="date">
+      <text:p>01/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-02" calcext:value-type="date">
+      <text:p>02/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-03" calcext:value-type="date">
+      <text:p>03/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-04" calcext:value-type="date">
+      <text:p>04/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-05" calcext:value-type="date">
+      <text:p>05/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-06" calcext:value-type="date">
+      <text:p>06/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-07" calcext:value-type="date">
+      <text:p>07/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-08" calcext:value-type="date">
+      <text:p>08/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-09" calcext:value-type="date">
+      <text:p>09/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-10" calcext:value-type="date">
+      <text:p>10/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-11" calcext:value-type="date">
+      <text:p>11/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-12" calcext:value-type="date">
+      <text:p>12/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-13" calcext:value-type="date">
+      <text:p>13/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-14" calcext:value-type="date">
+      <text:p>14/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-15" calcext:value-type="date">
+      <text:p>15/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-16" calcext:value-type="date">
+      <text:p>16/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-17" calcext:value-type="date">
+      <text:p>17/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-18" calcext:value-type="date">
+      <text:p>18/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-19" calcext:value-type="date">
+      <text:p>19/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-20" calcext:value-type="date">
+      <text:p>20/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-21" calcext:value-type="date">
+      <text:p>21/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-22" calcext:value-type="date">
+      <text:p>22/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-23" calcext:value-type="date">
+      <text:p>23/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-24" calcext:value-type="date">
+      <text:p>24/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-25" calcext:value-type="date">
+      <text:p>25/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-26" calcext:value-type="date">
+      <text:p>26/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-27" calcext:value-type="date">
+      <text:p>27/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-28" calcext:value-type="date">
+      <text:p>28/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-29" calcext:value-type="date">
+      <text:p>29/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-30" calcext:value-type="date">
+      <text:p>30/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-08-31" calcext:value-type="date">
+      <text:p>31/08/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-01" calcext:value-type="date">
+      <text:p>01/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-02" calcext:value-type="date">
+      <text:p>02/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-03" calcext:value-type="date">
+      <text:p>03/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-04" calcext:value-type="date">
+      <text:p>04/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-05" calcext:value-type="date">
+      <text:p>05/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-06" calcext:value-type="date">
+      <text:p>06/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-07" calcext:value-type="date">
+      <text:p>07/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-08" calcext:value-type="date">
+      <text:p>08/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-09" calcext:value-type="date">
+      <text:p>09/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-10" calcext:value-type="date">
+      <text:p>10/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-11" calcext:value-type="date">
+      <text:p>11/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-12" calcext:value-type="date">
+      <text:p>12/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-13" calcext:value-type="date">
+      <text:p>13/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-14" calcext:value-type="date">
+      <text:p>14/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-15" calcext:value-type="date">
+      <text:p>15/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-16" calcext:value-type="date">
+      <text:p>16/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-17" calcext:value-type="date">
+      <text:p>17/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-18" calcext:value-type="date">
+      <text:p>18/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-19" calcext:value-type="date">
+      <text:p>19/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-20" calcext:value-type="date">
+      <text:p>20/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-21" calcext:value-type="date">
+      <text:p>21/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-22" calcext:value-type="date">
+      <text:p>22/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-23" calcext:value-type="date">
+      <text:p>23/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-24" calcext:value-type="date">
+      <text:p>24/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-25" calcext:value-type="date">
+      <text:p>25/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-26" calcext:value-type="date">
+      <text:p>26/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-27" calcext:value-type="date">
+      <text:p>27/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-28" calcext:value-type="date">
+      <text:p>28/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-29" calcext:value-type="date">
+      <text:p>29/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-09-30" calcext:value-type="date">
+      <text:p>30/09/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-01" calcext:value-type="date">
+      <text:p>01/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-02" calcext:value-type="date">
+      <text:p>02/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-03" calcext:value-type="date">
+      <text:p>03/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-04" calcext:value-type="date">
+      <text:p>04/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-05" calcext:value-type="date">
+      <text:p>05/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-06" calcext:value-type="date">
+      <text:p>06/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-07" calcext:value-type="date">
+      <text:p>07/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-08" calcext:value-type="date">
+      <text:p>08/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-09" calcext:value-type="date">
+      <text:p>09/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-10" calcext:value-type="date">
+      <text:p>10/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-11" calcext:value-type="date">
+      <text:p>11/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-12" calcext:value-type="date">
+      <text:p>12/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-13" calcext:value-type="date">
+      <text:p>13/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-14" calcext:value-type="date">
+      <text:p>14/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-15" calcext:value-type="date">
+      <text:p>15/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-16" calcext:value-type="date">
+      <text:p>16/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-17" calcext:value-type="date">
+      <text:p>17/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-18" calcext:value-type="date">
+      <text:p>18/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-19" calcext:value-type="date">
+      <text:p>19/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-20" calcext:value-type="date">
+      <text:p>20/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-21" calcext:value-type="date">
+      <text:p>21/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-22" calcext:value-type="date">
+      <text:p>22/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-23" calcext:value-type="date">
+      <text:p>23/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-24" calcext:value-type="date">
+      <text:p>24/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-25" calcext:value-type="date">
+      <text:p>25/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-26" calcext:value-type="date">
+      <text:p>26/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-27" calcext:value-type="date">
+      <text:p>27/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-28" calcext:value-type="date">
+      <text:p>28/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-29" calcext:value-type="date">
+      <text:p>29/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-30" calcext:value-type="date">
+      <text:p>30/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-10-31" calcext:value-type="date">
+      <text:p>31/10/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-01" calcext:value-type="date">
+      <text:p>01/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-02" calcext:value-type="date">
+      <text:p>02/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-03" calcext:value-type="date">
+      <text:p>03/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-04" calcext:value-type="date">
+      <text:p>04/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-05" calcext:value-type="date">
+      <text:p>05/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-06" calcext:value-type="date">
+      <text:p>06/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-07" calcext:value-type="date">
+      <text:p>07/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-08" calcext:value-type="date">
+      <text:p>08/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-09" calcext:value-type="date">
+      <text:p>09/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-10" calcext:value-type="date">
+      <text:p>10/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-11" calcext:value-type="date">
+      <text:p>11/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-12" calcext:value-type="date">
+      <text:p>12/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-13" calcext:value-type="date">
+      <text:p>13/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-14" calcext:value-type="date">
+      <text:p>14/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-15" calcext:value-type="date">
+      <text:p>15/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-16" calcext:value-type="date">
+      <text:p>16/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-17" calcext:value-type="date">
+      <text:p>17/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-18" calcext:value-type="date">
+      <text:p>18/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-19" calcext:value-type="date">
+      <text:p>19/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-20" calcext:value-type="date">
+      <text:p>20/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-21" calcext:value-type="date">
+      <text:p>21/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-22" calcext:value-type="date">
+      <text:p>22/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-23" calcext:value-type="date">
+      <text:p>23/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-24" calcext:value-type="date">
+      <text:p>24/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-25" calcext:value-type="date">
+      <text:p>25/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-26" calcext:value-type="date">
+      <text:p>26/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-27" calcext:value-type="date">
+      <text:p>27/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-28" calcext:value-type="date">
+      <text:p>28/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-29" calcext:value-type="date">
+      <text:p>29/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-11-30" calcext:value-type="date">
+      <text:p>30/11/24</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-01" calcext:value-type="date">
+      <text:p>01/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="785" calcext:value-type="float">
+      <text:p>785</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-02" calcext:value-type="date">
+      <text:p>02/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="785" calcext:value-type="float">
+      <text:p>785</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-03" calcext:value-type="date">
+      <text:p>03/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="661" calcext:value-type="float">
+      <text:p>661</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-04" calcext:value-type="date">
+      <text:p>04/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="731" calcext:value-type="float">
+      <text:p>731</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-05" calcext:value-type="date">
+      <text:p>05/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="707" calcext:value-type="float">
+      <text:p>707</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-06" calcext:value-type="date">
+      <text:p>06/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="732" calcext:value-type="float">
+      <text:p>732</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-07" calcext:value-type="date">
+      <text:p>07/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="733" calcext:value-type="float">
+      <text:p>733</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-08" calcext:value-type="date">
+      <text:p>08/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="674" calcext:value-type="float">
+      <text:p>674</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-09" calcext:value-type="date">
+      <text:p>09/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="618" calcext:value-type="float">
+      <text:p>618</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-10" calcext:value-type="date">
+      <text:p>10/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="698" calcext:value-type="float">
+      <text:p>698</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-11" calcext:value-type="date">
+      <text:p>11/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="720" calcext:value-type="float">
+      <text:p>720</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-12" calcext:value-type="date">
+      <text:p>12/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="744" calcext:value-type="float">
+      <text:p>744</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-13" calcext:value-type="date">
+      <text:p>13/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="652" calcext:value-type="float">
+      <text:p>652</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-14" calcext:value-type="date">
+      <text:p>14/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="674" calcext:value-type="float">
+      <text:p>674</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-15" calcext:value-type="date">
+      <text:p>15/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="629" calcext:value-type="float">
+      <text:p>629</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-16" calcext:value-type="date">
+      <text:p>16/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="675" calcext:value-type="float">
+      <text:p>675</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-17" calcext:value-type="date">
+      <text:p>17/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="612" calcext:value-type="float">
+      <text:p>612</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-18" calcext:value-type="date">
+      <text:p>18/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="648" calcext:value-type="float">
+      <text:p>648</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-19" calcext:value-type="date">
+      <text:p>19/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="676" calcext:value-type="float">
+      <text:p>676</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-20" calcext:value-type="date">
+      <text:p>20/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="694" calcext:value-type="float">
+      <text:p>694</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-21" calcext:value-type="date">
+      <text:p>21/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="613" calcext:value-type="float">
+      <text:p>613</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-22" calcext:value-type="date">
+      <text:p>22/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="696" calcext:value-type="float">
+      <text:p>696</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-23" calcext:value-type="date">
+      <text:p>23/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="770" calcext:value-type="float">
+      <text:p>770</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-24" calcext:value-type="date">
+      <text:p>24/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="593" calcext:value-type="float">
+      <text:p>593</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-25" calcext:value-type="date">
+      <text:p>25/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="665" calcext:value-type="float">
+      <text:p>665</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-26" calcext:value-type="date">
+      <text:p>26/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="581" calcext:value-type="float">
+      <text:p>581</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-27" calcext:value-type="date">
+      <text:p>27/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="500" calcext:value-type="float">
+      <text:p>500</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-28" calcext:value-type="date">
+      <text:p>28/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="533" calcext:value-type="float">
+      <text:p>533</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-29" calcext:value-type="date">
+      <text:p>29/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="621" calcext:value-type="float">
+      <text:p>621</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-30" calcext:value-type="date">
+      <text:p>30/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="635" calcext:value-type="float">
+      <text:p>635</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="4"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2024-12-31" calcext:value-type="date">
+      <text:p>31/12/24</text:p>
+     </table:table-cell>
+     <table:table-cell office:value-type="float" office:value="621" calcext:value-type="float">
+      <text:p>621</text:p>
+     </table:table-cell>
+     <table:table-cell/>
+     <table:table-cell office:value-type="float" office:value="8774" calcext:value-type="float">
+      <text:p>8774</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="2"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-01" calcext:value-type="date">
+      <text:p>01/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-02" calcext:value-type="date">
+      <text:p>02/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-03" calcext:value-type="date">
+      <text:p>03/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-04" calcext:value-type="date">
+      <text:p>04/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-05" calcext:value-type="date">
+      <text:p>05/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-06" calcext:value-type="date">
+      <text:p>06/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-07" calcext:value-type="date">
+      <text:p>07/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-08" calcext:value-type="date">
+      <text:p>08/01/25</text:p>
+     </table:table-cell>
+     <table:table-cell table:number-columns-repeated="5"/>
+    </table:table-row>
+    <table:table-row table:style-name="ro1">
+     <table:table-cell office:value-type="date" office:date-value="2025-01-09" calcext:value-type="date">
+      <text:p>09/01/25</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="5"/>
     </table:table-row>
