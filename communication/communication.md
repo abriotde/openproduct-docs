@@ -1,3 +1,6 @@
+
+# Demande de subventions
+
 Bonjour,
 
 Tout d'abord, je ne sais pas si vous solliciter directement est la bonne manière. Veuillez m'excuser si j'abuse de votre temps.
@@ -10,10 +13,40 @@ N'hésitez pas à nous contacter pour plus de détails.
 Albéric de la Crochais, pour OpenProduct
 
 
-# DONE
+## DONE
 
 - Département Côtes d'armor : contact@cotesdarmor.fr : 16/02/2024
 - Région Bretagne : https://www.bretagne.bzh/contact/
 - Département Ille-et-Vilaine : Elue : isabelle.courtigne@ille-et-vilaine.fr
 - Département Ille-et-Vilaine : https://illisa.ille-et-vilaine.fr/saisine-espace-saisine
 - Région Normandie : https://www.normandie.fr/contacter-la-region
+
+## Result
+
+Aucune subvention obtenue.
+
+
+# Revendeur français "très fermés"
+
+* https://www.lesitedumadeinfrance.fr/
+
+* https://www.cocorico.store/
+
+* https://www.madefrance.fr/ 
+
+* https://www.leslipfrancais.fr/p
+
+# Revendeur français "fermés"
+
+* https://www.1083.fr
+
+* https://www.lindefrance.fr/ - contact@lindefrance.fr
+
+* https://www.mijuin.fr/ - bonjour@mijuin.fr - 45 Rue Robert Hooke, 76800 Saint-Étienne-du-Rouvray. Bâtiment Seine Écopolis
+
+* https://www.kelschdalsace.com - contact@kelschdalsace.com - +33 3 88 94 77 19
+
+* https://www.monstylofrancais.com/
+
+* https://missegle.com/ - contact@missegle.com - stephanie.albert@missegle.com
+
