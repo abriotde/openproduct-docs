@@ -81,7 +81,7 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 		message = MIMEText(body, 'html')
 		message['to'] = email
 		message['subject'] = SUBJECT
-		message.add_header('List-Unsubscribe', '<https://www.openproduct.fr/unsubcribe.php?mail='+email+'token='+token+'>')
+		message.add_header('List-Unsubscribe', '<https://www.openproduct.fr/unsubscribe.php?mail='+email+'token='+token+'>')
 		create_message = {'raw': base64.urlsafe_b64encode(message.as_bytes()).decode()}
 
 		try:

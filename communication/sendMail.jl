@@ -5,6 +5,7 @@
 # Date: Sat, 1 Jan 2000 12:00:59 +0200
 
 import SMTPClient, Random, DBInterface, OteraEngine, TOML
+using Dates
 
 EMAIL_BODY_1ST_COMM_TEMPLATE_FILE = "template1stCommunication.html"
 EMAIL_BODY_TEMPLATE_FILE = "templateMail.html"
