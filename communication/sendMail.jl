@@ -44,10 +44,15 @@ SMTP_USER = conf["SMTP_USER"]
 
 # using OpenProduct
 
-function sendMail(to, subject, message)::Bool
+function sendMail(to, subject, message, token)::Bool
 	from = SMTP_USER
 	fromC = "OpenProduct <"*from*">"
-	mime_msg = SMTPClient.get_mime_msg(HTML(replace(message, "\n"=>"\r\n")))
+	nowdt = Dates.now()
+	date = Dates.format(nowdt, RFC1123Format)*" +0100"
+	premsg = "Date: "*date*"\r\n"*
+		"List-Unsubscribe: <https://www.openproduct.fr/new/unsubscribe?mail="*to*"&token="*token*">\r\n"
+	mime_msg = premsg*SMTPClient.get_mime_msg(HTML(replace(message, "\n"=>"\r\n")))
+	println("MimeMsg:\n\n", premsg);
 	rcpt = [to]
 	body = SMTPClient.get_body(rcpt, fromC, subject, mime_msg)
 	# println("Body:",String(take!(body)))
@@ -119,7 +124,7 @@ function sendMail2AllProducers(subject, templateFilepath4Body)
 		println("Sleep ",slp," s.")
 		sleep(slp) # Sleep between up to 4 minutes.
 		# println("Send mail to ",email,".")
-		ok = sendMail(email, subject, message)
+		ok = sendMail(email, subject, message, token)
 		if ok
 			DBInterface.execute(sqlUpdateSendEmail, [email])
 			println("Sent message to ",email," (",name,", ",lastname,")")
@@ -170,7 +175,7 @@ function sendMailToNewProducers()
 		)
 		message = template1stCommunication(init=dictionary)
 		DBInterface.execute(sqlUpdateSendEmail, [email])
-		ok = sendMail(email, subject, message)
+		ok = sendMail(email, subject, message, token)
 		if ok
 			println("sent message to ",email," (",name,", ",lastname,")")
 		end
@@ -180,7 +185,7 @@ end
 # sendMailToNewProducers()
 # sendMailForAG()
 sendMail2AllProducers(
-	"OpenProduct évolue ! Gérez désormais votre profil en direct",
+	"OpenProduct évolue. Gérez désormais votre profil en direct",
 	EMAIL_BODY_TEMPLATE_FILE
 )
 # sendMail("alberic.delacrochais@protonmail.com", "Test", "Un petit message de test")
