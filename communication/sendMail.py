@@ -92,7 +92,7 @@ producers = db_cnx.fetchall()
 print(producers)
 
 # sendMail("alberic.delacrochais@protonmail.com", EMAIL_SUBJECT, "Un test", "ugiofnkjulblfu")
-producers = [('OpenHomeSystem', 'Albéric', 'alberic.delacrochais@protonmail.com', '5b76db3e3f1d426ede4fce655844366b')]
+# producers = [('OpenHomeSystem', 'Albéric', 'alberic.delacrochais@protonmail.com', '5b76db3e3f1d426ede4fce655844366b')]
 
 from jinja2 import Template
 with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
