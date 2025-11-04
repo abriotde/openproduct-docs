@@ -1,11 +1,9 @@
 #!/bin/env python3
 
-import base64
 from email.mime.text import MIMEText
-from requests import HTTPError
 import random
 import os.path
-import tomllib
+import tomli
 import psycopg
 import smtplib, ssl
 from email.mime.text import MIMEText
@@ -37,7 +35,7 @@ def get_connection(root_path=".."):
 			conffile = "../../openproduct-web-svelte4/.env.local"
 		print("Use configuration file : ", conffile)
 		with open(conffile, "rb") as f:
-			conf = tomllib.load(f)
+			conf = tomli.load(f)
 			DATABASE_NAME = conf["DATABASE_NAME"]
 			DATABASE_USER = conf["DATABASE_USER"]
 			DATABASE_PASSWORD = conf["DATABASE_PASSWORD"]
@@ -54,7 +52,7 @@ SMTP_HOST = None
 SMTP_PORT = None
 SMTP_PASS = None
 with open(conffile, "rb") as f:
-	conf = tomllib.load(f)
+	conf = tomli.load(f)
 	SMTP_USER = conf["SMTP_USER"]
 	SMTP_HOST = conf["SMTP_HOST"]
 	SMTP_PORT = conf["SMTP_PORT"]
@@ -69,7 +67,7 @@ def sendMail(to, subject, body, token):
 	message["Subject"] = subject
 	message["From"] = fromC
 	message["To"] = to
-	message.attach(MIMEText(body))
+	message.attach(MIMEText(body, "html"))
 	message.add_header('List-Unsubscribe', '<https://www.openproduct.fr/new/unsubscribe?mail='+to+'token='+token+'>')
 	context = ssl.create_default_context()
 	with smtplib.SMTP_SSL(SMTP_HOST, SMTP_PORT, context=context) as server:
@@ -94,7 +92,7 @@ producers = db_cnx.fetchall()
 print(producers)
 
 # sendMail("alberic.delacrochais@protonmail.com", EMAIL_SUBJECT, "Un test", "ugiofnkjulblfu")
-# producers = [('OpenHomeSystem', 'Albéric', 'alberic.delacrochais@protonmail.com', '5b76db3e3f1d426ede4fce655844366b')]
+producers = [('OpenHomeSystem', 'Albéric', 'alberic.delacrochais@protonmail.com', '5b76db3e3f1d426ede4fce655844366b')]
 
 from jinja2 import Template
 with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
