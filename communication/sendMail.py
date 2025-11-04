@@ -114,7 +114,7 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 		print("Sleep ",slp," s.")
 		time.sleep(slp)
 		if sendMail(email, EMAIL_SUBJECT, body, token):
-			sql = "UPDATE producers SET send_email='ok' WHERE email='"+email+"'"
+			sql = "UPDATE producers SET has_send_mail=True WHERE email='"+email+"'"
 			db_cnx.execute(sql)
 			print("Sent message to ",email," successfully.")
 		else:
