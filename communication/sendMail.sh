@@ -2,5 +2,7 @@
 
 cd ${0/sendMail.sh/}
 
-./sendMail.jl
+source /home/kaja9241/virtualenv/scriptspython/3.11/bin/activate
+
+python3 ./sendMail.py
 

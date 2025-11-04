@@ -174,9 +174,9 @@ function sendMailToNewProducers()
 			Symbol("token")=> token
 		)
 		message = template1stCommunication(init=dictionary)
-		DBInterface.execute(sqlUpdateSendEmail, [email])
 		ok = sendMail(email, subject, message, token)
 		if ok
+			DBInterface.execute(sqlUpdateSendEmail, [email])
 			println("sent message to ",email," (",name,", ",lastname,")")
 		end
 	end
