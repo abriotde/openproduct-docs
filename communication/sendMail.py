@@ -57,7 +57,7 @@ with open(conffile, "rb") as f:
 	SMTP_HOST = conf["SMTP_HOST"]
 	SMTP_PORT = conf["SMTP_PORT"]
 	SMTP_PASS = conf["SMTP_PASS"]
-	
+
 def sendMail(to, subject, body, token):
 	global SMTP_USER
 	fromC = "OpenProduct <"+SMTP_USER+">"
@@ -85,11 +85,11 @@ db_cnx.execute(
 			AND status in('actif', 'to-check', 'unknown')
 			AND has_send_mail=false
 		ORDER BY ID
-		LIMIT 10
+		LIMIT 30
 	"""
 )
 producers = db_cnx.fetchall()
-print(producers)
+# print(producers)
 
 # sendMail("alberic.delacrochais@protonmail.com", EMAIL_SUBJECT, "Un test", "ugiofnkjulblfu")
 # producers = [('OpenHomeSystem', 'Albéric', 'alberic.delacrochais@protonmail.com', '5b76db3e3f1d426ede4fce655844366b')]
@@ -108,12 +108,14 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 			'token': token
 		}
 		body = template.render(context)
-		slp =  random.randrange(1, 240)
+		slp =  random.randrange(1, 120)
 		print("Sleep ",slp," s.")
 		time.sleep(slp)
-		if sendMail(email, EMAIL_SUBJECT, body, token):
-			sql = "UPDATE producers SET has_send_mail=True WHERE email='"+email+"'"
-			db_cnx.execute(sql)
+		if True: # sendMail(email, EMAIL_SUBJECT, body, token):
+			sql = "UPDATE producers SET has_send_mail=true WHERE email=(%s)"
+			# print("SQL: ", sql)
+			db_cnx.execute(sql, (email,))
+			db_cnx.connection.commit()
 			print("Sent message to ",email," successfully.")
 		else:
 			print("Fail send mail to ",email)
