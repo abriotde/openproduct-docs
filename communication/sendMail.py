@@ -111,7 +111,7 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 		slp =  random.randrange(1, 120)
 		print("Sleep ",slp," s.")
 		time.sleep(slp)
-		if True: # sendMail(email, EMAIL_SUBJECT, body, token):
+		if sendMail(email, EMAIL_SUBJECT, body, token):
 			sql = "UPDATE producers SET has_send_mail=true WHERE email=(%s)"
 			# print("SQL: ", sql)
 			db_cnx.execute(sql, (email,))
