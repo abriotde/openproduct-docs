@@ -1,3 +1,4 @@
 tomli
 psycopg
 jinja2
+bs4

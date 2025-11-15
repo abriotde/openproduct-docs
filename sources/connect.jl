@@ -18,4 +18,4 @@ if ENV=="dev"
 	include_path = "../../openproduct-web-svelte4"
 end
 include(include_path*"/scripts/connect.jl")
-OpenProduct.GetConnection() = get_connection(ROOT_PATH)
+# OpenProduct.GetConnection() = get_connection()

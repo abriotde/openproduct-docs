@@ -93,6 +93,9 @@ function processMail(mail::Dict{String, String})::Bool
 		# Host or domain name not found. Name service error
 		# println("-> X-Postfix: ", pb)
 		status = tocheck
+	else
+		# Host or domain name not found. Name service error
+		println("-> Unknown: ", pb)
 	end
 	if status==redo
 		sql = "update producers p "*
@@ -109,9 +112,8 @@ function processMail(mail::Dict{String, String})::Bool
 	elseif status==fromlocal
 		println("FROMLOCAL: ",email)
 		ok = true
-	elseif !ok
-		println("processMail(",email, ", ", pb,")")
-		exit(0)
+	else
+		println("TODO : processMail(",email, ", ", pb,") : Not known problem.")
 	end
 	ok
 end

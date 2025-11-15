@@ -80,8 +80,8 @@ def sendMail(to, subject, body, token):
 db_cnx.execute(
 	"""SELECT p.company_name, coalesce(lastname, firstname , '') lastname, email, token
 		FROM producers p 
-		WHERE email is not null and email!=''
-			AND send_email='ok'
+		WHERE email is not null and email!='' and email like '%@%'
+			AND send_email in ('ok', 'unknown')
 			AND status in('actif', 'to-check', 'unknown')
 			AND has_send_mail=false
 		ORDER BY ID
