@@ -99,7 +99,7 @@ with open(EMAIL_BODY_TEMPLATE_FILE, 'r') as f:
 	template = Template(f.read())
 
 	for producer in producers:
-		email = producer[2]
+		email = producer[2].strip().replace('\u200b', "")
 		token = producer[3]
 		context = {
 			'email': email,
