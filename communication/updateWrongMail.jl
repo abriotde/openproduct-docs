@@ -115,6 +115,7 @@ function processMail(mail::Dict{String, String})::Bool
 	else
 		println("TODO : processMail(",email, ", ", pb,") : Not known problem.")
 	end
+	println("Mail : ", email)
 	ok
 end
 
