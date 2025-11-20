@@ -1,11 +1,11 @@
-#!/usr/local/bin/julia
+#!/bin/env julia
 
 #########  #############
 # TODO : Get number of pages per regions.
 
 
-import MySQL, DBInterface, CSV
-using ArgParse, DataFrames, Dates, Cascadia
+import DBInterface, CSV
+using ArgParse, DataFrames, Dates
 
 
 function parse_commandline()
@@ -21,10 +21,9 @@ function parse_commandline()
 	return parse_args(s)
 end
 args = parse_commandline()
-# println(args)
 
 include("connect.jl")
-dbConnection = get_connection(include_path)
+dbConnection = OpenProduct.get_connection(ROOT_PATH)
 
 function loadProducts(dbConnection)::Dict{String, Integer}
 	products = Dict()
@@ -192,7 +191,12 @@ function load_csv(filepath)
 	end
 	rename!(df, colnames)
 	for line in eachrow(df)
-		load_producer(line)
+		try
+			load_producer(line)
+		catch e
+			println("ERROR : for producer ",line,"; ",e,"")
+			Base.showerror(stdout, e, Base.catch_backtrace())
+		end
 	end
 	# println(df)
 end

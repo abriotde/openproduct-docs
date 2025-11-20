@@ -1,8 +1,7 @@
 
+import LibPQ
 using Memoize
-include("../lib/OpenProduct.jl/src/OpenProduct.jl")
 
-using .OpenProduct
 ENV="dev"
 conffile = "../.env.production"
 if isfile(conffile)
@@ -13,9 +12,11 @@ else
 end
 
 CURDIR=pwd()
-include_path = ".."
+ROOT_PATH = ".."
 if ENV=="dev"
-	include_path = "../../openproduct-web-svelte4"
+	ROOT_PATH = "../../openproduct-web-svelte4"
 end
-include(include_path*"/scripts/connect.jl")
+
+include(ROOT_PATH*"/../OpenProduct.jl/src/OpenProduct.jl")
+using .OpenProduct
 # OpenProduct.GetConnection() = get_connection()
