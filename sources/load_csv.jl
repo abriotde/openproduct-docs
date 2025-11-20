@@ -76,6 +76,10 @@ function load_producer(line::DataFrameRow)::Bool
 	lastname = get(line2, :lastname, "")
 	sourcekey = imageurl = missing
 	imageurl = missing
+	tag = get(line2, :tag, 0)
+	if ismissing(tag)
+		tag=0
+	end
 	# Position
 	address = get(line2, :address, missing)
 	postal_code = get(line2, :postal_code, missing)
@@ -124,7 +128,7 @@ function load_producer(line::DataFrameRow)::Bool
 		latitude, longitude, score, company_name, firstname, lastname, city, postal_code,
 		address, phoneNumber, phoneNumber2, siret, email, website,
 		shortDescription, description, sourcekey, imageurl, openingHours, categories, 
-		startdate, missing, lastUpdateDate
+		startdate, missing, lastUpdateDate, tag
 	)
 	# println(producer)
 	producer_id = insertOnDuplicateUpdate(dbConnection, producer)
