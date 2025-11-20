@@ -1,4 +1,25 @@
 
+
+# Demande de soutien/référencement
+
+association OpenProduct
+contact@openproduct.fr
+0985104873
+
+Bonjour,
+
+Je relance le site https://openproduct.fr/ qui ambitionne de recenser tous les producteurs locaux (pas seulement alimentaires mais seulement en B2C). Je sais que ce sujet vous touche et que vos clients y seront sensible, c'est pourquoi je me permet de vous solliciter. 
+Bien entendu, j'apprécierais un soutien financier, mais c'est loin d'être la seule chose manière de me soutenir. 
+Une manière très simple serait d'imprimer le flyer téléchargeable ici https://openproduct.fr/documents.html et de le mettre à disposition de vos clients.
+Peut-être pourriez-vous me communiquer une partie de la liste de vos fournisseurs ou est-elle secrète?
+Sinon, peut-être pouvez-vous faire remonter l'information au sein des autres enseignes du groupe.
+Dans tous les cas vos retour et avis m'apporteraient beaucoup.
+
+Cordialement,
+Association OpenProduct (Albéric).
+
+
+
 # Demande de subventions
 
 Bonjour,

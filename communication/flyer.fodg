@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:anim="urn:oasis:names:tc:opendocument:xmlns:animation:1.0" xmlns:smil="urn:oasis:names:tc:opendocument:xmlns:smil-compatible:1.0" xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:officeooo="http://openoffice.org/2009/office" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.4" office:mimetype="application/vnd.oasis.opendocument.graphics">
- <office:meta><meta:creation-date>2024-02-14T10:16:06.735641941</meta:creation-date><dc:date>2025-11-17T11:07:53.485076449</dc:date><meta:editing-duration>PT2H34M50S</meta:editing-duration><meta:editing-cycles>45</meta:editing-cycles><meta:generator>LibreOffice/25.2.6.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:print-date>2025-11-17T10:52:55.280011490</meta:print-date><meta:document-statistic meta:object-count="6"/></office:meta>
+ <office:meta><meta:creation-date>2024-02-14T10:16:06.735641941</meta:creation-date><dc:date>2025-11-18T13:52:08.674928145</dc:date><meta:editing-duration>PT2H36M41S</meta:editing-duration><meta:editing-cycles>46</meta:editing-cycles><meta:generator>LibreOffice/25.2.6.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:print-date>2025-11-17T10:52:55.280011490</meta:print-date><meta:document-statistic meta:object-count="6"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
-   <config:config-item config:name="VisibleAreaTop" config:type="int">-225</config:config-item>
-   <config:config-item config:name="VisibleAreaLeft" config:type="int">-3321</config:config-item>
+   <config:config-item config:name="VisibleAreaTop" config:type="int">-1342</config:config-item>
+   <config:config-item config:name="VisibleAreaLeft" config:type="int">-1491</config:config-item>
    <config:config-item config:name="VisibleAreaWidth" config:type="int">17245</config:config-item>
    <config:config-item config:name="VisibleAreaHeight" config:type="int">15331</config:config-item>
    <config:config-item-map-indexed config:name="Views">
@@ -35,10 +35,10 @@
      <config:config-item config:name="IsClickChangeRotation" config:type="boolean">true</config:config-item>
      <config:config-item config:name="SlidesPerRow" config:type="short">4</config:config-item>
      <config:config-item config:name="EditMode" config:type="int">0</config:config-item>
-     <config:config-item config:name="VisibleAreaTop" config:type="int">-225</config:config-item>
-     <config:config-item config:name="VisibleAreaLeft" config:type="int">-1464</config:config-item>
-     <config:config-item config:name="VisibleAreaWidth" config:type="int">13512</config:config-item>
-     <config:config-item config:name="VisibleAreaHeight" config:type="int">15332</config:config-item>
+     <config:config-item config:name="VisibleAreaTop" config:type="int">-224</config:config-item>
+     <config:config-item config:name="VisibleAreaLeft" config:type="int">-1043</config:config-item>
+     <config:config-item config:name="VisibleAreaWidth" config:type="int">12578</config:config-item>
+     <config:config-item config:name="VisibleAreaHeight" config:type="int">15242</config:config-item>
      <config:config-item config:name="GridCoarseWidth" config:type="int">1000</config:config-item>
      <config:config-item config:name="GridCoarseHeight" config:type="int">1000</config:config-item>
      <config:config-item config:name="GridFineWidth" config:type="int">100</config:config-item>
@@ -114,8 +114,8 @@
   </office:script>
  </office:scripts>
  <office:font-face-decls>
-  <style:font-face style:name="Latin Modern Roman Unslanted" svg:font-family="&apos;Latin Modern Roman Unslanted&apos;" style:font-pitch="variable"/>
-  <style:font-face style:name="Latin Modern Roman Unslanted1" svg:font-family="&apos;Latin Modern Roman Unslanted&apos;"/>
+  <style:font-face style:name="Latin Modern Roman Unslanted" svg:font-family="&apos;Latin Modern Roman Unslanted&apos;"/>
+  <style:font-face style:name="Latin Modern Roman Unslanted1" svg:font-family="&apos;Latin Modern Roman Unslanted&apos;" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Mono" svg:font-family="&apos;Liberation Mono&apos;, Cousine, &apos;DejaVu Sans Mono&apos;" style:font-family-generic="modern" style:font-pitch="fixed"/>
   <style:font-face style:name="Liberation Sans" svg:font-family="&apos;Liberation Sans&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
   <style:font-face style:name="Liberation Serif" svg:font-family="&apos;Liberation Serif&apos;" style:font-family-generic="roman" style:font-pitch="variable"/>
@@ -148,7 +148,7 @@
   <draw:stroke-dash draw:name="Dash_20_Dot_20_1" draw:display-name="Dash Dot 1" draw:style="rect" draw:dots1="1" draw:dots1-length="0.02cm" draw:dots2="1" draw:dots2-length="0.02cm" draw:distance="0.02cm"/>
   <style:default-style style:family="graphic">
    <style:graphic-properties svg:stroke-color="#3465a4" draw:fill-color="#729fcf" fo:wrap-option="no-wrap" style:writing-mode="lr-tb"/>
-   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" loext:tab-stop-distance="0cm" style:writing-mode="lr-tb" style:font-independent-line-spacing="false">
+   <style:paragraph-properties style:text-autospace="ideograph-alpha" style:punctuation-wrap="simple" style:line-break="strict" loext:tab-stop-distance="0cm" style:font-independent-line-spacing="false">
     <style:tab-stops/>
    </style:paragraph-properties>
    <style:text-properties style:use-window-font-color="true" loext:opacity="0%" style:font-name="Liberation Serif" fo:font-size="24pt" fo:language="fr" fo:country="FR" style:font-name-asian="Tahoma" style:font-size-asian="24pt" style:language-asian="zh" style:country-asian="CN" style:font-name-complex="Tahoma" style:font-size-complex="24pt" style:language-complex="hi" style:country-complex="IN"/>
@@ -317,48 +317,44 @@
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="gr4" style:family="graphic" style:parent-style-name="standard" style:list-style-name="L1">
-   <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="2.193cm" loext:decorative="false"/>
+   <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="3.289cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="gr5" style:family="graphic" style:parent-style-name="standard">
-   <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="0.789cm" loext:decorative="false"/>
+   <style:graphic-properties draw:stroke="none" svg:stroke-color="#000000" draw:fill="none" draw:fill-color="#ffffff" draw:auto-grow-height="true" draw:auto-grow-width="false" fo:min-height="0.899cm" loext:decorative="false"/>
    <style:paragraph-properties style:writing-mode="lr-tb"/>
   </style:style>
   <style:style style:name="P1" style:family="paragraph">
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="100%" fo:text-align="start" fo:text-indent="0cm"/>
   </style:style>
   <style:style style:name="P2" style:family="paragraph">
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:line-height="100%" fo:text-align="start" fo:text-indent="0cm"/>
-   <style:text-properties style:font-name="Liberation Mono" fo:font-size="10pt" style:font-name-asian="Liberation Mono" style:font-size-asian="10pt" style:font-name-complex="Liberation Mono" style:font-size-complex="10pt"/>
-  </style:style>
-  <style:style style:name="P3" style:family="paragraph">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-align="start" fo:text-indent="0cm"/>
    <style:text-properties style:font-name="Roboto" fo:font-size="10pt" fo:background-color="transparent" style:font-name-asian="Liberation Mono" style:font-size-asian="10pt" style:font-name-complex="Liberation Mono" style:font-size-complex="10pt"/>
   </style:style>
-  <style:style style:name="P4" style:family="paragraph">
+  <style:style style:name="P3" style:family="paragraph">
    <loext:graphic-properties draw:fill="none"/>
    <style:paragraph-properties fo:text-align="center"/>
   </style:style>
-  <style:style style:name="P5" style:family="paragraph">
+  <style:style style:name="P4" style:family="paragraph">
    <style:paragraph-properties fo:text-align="center"/>
   </style:style>
-  <style:style style:name="P6" style:family="paragraph">
+  <style:style style:name="P5" style:family="paragraph">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:text-align="center"/>
-   <style:text-properties style:font-name="Latin Modern Roman Unslanted" fo:font-size="12pt" fo:font-weight="bold" fo:background-color="transparent" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-weight-complex="bold"/>
+   <style:text-properties style:font-name="Latin Modern Roman Unslanted1" fo:font-size="12pt" fo:font-weight="bold" fo:background-color="transparent" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-weight-complex="bold"/>
+  </style:style>
+  <style:style style:name="P6" style:family="paragraph">
+   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
   </style:style>
   <style:style style:name="P7" style:family="paragraph">
+   <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
    <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
+   <style:text-properties style:font-name="Latin Modern Roman Unslanted1" fo:font-size="22pt" fo:background-color="transparent" style:font-size-asian="22pt" style:font-size-complex="22pt"/>
   </style:style>
   <style:style style:name="P8" style:family="paragraph">
    <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
-   <style:paragraph-properties fo:margin-left="0cm" fo:margin-right="0cm" fo:margin-top="0cm" fo:margin-bottom="0cm" fo:line-height="100%" fo:text-indent="0cm"/>
-   <style:text-properties style:font-name="Latin Modern Roman Unslanted" fo:font-size="22pt" fo:background-color="transparent" style:font-size-asian="22pt" style:font-size-complex="22pt"/>
-  </style:style>
-  <style:style style:name="P9" style:family="paragraph">
-   <loext:graphic-properties draw:fill="none" draw:fill-color="#ffffff"/>
-   <style:text-properties style:font-name="Latin Modern Roman Unslanted1" fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+   <style:text-properties style:font-name="Latin Modern Roman Unslanted" fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
   </style:style>
   <style:style style:name="T1" style:family="text">
    <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Roboto" fo:font-size="11pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC" style:font-size-asian="11pt" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="11pt" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
@@ -376,13 +372,13 @@
    <style:text-properties style:font-name="Roboto" fo:font-size="11pt" fo:font-weight="bold" fo:background-color="transparent" style:font-name-asian="Liberation Mono" style:font-size-asian="11pt" style:font-weight-asian="bold" style:font-name-complex="Liberation Mono" style:font-size-complex="11pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T6" style:family="text">
-   <style:text-properties style:font-name="Latin Modern Roman Unslanted" fo:font-size="12pt" fo:font-weight="bold" fo:background-color="transparent" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-weight-complex="bold"/>
+   <style:text-properties style:font-name="Latin Modern Roman Unslanted1" fo:font-size="12pt" fo:font-weight="bold" fo:background-color="transparent" style:font-size-asian="12pt" style:font-weight-asian="bold" style:font-size-complex="12pt" style:font-weight-complex="bold"/>
   </style:style>
   <style:style style:name="T7" style:family="text">
-   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Latin Modern Roman Unslanted" fo:font-size="22pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC" style:font-size-asian="22pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="22pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
+   <style:text-properties fo:font-variant="normal" fo:text-transform="none" style:use-window-font-color="true" loext:opacity="0%" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Latin Modern Roman Unslanted1" fo:font-size="22pt" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="bold" style:letter-kerning="true" fo:background-color="transparent" style:font-name-asian="Noto Sans CJK SC" style:font-size-asian="22pt" style:font-style-asian="normal" style:font-weight-asian="bold" style:font-name-complex="Noto Sans Devanagari" style:font-size-complex="22pt" style:font-style-complex="normal" style:font-weight-complex="bold" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="T8" style:family="text">
-   <style:text-properties style:font-name="Latin Modern Roman Unslanted1" fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
+   <style:text-properties style:font-name="Latin Modern Roman Unslanted" fo:font-size="9pt" style:font-size-asian="9pt" style:font-size-complex="9pt"/>
   </style:style>
   <text:list-style style:name="L1">
    <text:list-level-style-bullet text:level="1" text:bullet-char="●">
@@ -457,20 +453,20 @@
  <office:body>
   <office:drawing>
    <draw:page draw:name="page1" draw:style-name="dp2" draw:master-page-name="Standard">
-    <draw:frame draw:style-name="gr1" draw:text-style-name="P3" draw:layer="layout" svg:width="8.2cm" svg:height="6.6cm" svg:x="1.5cm" svg:y="3.041cm">
+    <draw:frame draw:style-name="gr1" draw:text-style-name="P2" draw:layer="layout" svg:width="8.2cm" svg:height="6.6cm" svg:x="1.5cm" svg:y="3.041cm">
      <draw:text-box>
       <text:p text:style-name="P1"><text:span text:style-name="T1">Nous recensons </text:span><text:span text:style-name="T2">plus de 6000 producteurs</text:span><text:span text:style-name="T1"> partout en France. <text:s/></text:span></text:p>
-      <text:p text:style-name="P2"><text:span text:style-name="T3">Découvrez des produits </text:span><text:span text:style-name="T4">d’une qualité exceptionnelle</text:span><text:span text:style-name="T3">, directement chez ceux qui les créent :</text:span></text:p>
-      <text:p text:style-name="P2"><text:span text:style-name="T3">- 🍷 Nourriture &amp; boissons</text:span></text:p>
-      <text:p text:style-name="P2"><text:span text:style-name="T3">- 👕 Vêtements &amp; accessoires</text:span></text:p>
-      <text:p text:style-name="P2"><text:span text:style-name="T3">- 🎨 Objets d’art &amp; artisanat</text:span></text:p>
-      <text:p text:style-name="P2"><text:span text:style-name="T3">- 🧩 Outils &amp; Jeux</text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T3">Découvrez des produits </text:span><text:span text:style-name="T4">d’une qualité exceptionnelle</text:span><text:span text:style-name="T3">, directement chez ceux qui les créent :</text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T3">- 🍷 Nourriture &amp; boissons</text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T3">- 👕 Vêtements &amp; accessoires</text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T3">- 🎨 Objets d’art &amp; artisanat</text:span></text:p>
+      <text:p text:style-name="P1"><text:span text:style-name="T3">- 🧩 Outils &amp; Jeux</text:span></text:p>
       <text:p text:style-name="P1"><text:span text:style-name="T1"/></text:p>
       <text:p text:style-name="P1"><text:span text:style-name="T5">Soutenez l’artisanat et les PME locales. </text:span></text:p>
       <text:p text:style-name="P1"><text:span text:style-name="T5">Découvrez. Achetez. Partagez.</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr2" draw:text-style-name="P4" draw:layer="layout" svg:width="4.7cm" svg:height="4.7cm" svg:x="2.4cm" svg:y="9.8cm">
+    <draw:frame draw:style-name="gr2" draw:text-style-name="P3" draw:layer="layout" svg:width="4.7cm" svg:height="4.7cm" svg:x="2.4cm" svg:y="9.8cm">
      <draw:image draw:mime-type="image/svg+xml">
       <office:binary-data>PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbDpzcGFjZT0icHJl
        c2VydmUiIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBzdHls
@@ -1349,12 +1345,12 @@
       </office:binary-data>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr3" draw:text-style-name="P6" draw:layer="layout" svg:width="5.2cm" svg:height="1.673cm" svg:x="1.9cm" svg:y="8.927cm">
+    <draw:frame draw:style-name="gr3" draw:text-style-name="P5" draw:layer="layout" svg:width="5.2cm" svg:height="1.673cm" svg:x="1.9cm" svg:y="8.927cm">
      <draw:text-box>
-      <text:p text:style-name="P5"><text:span text:style-name="T6"><text:s/>https://openproduct.fr</text:span></text:p>
+      <text:p text:style-name="P4"><text:span text:style-name="T6"><text:s/>https://openproduct.fr</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr2" draw:text-style-name="P4" draw:layer="layout" svg:width="3.5cm" svg:height="2.54cm" svg:x="6.1cm" svg:y="0.06cm">
+    <draw:frame draw:style-name="gr2" draw:text-style-name="P3" draw:layer="layout" svg:width="2.205cm" svg:height="1.6cm" svg:x="7.795cm" svg:y="0.5cm">
      <draw:image draw:mime-type="image/png">
       <office:binary-data>iVBORw0KGgoAAAANSUhEUgAAAaAAAAEuCAYAAADIjMbxAAAgAElEQVR4nOzdd3RU55k/8Oe2
        udOrem+AEBIgOgJMNxj3XjaJHac3Z9PcML/cGEmYkGWzZE8S72Z3s8k6WZPqxF7bYJrp1XQE
@@ -1725,14 +1721,14 @@
       <text:p/>
      </draw:image>
     </draw:frame>
-    <draw:frame draw:style-name="gr4" draw:text-style-name="P8" draw:layer="layout" svg:width="5.913cm" svg:height="2.443cm" draw:transform="rotate (-0.0118682389135618) translate (0.687cm 0.387cm)">
+    <draw:frame draw:style-name="gr4" draw:text-style-name="P7" draw:layer="layout" svg:width="7.834cm" svg:height="3.539cm" draw:transform="rotate (-0.0118682389135618) translate (0.367cm 0.068cm)">
      <draw:text-box>
-      <text:p text:style-name="P7"><text:span text:style-name="T7">OpenProduct</text:span></text:p>
+      <text:p text:style-name="P6"><text:span text:style-name="T7">Découvrez les producteurs locaux</text:span></text:p>
      </draw:text-box>
     </draw:frame>
-    <draw:frame draw:style-name="gr5" draw:text-style-name="P9" draw:layer="layout" svg:width="5.1cm" svg:height="1.039cm" svg:x="5.8cm" svg:y="2.361cm">
+    <draw:frame draw:style-name="gr5" draw:text-style-name="P8" draw:layer="layout" svg:width="8cm" svg:height="1.149cm" svg:x="2.5cm" svg:y="2.251cm">
      <draw:text-box>
-      <text:p><text:span text:style-name="T8">Annuaire des producteurs</text:span></text:p>
+      <text:p><text:span text:style-name="T8">OpenProduct : Un annuaire des producteurs</text:span></text:p>
      </draw:text-box>
     </draw:frame>
    </draw:page>
