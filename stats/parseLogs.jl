@@ -2,7 +2,7 @@
 #=
 	Get and print statistics of website use according to web server logfiles
 =#
-
+import DBInterface, LibPQ
 using ArgParse
 using GZip
 
@@ -10,6 +10,7 @@ DATA_PATH = "./data/"
 
 regexLogFile = Regex("addon-openproduct.fr.kaja9241.odns.fr(-ssl_log)?-([A-Za-z]+)-([0-9]+).gz")
 regexLogLine = Regex("(.*) -.*- \\[([0-9]+)/([A-Z][a-z]+)/([0-9]+).*\\].*")
+regexLogLine = Regex("(.*) -.*- \\[([0-9]+)/([A-Z][a-z]+)/([0-9]+).*\\] \"GET ([a-zA-Z/.]+).*\"(.*)\"")
 MonthTranslation = Dict{String, Int}(
 	"Jan" => 1,
 	"Feb" => 2,
@@ -36,10 +37,13 @@ function sync()
 	run(`rsync -avpzh "openproduct:logs/addon-openproduct.fr.kaja9241.*" $DATA_PATH`)
 end
 
+botPatterns = ["bingbot","Googlebot","AhrefsBot"]
+
 #=
 	Parse log file `filename` and generate a Dict with use statistics 
 =#
 function getStatsFromFile(filename, stats)
+	useragents = Dict{String, Int}()
 	visitors = dateRef = monthStr = yearStr = month_i = month_i = nothing
 	fd = GZip.open(DATA_PATH*"/"*filename, "r") do io
 		linenb = 0
@@ -51,6 +55,24 @@ function getStatsFromFile(filename, stats)
 				# println(m)
 				ip = m[1]
 				date = m[2]
+				url = m[5]
+				useragent = m[6]
+				isbot = false
+				for bot in botPatterns
+					if occursin(bot, useragent)
+						isbot = true
+						useragent = bot
+						# println("User-Agent:", useragent)
+						break
+					end
+				end
+				nbOccurUA = get(useragents, useragent, 0) + 1
+				useragents[useragent] = nbOccurUA
+				if isbot
+					continue
+				end
+				useragents[useragent] = nbOccurUA
+				# println("URL:", url,"; User-Agent:", useragent)
 				if dateRef==nothing
 					# Init for next dates
 					visitors = Dict{String, Bool}()
@@ -85,8 +107,11 @@ function getStatsFromFile(filename, stats)
 				# print(".")
 				visitors[ip] = true
 				monthVisitors[month_i][ip] = true
+			# else
+			# 	println("Skip : ", line)
 			end
 		end
+		# println("User-Agents: ", useragents)
 		# Save values
 		date_i = parse(Int64, dateRef);
 		if !haskey(stats, month_i)
@@ -105,7 +130,7 @@ end
 #=
 	Parse all log files in `DATA_PATH` and return  a Dict with use statistics 
 =#
-function getStats()
+function getStats()::Dict{Int,Dict{Int, Int}}
 	stats = Dict{Int,Dict{Int, Int}}()
 	for filename in readdir(DATA_PATH)
 		println("File : ",filename)
@@ -140,8 +165,31 @@ function printStats(stats)
 		end
 	end
 end
+#=
+	Load `stats` in PostgreSQL DB
+=#
+function loadStats(dbConnection::LibPQ.DBConnection, stats::Dict{Int,Dict{Int, Int}})::Bool
+	sql = "Insert into stats_day(date, website_uniq_visit) VALUES (\$1, \$2) ON CONFLICT (date) DO UPDATE SET website_uniq_visit=EXCLUDED.website_uniq_visit;"
+	sqlInsert = DBInterface.prepare(dbConnection, sql)
+	for (month, values) in stats
+		for (day, v) in values
+			date = year*"-"*string(month)*"-"*string(day)
+			LibPQ.execute(sqlInsert, (date, v))
+			# println("Month:", month, "; Day:", day,"; Values:",v)
+		end
+	end
+	true
+end
 
 year = 0
-sync()
+include("../sources/connect.jl")
+dbConnection = OpenProduct.get_connection(ROOT_PATH)
+if ENV=="dev"
+	sync()
+else
+	DATA_PATH = "/home/kaja9241/logs"
+end
 stats = getStats()
-printStats(stats)
+# printStats(stats)
+# print("ENV:", ENV)
+loadStats(dbConnection, stats)
