@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <office:document xmlns:presentation="urn:oasis:names:tc:opendocument:xmlns:presentation:1.0" xmlns:css3t="http://www.w3.org/TR/css3-text/" xmlns:grddl="http://www.w3.org/2003/g/data-view#" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xforms="http://www.w3.org/2002/xforms" xmlns:dom="http://www.w3.org/2001/xml-events" xmlns:script="urn:oasis:names:tc:opendocument:xmlns:script:1.0" xmlns:form="urn:oasis:names:tc:opendocument:xmlns:form:1.0" xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:office="urn:oasis:names:tc:opendocument:xmlns:office:1.0" xmlns:ooo="http://openoffice.org/2004/office" xmlns:fo="urn:oasis:names:tc:opendocument:xmlns:xsl-fo-compatible:1.0" xmlns:config="urn:oasis:names:tc:opendocument:xmlns:config:1.0" xmlns:ooow="http://openoffice.org/2004/writer" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:drawooo="http://openoffice.org/2010/draw" xmlns:oooc="http://openoffice.org/2004/calc" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:calcext="urn:org:documentfoundation:names:experimental:calc:xmlns:calcext:1.0" xmlns:style="urn:oasis:names:tc:opendocument:xmlns:style:1.0" xmlns:text="urn:oasis:names:tc:opendocument:xmlns:text:1.0" xmlns:of="urn:oasis:names:tc:opendocument:xmlns:of:1.2" xmlns:tableooo="http://openoffice.org/2009/table" xmlns:draw="urn:oasis:names:tc:opendocument:xmlns:drawing:1.0" xmlns:dr3d="urn:oasis:names:tc:opendocument:xmlns:dr3d:1.0" xmlns:rpt="http://openoffice.org/2005/report" xmlns:formx="urn:openoffice:names:experimental:ooxml-odf-interop:xmlns:form:1.0" xmlns:svg="urn:oasis:names:tc:opendocument:xmlns:svg-compatible:1.0" xmlns:chart="urn:oasis:names:tc:opendocument:xmlns:chart:1.0" xmlns:table="urn:oasis:names:tc:opendocument:xmlns:table:1.0" xmlns:field="urn:openoffice:names:experimental:ooo-ms-interop:xmlns:field:1.0" xmlns:number="urn:oasis:names:tc:opendocument:xmlns:datastyle:1.0" xmlns:meta="urn:oasis:names:tc:opendocument:xmlns:meta:1.0" xmlns:loext="urn:org:documentfoundation:names:experimental:office:xmlns:loext:1.0" office:version="1.4" office:mimetype="application/vnd.oasis.opendocument.spreadsheet">
- <office:meta><meta:creation-date>2024-03-09T15:36:34.806002306</meta:creation-date><dc:date>2025-11-22T23:29:20.603549189</dc:date><meta:editing-duration>PT10H45M18S</meta:editing-duration><meta:editing-cycles>61</meta:editing-cycles><meta:generator>LibreOffice/25.2.6.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:cell-count="139" meta:object-count="0"/></office:meta>
+ <office:meta><meta:creation-date>2024-03-09T15:36:34.806002306</meta:creation-date><dc:date>2025-11-22T15:05:09.601098139</dc:date><meta:editing-duration>PT10H33M39S</meta:editing-duration><meta:editing-cycles>59</meta:editing-cycles><meta:generator>LibreOffice/25.2.6.2$Linux_X86_64 LibreOffice_project/520$Build-2</meta:generator><meta:document-statistic meta:table-count="1" meta:cell-count="138" meta:object-count="0"/></office:meta>
  <office:settings>
   <config:config-item-set config:name="ooo:view-settings">
    <config:config-item config:name="VisibleAreaTop" config:type="int">452</config:config-item>
@@ -13,10 +13,10 @@
      <config:config-item config:name="ViewId" config:type="string">view1</config:config-item>
      <config:config-item-map-named config:name="Tables">
       <config:config-item-map-entry config:name="Feuille1">
-       <config:config-item config:name="CursorPositionX" config:type="int">0</config:config-item>
-       <config:config-item config:name="CursorPositionY" config:type="int">2</config:config-item>
+       <config:config-item config:name="CursorPositionX" config:type="int">9</config:config-item>
+       <config:config-item config:name="CursorPositionY" config:type="int">12</config:config-item>
        <config:config-item config:name="ActiveSplitRange" config:type="short">2</config:config-item>
-       <config:config-item config:name="PositionLeft" config:type="int">0</config:config-item>
+       <config:config-item config:name="PositionLeft" config:type="int">6</config:config-item>
        <config:config-item config:name="PositionRight" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionTop" config:type="int">0</config:config-item>
        <config:config-item config:name="PositionBottom" config:type="int">0</config:config-item>
@@ -31,7 +31,7 @@
       </config:config-item-map-entry>
      </config:config-item-map-named>
      <config:config-item config:name="ActiveTable" config:type="string">Feuille1</config:config-item>
-     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">946</config:config-item>
+     <config:config-item config:name="HorizontalScrollbarWidth" config:type="int">938</config:config-item>
      <config:config-item config:name="ZoomType" config:type="short">0</config:config-item>
      <config:config-item config:name="ZoomValue" config:type="int">100</config:config-item>
      <config:config-item config:name="PageViewZoomValue" config:type="int">60</config:config-item>
@@ -101,7 +101,7 @@
    <config:config-item config:name="LoadReadonly" config:type="boolean">false</config:config-item>
    <config:config-item config:name="PrinterName" config:type="string">HLL2310D</config:config-item>
    <config:config-item config:name="PrinterPaperFromSetup" config:type="boolean">false</config:config-item>
-   <config:config-item config:name="PrinterSetup" config:type="base64Binary">yAH+/0hMTDIzMTBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpITEwyMzEwRAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAtQAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SExMMjMxMEQKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5hZGp1c3RtZW50PTAsMCwnMCwwCmNvbG9yZGVwdGg9MjQKY29sb3JkZXZpY2U9MApQUERDb250ZXh0RGF0YQpJbnB1dFNsb3Q6VFJBWTEARHVwbGV4Ok5vbmUAUGFnZVNpemU6QTQAABIAQ09NUEFUX0RVUExFWF9NT0RFDwBEdXBsZXhNb2RlOjpPZmYMAFBSSU5URVJfTkFNRQgASExMMjMxMEQLAERSSVZFUl9OQU1FDQBDVVBTOkhMTDIzMTBE</config:config-item>
+   <config:config-item config:name="PrinterSetup" config:type="base64Binary">yAH+/0hMTDIzMTBEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ1VQUzpITEwyMzEwRAAAAAAAAAAAAAAAAAAAAAAAAAAWAAMAtQAAAAAAAQAEAAhSAAAEdAAASm9iRGF0YSAxCnByaW50ZXI9SExMMjMxMEQKb3JpZW50YXRpb249UG9ydHJhaXQKY29waWVzPTEKY29sbGF0ZT1mYWxzZQptYXJnaW5hZGp1c3RtZW50PTAsMCwnMCwwCmNvbG9yZGVwdGg9MjQKY29sb3JkZXZpY2U9MApQUERDb250ZXh0RGF0YQpQYWdlU2l6ZTpBNABEdXBsZXg6Tm9uZQBJbnB1dFNsb3Q6VFJBWTEAABIAQ09NUEFUX0RVUExFWF9NT0RFDwBEdXBsZXhNb2RlOjpPZmYMAFBSSU5URVJfTkFNRQgASExMMjMxMEQLAERSSVZFUl9OQU1FDQBDVVBTOkhMTDIzMTBE</config:config-item>
    <config:config-item config:name="RasterIsVisible" config:type="boolean">false</config:config-item>
    <config:config-item config:name="RasterResolutionX" config:type="int">1000</config:config-item>
    <config:config-item config:name="RasterResolutionY" config:type="int">1000</config:config-item>
@@ -126,7 +126,9 @@
  </office:settings>
  <office:scripts>
   <office:script script:language="ooo:Basic">
-   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink"/>
+   <ooo:libraries xmlns:ooo="http://openoffice.org/2004/office" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <ooo:library-embedded ooo:name="Standard"/>
+   </ooo:libraries>
   </office:script>
  </office:scripts>
  <office:font-face-decls>
@@ -333,30 +335,14 @@
   <style:style style:name="ce3" style:family="table-cell" style:parent-style-name="Default">
    <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
   </style:style>
+  <style:style style:name="ce6" style:family="table-cell" style:parent-style-name="Default">
+   <style:text-properties fo:color="#ff0000"/>
+  </style:style>
   <style:style style:name="ce4" style:family="table-cell" style:parent-style-name="Default">
    <style:table-cell-properties fo:wrap-option="wrap"/>
    <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="10pt" fo:language="fr" fo:country="FR" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="DejaVu Sans" style:font-size-asian="10pt" style:language-asian="zh" style:country-asian="CN" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Arabic UI" style:font-size-complex="10pt" style:language-complex="hi" style:country-complex="IN" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
   </style:style>
   <style:style style:name="ce5" style:family="table-cell" style:parent-style-name="Default">
-   <style:text-properties style:font-name="Liberation Serif" style:font-name-asian="DejaVu Sans" style:font-name-complex="Noto Sans Arabic UI"/>
-  </style:style>
-  <style:style style:name="ce6" style:family="table-cell" style:parent-style-name="Default">
-   <style:text-properties fo:color="#ff0000"/>
-  </style:style>
-  <style:style style:name="ce10" style:family="table-cell" style:parent-style-name="Default">
-   <style:text-properties style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Monospace" fo:font-size="10pt" fo:language="none" fo:country="none" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="Monospace" style:font-size-asian="10pt" style:language-asian="none" style:country-asian="none" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Monospace" style:font-size-complex="10pt" style:language-complex="none" style:country-complex="none" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="ce11" style:family="table-cell" style:parent-style-name="Default">
-   <style:text-properties fo:font-weight="bold" style:font-weight-asian="bold" style:font-weight-complex="bold"/>
-  </style:style>
-  <style:style style:name="ce12" style:family="table-cell" style:parent-style-name="Default">
-   <style:text-properties fo:color="#ff0000"/>
-  </style:style>
-  <style:style style:name="ce13" style:family="table-cell" style:parent-style-name="Default">
-   <style:table-cell-properties fo:wrap-option="wrap"/>
-   <style:text-properties style:use-window-font-color="true" style:text-outline="false" style:text-line-through-style="none" style:text-line-through-type="none" style:font-name="Liberation Serif" fo:font-size="10pt" fo:language="fr" fo:country="FR" fo:font-style="normal" fo:text-shadow="none" style:text-underline-style="none" fo:font-weight="normal" style:text-underline-mode="continuous" style:text-overline-mode="continuous" style:text-line-through-mode="continuous" style:font-name-asian="DejaVu Sans" style:font-size-asian="10pt" style:language-asian="zh" style:country-asian="CN" style:font-style-asian="normal" style:font-weight-asian="normal" style:font-name-complex="Noto Sans Arabic UI" style:font-size-complex="10pt" style:language-complex="hi" style:country-complex="IN" style:font-style-complex="normal" style:font-weight-complex="normal" style:text-emphasize="none" style:font-relief="none" style:text-overline-style="none" style:text-overline-color="font-color"/>
-  </style:style>
-  <style:style style:name="ce14" style:family="table-cell" style:parent-style-name="Default">
    <style:text-properties style:font-name="Liberation Serif" style:font-name-asian="DejaVu Sans" style:font-name-complex="Noto Sans Arabic UI"/>
   </style:style>
   <style:page-layout style:name="pm1">
@@ -401,7 +387,7 @@
      <text:p><text:sheet-name>???</text:sheet-name><text:s/>(<text:title>???</text:title>)</text:p>
     </style:region-left>
     <style:region-right>
-     <text:p><text:date style:data-style-name="N2" text:date-value="2025-11-22">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="23:29:05.133484821">00:00:00</text:time></text:p>
+     <text:p><text:date style:data-style-name="N2" text:date-value="2025-11-22">00/00/0000</text:date>, <text:time style:data-style-name="N2" text:time-value="15:02:17.302634180">00:00:00</text:time></text:p>
     </style:region-right>
    </style:header>
    <style:header-left style:display="false"/>
@@ -434,49 +420,49 @@
     <table:table-column table:style-name="co14" table:default-cell-style-name="Default"/>
     <table:table-column table:style-name="co4" table:default-cell-style-name="Default"/>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce10"/>
+     <table:table-cell table:style-name="ce1"/>
      <table:table-cell table:number-columns-repeated="19"/>
     </table:table-row>
     <table:table-row table:style-name="ro2">
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Nom du producteur</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Prénom</text:p><text:p>(optionnel)</text:p>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Prénom</text:p><text:p>(optionnel)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Nom de famille</text:p><text:p>(optionnel)</text:p>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Nom de famille</text:p><text:p>(optionnel)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Ville</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Ville</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Code postal</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Code postal</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Adresse</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Adresse</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Latitude</text:p><text:p>(S’il n’y a pas d’adresse)</text:p>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Latitude</text:p><text:p>(S’il n’y a pas d’adresse)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Longitude</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Longitude</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Siret</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Siret</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>n° de téléphone</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>n° de téléphone</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>2nd n° de téléphone</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>2nd n° de téléphone</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>email</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>email</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>Site web</text:p><text:p/>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>Site web</text:p><text:p/>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string"><text:p>2nd site web</text:p><text:p>(souvent Facebook)</text:p>
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string"><text:p>2nd site web</text:p><text:p>(souvent Facebook)</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>3° site web</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Description</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Horaires d’ouvertures</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce11" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce3" office:value-type="string" calcext:value-type="string">
       <text:p>Catégorie/Profession</text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p>Production</text:p><text:p>(Liste séparé par des virgules)</text:p>
@@ -506,7 +492,7 @@
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p><text:a xlink:href="https://neoatelier.fr/" xlink:type="simple">https://neoatelier.fr/</text:a></text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
       <text:p>Sacs à dos et accessoires, made in France. Depuis 2013, nous nous engageons pour une fabrication locale et responsable de matériel de parapente au sein de notre atelier de confection, au bord du lac d’Annecy.</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -544,7 +530,7 @@
       <text:p>https://www.facebook.com/leformier</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
       <text:p>Le Formier est une marque française de chaussures pour homme, alliant élégance et confort, fabriquée avec savoir-faire en France. Nous sélectionnons des matériaux de qualité et concevons des modèles intemporels : derbies, boots, baskets… pour un style raffiné au quotidien.</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -559,7 +545,7 @@
      </table:table-cell>
     </table:table-row>
     <table:table-row table:style-name="ro1">
-     <table:table-cell table:style-name="ce12" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce6" office:value-type="string" calcext:value-type="string">
       <text:p>*Montlimart</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="8"/>
@@ -567,7 +553,7 @@
       <text:p>241717405</text:p>
      </table:table-cell>
      <table:table-cell/>
-     <table:table-cell table:style-name="ce13" office:value-type="string" calcext:value-type="string"><text:p><text:a xlink:href="mailto:bonjour@montlimart.com" xlink:type="simple">bonjour@montlimart.com</text:a></text:p>
+     <table:table-cell table:style-name="ce4" office:value-type="string" calcext:value-type="string"><text:p><text:a xlink:href="mailto:bonjour@montlimart.com" xlink:type="simple">bonjour@montlimart.com</text:a></text:p>
      </table:table-cell>
      <table:table-cell office:value-type="string" calcext:value-type="string"><text:p><text:a xlink:href="https://www.montlimart.com/" xlink:type="simple">https://www.montlimart.com/</text:a></text:p>
      </table:table-cell>
@@ -577,7 +563,7 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>https://www.instagram.com/montlimart/</text:p>
      </table:table-cell>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string"><text:p>Marque française de vêtements &amp; accessoires pour homme, Montlimart est née d’une envie : celle d’offrir un vestiaire masculin, conscient et responsable, pensé comme un moyen d’expression de vos engagements. Il est composé de <text:a xlink:href="https://www.montlimart.com/99-vetements" xlink:type="simple">bons basiques</text:a>dont on ne se lasse jamais et ponctué de pièces plus singulières pour apporter un caractère unique à chacun de vos looks. Notre mission est de créer des vêtements, accessoires &amp; <text:a xlink:href="https://www.montlimart.com/14-chaussures" xlink:type="simple">chaussures</text:a> de qualité qui durent dans le temps, dans des matières toujours plus vertueuses et certifiées.</text:p>
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string"><text:p>Marque française de vêtements &amp; accessoires pour homme, Montlimart est née d’une envie : celle d’offrir un vestiaire masculin, conscient et responsable, pensé comme un moyen d’expression de vos engagements. Il est composé de <text:a xlink:href="https://www.montlimart.com/99-vetements" xlink:type="simple">bons basiques</text:a>dont on ne se lasse jamais et ponctué de pièces plus singulières pour apporter un caractère unique à chacun de vos looks. Notre mission est de créer des vêtements, accessoires &amp; <text:a xlink:href="https://www.montlimart.com/14-chaussures" xlink:type="simple">chaussures</text:a> de qualité qui durent dans le temps, dans des matières toujours plus vertueuses et certifiées.</text:p>
      </table:table-cell>
      <table:table-cell/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
@@ -656,7 +642,7 @@
       <text:p>https://www.ardelaine.fr/</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
       <text:p>Nous valorisons la laine locale de façon artisanale et écologique pour vous proposer de beaux articles autour de l&apos;habillement, de la maison et du jardin. Nous sommes situés en Ardèche où nous vous accueillons tout au long de l&apos;année pour partager notre aventure et transmettre nos savoirs et savoir-faire.</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -696,7 +682,7 @@
       <text:p>https://www.leberetfrancais.com/fr/</text:p>
      </table:table-cell>
      <table:table-cell table:number-columns-repeated="2"/>
-     <table:table-cell table:style-name="ce14" office:value-type="string" calcext:value-type="string">
+     <table:table-cell table:style-name="ce5" office:value-type="string" calcext:value-type="string">
       <text:p>Donnez une touche unique à votre béret grâce à notre service de broderie personnalisée. Faites inscrire votre prénom, vos initiales ou un mot qui vous tient à coeur, directement sur votre béret. Une création raffinée, pensée pour refléter votre personnalité et sublimer le savoir-faire à la française.</text:p>
      </table:table-cell>
      <table:table-cell/>
@@ -840,11 +826,7 @@
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>Dom. de la Vigne</text:p>
      </table:table-cell>
-     <table:table-cell table:number-columns-repeated="2"/>
-     <table:table-cell table:style-name="ce13" office:value-type="float" office:value="519475602" calcext:value-type="float">
-      <text:p>519475602</text:p>
-     </table:table-cell>
-     <table:table-cell table:number-columns-repeated="3"/>
+     <table:table-cell table:number-columns-repeated="6"/>
      <table:table-cell office:value-type="string" calcext:value-type="string">
       <text:p>https://www.mapetitetribu.fr/</text:p>
      </table:table-cell>

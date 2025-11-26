@@ -1,4 +1,4 @@
-#!/usr/local/bin/julia --startup=no
+#!/bin/env julia
 #=
 	Get and print statistics of website use according to web server logfiles
 =#
@@ -182,7 +182,7 @@ function loadStats(dbConnection::LibPQ.DBConnection, stats::Dict{Int,Dict{Int, I
 end
 
 year = 0
-include("../sources/connect.jl")
+include("connect.jl")
 dbConnection = OpenProduct.get_connection(ROOT_PATH)
 if ENV=="dev"
 	sync()
@@ -190,6 +190,6 @@ else
 	DATA_PATH = "/home/kaja9241/logs"
 end
 stats = getStats()
-# printStats(stats)
+printStats(stats)
 # print("ENV:", ENV)
-loadStats(dbConnection, stats)
+# loadStats(dbConnection, stats)

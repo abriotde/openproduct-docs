@@ -1,10 +1,35 @@
 
+Bonjour,
+
+Je relance le site https://openproduct.fr/ qui ambitionne de recenser tous les producteurs locaux (pas seulement alimentaires mais seulement en B2C). Je sais que ce sujet vous touche et que vos adhérents y seront sensible, c'est pourquoi je me permet de vous solliciter. 
+Bien entendu, j'apprécierais un soutien financier, mais c'est loin d'être la seule chose manière de me soutenir. 
+Peut-être pourriez vous parler du site auprès des producteurs et/ou consommateurs?
+Peut-être pourriez-vous me communiquer une partie de la liste de vos producteurs recensés?
+Peut-être pourrait-on envisager un partenariat?
+Dans tous les cas vos retour et avis m'apporteraient beaucoup.
+
+Cordialement,
+Association OpenProduct (Albéric).
+
+Fédération Indépendante du Made in France : contact@fimif.fr
+Mag'in France : https://maginfrance.fr/contact/
+Les Équipes du Made In France : contact@lemif.fr
+https://collectifboutiquesmif.fr/
+association fabriqué en france : associationfabriqueenfrance@gmail.com
+Fédération Indépendante du Made In France 
+Made in chez nous : made.in.chez.nous.en.france@gmail.com
+Savoir pour faire : https://www.savoirpourfaire.fr/contact
+French Tex : communication@frenchtex.org
+La Rue du Made in France : bonjour@laruedumadeinfrance.com
+BIEN ou bien : https://bienoubien.com/nous-contacter/
+La gazette France : abonnement@lagazettefrance.fr
 
 # Demande de soutien/référencement
 
 association OpenProduct
 contact@openproduct.fr
 0985104873
+Promotion des producteurs locaux
 
 Bonjour,
 
